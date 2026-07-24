@@ -698,7 +698,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
   display: flex;
   flex-direction: column;
   min-height: 370px;
+  overflow: hidden;
   padding: 24px;
+  position: relative;
   text-decoration: none;
   transition: 220ms ease;
 }
@@ -706,15 +708,61 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
 .mini-index { color: #778095; font-family: var(--font-mono), monospace; font-size: 10px; }
 .side-logo-wrap {
   align-items: center;
-  background: #f6f4ef;
-  border-radius: 4px;
   display: flex;
-  height: 105px;
+  height: 144px;
   justify-content: center;
-  margin: 32px 0;
-  padding: 20px;
+  margin: 24px -24px 30px;
+  overflow: hidden;
+  padding: 30px 42px 24px;
+  position: relative;
 }
-.side-logo-wrap img { max-height: 65px; max-width: 85%; object-fit: contain; }
+.side-logo-wrap::after {
+  border: 1px solid rgba(23,38,77,.11);
+  border-left: 0;
+  border-right: 0;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.brand-band-label {
+  color: rgba(23,38,77,.48);
+  font-family: var(--font-mono), monospace;
+  font-size: 8px;
+  left: 16px;
+  letter-spacing: .09em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 12px;
+}
+.side-logo-wrap img {
+  display: block;
+  max-height: 72px;
+  max-width: 88%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+.side-project-card-paws .side-logo-wrap {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(106,143,45,.18) 0 34px, transparent 35px),
+    #e9efdc;
+}
+.side-project-card-paws .side-logo-wrap img,
+.side-project-card-manya .side-logo-wrap img { mix-blend-mode: multiply; }
+.side-project-card-flights .side-logo-wrap {
+  background:
+    radial-gradient(circle at 12% 82%, rgba(48,239,199,.12) 0 42px, transparent 43px),
+    #080a10;
+}
+.side-project-card-flights .brand-band-label { color: rgba(255,255,255,.48); }
+.side-project-card-flights .side-logo-wrap::after { border-color: rgba(48,239,199,.23); }
+.side-project-card-flights .side-logo-wrap img { max-height: 78px; max-width: 84%; }
+.side-project-card-manya .side-logo-wrap {
+  background:
+    radial-gradient(circle at 84% 28%, rgba(238,104,75,.14) 0 38px, transparent 39px),
+    #f1e4dc;
+}
 .side-project-grid h3 { font-size: 24px; letter-spacing: -.04em; margin: 0 0 9px; }
 .side-project-grid p { color: #536078; font-size: 15px; line-height: 1.55; margin: 0; }
 .side-link { color: var(--lime); font-size: 12px; margin-top: auto; padding-top: 24px; }

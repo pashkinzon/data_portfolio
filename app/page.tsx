@@ -410,6 +410,7 @@ const impactCases: ImpactCase[] = [
 const sideProjects = [
   {
     title: "Paws from Georgia",
+    theme: "paws",
     logo: "/assets/logo-paws-georgia.png",
     href: "https://paws-for-georgia.onrender.com/",
     copy: {
@@ -419,6 +420,7 @@ const sideProjects = [
   },
   {
     title: "Flights History",
+    theme: "flights",
     logo: "/assets/logo-flights-history.png",
     href: "https://flights-history.onrender.com/",
     copy: {
@@ -428,6 +430,7 @@ const sideProjects = [
   },
   {
     title: "Маня",
+    theme: "manya",
     logo: "/assets/logo-manya.png",
     href: "https://pashkinzon.github.io/manya-platform-prototype/",
     copy: {
@@ -775,9 +778,18 @@ export default function Home() {
         </div>
         <div className="side-project-grid">
           {sideProjects.map((project, index) => (
-            <a key={project.title} href={project.href} target="_blank" rel="noreferrer">
+            <a
+              key={project.title}
+              className={`side-project-card side-project-card-${project.theme}`}
+              href={project.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               <span className="mini-index">0{index + 4}</span>
-              <div className="side-logo-wrap"><img src={project.logo} alt={`${project.title} logo`} /></div>
+              <div className="side-logo-wrap">
+                <span className="brand-band-label">{lang === "en" ? "Independent build" : "Eigenes Projekt"}</span>
+                <img src={project.logo} alt={`${project.title} logo`} />
+              </div>
               <h3>{project.title}</h3>
               <p>{t(project.copy, lang)}</p>
               <span className="side-link">{t(ui.visit, lang)} <Arrow diagonal /></span>

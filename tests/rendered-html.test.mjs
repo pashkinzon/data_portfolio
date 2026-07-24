@@ -50,5 +50,5 @@ test("ships bilingual ownership content and required assets", async () => {
   assert.match(page, /logo-dm\.webp/);
   assert.match(page, /logo-flink\.png/);
   assert.match(page, /Pavel_Polishchuk_CV_DE\.pdf/);
-  assert.match(layout, /og-v2\.png/);
+  assert.match(layout, /og-v3\.png/);
 });

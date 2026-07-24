@@ -162,7 +162,7 @@ const projects: Project[] = [
       { en: "Integrated API and database context", de: "API- und Datenbankkontext integriert" },
       { en: "Validated usage and rollout path", de: "Nutzung und Rollout-Pfad validiert" },
     ],
-    image: "/project-atlas-v2.png",
+    image: "/project-atlas-v3.png",
     alt: { en: "Visual map of Pavel's data products", de: "Visuelle Karte von Pavels Datenprodukten" },
     logo: "/assets/logo-dm.webp",
     logoAlt: "dm-drogerie markt",

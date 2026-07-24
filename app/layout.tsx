@@ -22,32 +22,32 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Pavel Polishchuk — Data Analyst & Builder",
+    title: "Pavel Polishchuk — Data Product Owner & Analyst",
     description:
-      "Dashboards, automations, and useful interfaces that turn messy data into clear decisions.",
+      "I own the path from messy business question to adopted data product: retail analytics, automation, AI workflows, and measurable operational impact.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Pavel Polishchuk — Data Analyst & Builder",
+      title: "Pavel Polishchuk — Data Product Owner & Analyst",
       description:
-        "I turn messy data into clear decisions. Explore dashboards, automations, and useful interfaces.",
+        "I don’t just analyze data. I own what gets built.",
       type: "website",
       images: [
         {
-          url: `${origin}/og.png`,
-          width: 1734,
-          height: 907,
-          alt: "Pavel Polishchuk — I turn messy data into clear decisions.",
+          url: `${origin}/og-v2.png`,
+          width: 1731,
+          height: 909,
+          alt: "Pavel Polishchuk — I own what gets built.",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Pavel Polishchuk — Data Analyst & Builder",
-      description: "I turn messy data into clear decisions.",
-      images: [`${origin}/og.png`],
+      title: "Pavel Polishchuk — Data Product Owner & Analyst",
+      description: "I don’t just analyze data. I own what gets built.",
+      images: [`${origin}/og-v2.png`],
     },
   };
 }

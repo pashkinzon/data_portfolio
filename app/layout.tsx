@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Pavel Polishchuk — Data Product Owner & Analyst",
+    title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
     description:
       "I own the path from messy business question to adopted data product: retail analytics, automation, AI workflows, and measurable operational impact.",
     icons: {
@@ -30,13 +30,13 @@ export async function generateMetadata(): Promise<Metadata> {
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Pavel Polishchuk — Data Product Owner & Analyst",
+      title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
       description:
         "I don’t just analyze data. I own what gets built.",
       type: "website",
       images: [
         {
-          url: `${origin}/og-v3.png`,
+          url: `${origin}/og-v4.png`,
           width: 1731,
           height: 909,
           alt: "Pavel Polishchuk — I own what gets built.",
@@ -45,9 +45,9 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Pavel Polishchuk — Data Product Owner & Analyst",
+      title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
       description: "I don’t just analyze data. I own what gets built.",
-      images: [`${origin}/og-v3.png`],
+      images: [`${origin}/og-v4.png`],
     },
   };
 }

@@ -8,11 +8,19 @@ type LocalText = { en: string; de: string };
 type Project = {
   id: string;
   number: string;
+  shortTitle: LocalText;
   kicker: LocalText;
   title: LocalText;
   description: LocalText;
   impact: LocalText;
   ownership: LocalText[];
+  caseStudy: {
+    challenge: LocalText;
+    contribution: LocalText;
+    decisions: LocalText[];
+    result: LocalText;
+    evidence: LocalText[];
+  };
   image: string;
   alt: LocalText;
   logo: string;
@@ -41,14 +49,18 @@ const ui = {
   menu: { en: "Menu", de: "Menü" },
   close: { en: "Close", de: "Schließen" },
   heroEyebrow: {
-    en: "Product-minded data analyst · retail analytics & automation",
-    de: "Produktorientierter Data Analyst · Retail Analytics & Automation",
+    en: "Retail analytics · automation · internal AI products",
+    de: "Retail Analytics · Automatisierung · interne AI-Produkte",
   },
-  heroLine1: { en: "I don’t just analyze data.", de: "Ich analysiere nicht nur Daten." },
-  heroLine2: { en: "I own what gets built.", de: "Ich verantworte, was daraus entsteht." },
+  heroLine1: { en: "Data Product Owner", de: "Data Product Owner" },
+  heroLine2: { en: "& Analytics Builder.", de: "& Analytics Builder." },
+  heroManifesto: {
+    en: "I don’t just analyze data. I own what gets built.",
+    de: "Ich analysiere nicht nur Daten. Ich verantworte, was daraus entsteht.",
+  },
   heroCopy: {
-    en: "I find the operational friction, shape the KPI logic, build the system, and stay for adoption. The result: faster decisions and tools people choose to use.",
-    de: "Ich finde operative Reibung, forme die KPI-Logik, baue das System und begleite die Nutzung. Das Ergebnis: schnellere Entscheidungen und Werkzeuge, die Menschen tatsächlich verwenden.",
+    en: "I turn ambiguous retail and operations problems into adopted data products—combining KPI strategy, hands-on building, and measurable business impact.",
+    de: "Ich verwandle unklare Retail- und Operations-Probleme in genutzte Datenprodukte—mit KPI-Strategie, Hands-on-Umsetzung und messbarem Business Impact.",
   },
   explore: { en: "Explore owned products", de: "Produkte entdecken" },
   cv: { en: "Open CV (DE)", de: "Lebenslauf öffnen" },
@@ -59,6 +71,13 @@ const ui = {
     de: "Die stärkste Arbeit ist kein Dashboard-Screenshot. Sie zeigt den gesamten Ownership-Loop: Bedarf verstehen, Logik definieren, Produkt bauen, Nutzung sichern und verbessern.",
   },
   owned: { en: "What I owned", de: "Meine Verantwortung" },
+  openCase: { en: "Open full case study", de: "Case Study öffnen" },
+  closeCase: { en: "Close case study", de: "Case Study schließen" },
+  caseChallenge: { en: "The challenge", de: "Die Herausforderung" },
+  caseContribution: { en: "My individual contribution", de: "Mein individueller Beitrag" },
+  caseDecisions: { en: "Key product decisions", de: "Zentrale Produktentscheidungen" },
+  caseResult: { en: "Measured result", de: "Messbares Ergebnis" },
+  caseEvidence: { en: "Evidence", de: "Belege" },
   sideKicker: { en: "Independent & social-impact builds", de: "Eigene & gemeinnützige Projekte" },
   sideTitle: { en: "Products beyond the day job.", de: "Produkte über den Job hinaus." },
   sideIntro: {
@@ -127,6 +146,7 @@ const projects: Project[] = [
   {
     id: "automation",
     number: "01",
+    shortTitle: { en: "KPI automation", de: "KPI-Automation" },
     kicker: { en: "Owned at dm · Automation product", de: "Bei dm verantwortet · Automatisierungsprodukt" },
     title: { en: "KPI mailing: 8 hours became 15 minutes", de: "KPI-Mailing: aus 8 Stunden wurden 15 Minuten" },
     description: {
@@ -140,6 +160,30 @@ const projects: Project[] = [
       { en: "Built the automated workflow", de: "Automatisierten Workflow gebaut" },
       { en: "Rolled it out for a five-person team", de: "Für ein fünfköpfiges Team ausgerollt" },
     ],
+    caseStudy: {
+      challenge: {
+        en: "A five-person team repeatedly assembled and sent individual KPI emails for 75 stores. The weekly process consumed around eight hours, created avoidable manual work, and made consistent delivery harder.",
+        de: "Ein fünfköpfiges Team erstellte und versendete wiederholt einzelne KPI-Mails für 75 Märkte. Der wöchentliche Prozess dauerte rund acht Stunden, erzeugte vermeidbare Handarbeit und erschwerte eine konsistente Auslieferung.",
+      },
+      contribution: {
+        en: "I owned the solution from problem framing to rollout: mapped the existing workflow, defined the KPI and recipient logic, built the Python/PySpark generation pipeline, automated delivery, and introduced it to the operating team.",
+        de: "Ich verantwortete die Lösung von der Problemdefinition bis zum Rollout: Ist-Prozess analysiert, KPI- und Empfängerlogik definiert, Python/PySpark-Pipeline gebaut, Versand automatisiert und im operativen Team eingeführt.",
+      },
+      decisions: [
+        { en: "Standardize KPI calculation before automating delivery", de: "KPI-Berechnung vor dem Versand standardisieren" },
+        { en: "Generate store-specific outputs from one reproducible workflow", de: "Marktspezifische Outputs aus einem reproduzierbaren Workflow erzeugen" },
+        { en: "Design for team use rather than a one-person script", de: "Für Teamnutzung statt als Ein-Personen-Skript bauen" },
+      ],
+      result: {
+        en: "Weekly reporting time fell from roughly eight hours to under 15 minutes—a 32× faster workflow serving all 75 stores.",
+        de: "Die wöchentliche Reporting-Zeit sank von rund acht Stunden auf unter 15 Minuten—ein 32× schnellerer Workflow für alle 75 Märkte.",
+      },
+      evidence: [
+        { en: "8h → <15m per week", de: "8 Std. → <15 Min. pro Woche" },
+        { en: "75 stores", de: "75 Märkte" },
+        { en: "Five-person team enabled", de: "Fünfköpfiges Team entlastet" },
+      ],
+    },
     image: "/assets/project-fuks-dashboard.png",
     alt: { en: "Retail analysis dashboard", de: "Dashboard für Retail-Analysen" },
     logo: "/assets/logo-dm.webp",
@@ -149,6 +193,7 @@ const projects: Project[] = [
   {
     id: "copilot",
     number: "02",
+    shortTitle: { en: "AI analyst", de: "AI-Analyst" },
     kicker: { en: "Owned at dm · Internal AI product", de: "Bei dm verantwortet · Internes AI-Produkt" },
     title: { en: "An AI analyst with company context", de: "Ein AI-Analyst mit Unternehmenskontext" },
     description: {
@@ -162,6 +207,30 @@ const projects: Project[] = [
       { en: "Integrated API and database context", de: "API- und Datenbankkontext integriert" },
       { en: "Validated usage and rollout path", de: "Nutzung und Rollout-Pfad validiert" },
     ],
+    caseStudy: {
+      challenge: {
+        en: "Complex internal data questions depended on scarce specialist knowledge: users needed to understand data structures, formulate PySpark logic, and navigate several technical systems before reaching an answer.",
+        de: "Komplexe interne Datenfragen hingen von knappem Spezialwissen ab: Nutzer mussten Datenstrukturen verstehen, PySpark-Logik formulieren und mehrere technische Systeme bedienen, bevor sie eine Antwort erhielten.",
+      },
+      contribution: {
+        en: "I identified the repeated analyst bottleneck, designed the assistant workflow, connected company context through APIs and databases, shaped the code-generation behavior, and validated the first daily-use cases.",
+        de: "Ich identifizierte den wiederkehrenden Analysten-Engpass, konzipierte den Assistenten-Workflow, band Unternehmenskontext über APIs und Datenbanken an, gestaltete die Code-Generierung und validierte die ersten täglichen Use Cases.",
+      },
+      decisions: [
+        { en: "Ground answers in company data context instead of generic AI output", de: "Antworten im Unternehmenskontext statt in generischem AI-Output verankern" },
+        { en: "Return usable PySpark code alongside explanations", de: "Nutzbaren PySpark-Code zusammen mit Erklärungen liefern" },
+        { en: "Validate with a small daily-user group before wider rollout", de: "Mit einer kleinen täglichen Nutzergruppe vor dem breiten Rollout validieren" },
+      ],
+      result: {
+        en: "The assistant moved from prototype to daily use by more than five users, with a defined path toward a 100+ user rollout.",
+        de: "Der Assistent entwickelte sich vom Prototyp zum täglich genutzten Produkt mit mehr als fünf Nutzern und einem definierten Rollout-Pfad für über 100 Nutzer.",
+      },
+      evidence: [
+        { en: "5+ daily users", de: "5+ tägliche Nutzer" },
+        { en: "100+ users in planned rollout", de: "100+ Nutzer im geplanten Rollout" },
+        { en: "API + database context", de: "API- + Datenbankkontext" },
+      ],
+    },
     image: "/project-atlas-v3.png",
     alt: { en: "Visual map of Pavel's data products", de: "Visuelle Karte von Pavels Datenprodukten" },
     logo: "/assets/logo-dm.webp",
@@ -171,6 +240,7 @@ const projects: Project[] = [
   {
     id: "layout",
     number: "03",
+    shortTitle: { en: "Layout impact", de: "Layout Impact" },
     kicker: { en: "Owned at dm · Decision product", de: "Bei dm verantwortet · Entscheidungsprodukt" },
     title: { en: "Layout impact dashboard, owned end to end", de: "Layout-Impact-Dashboard, von Idee bis Nutzung" },
     description: {
@@ -184,6 +254,30 @@ const projects: Project[] = [
       { en: "Designed and built the interface", de: "Interface konzipiert und gebaut" },
       { en: "Earned recurring cross-team use", de: "Wiederkehrende teamübergreifende Nutzung erreicht" },
     ],
+    caseStudy: {
+      challenge: {
+        en: "Assortment and space-planning teams needed a shared way to understand how layout changes affected performance. Questions were fragmented across teams and lacked one trusted analytical view.",
+        de: "Sortiments- und Space-Planning-Teams brauchten eine gemeinsame Sicht darauf, wie Layout-Änderungen die Performance beeinflussen. Fragen waren über Teams verteilt, eine vertrauenswürdige analytische Sicht fehlte.",
+      },
+      contribution: {
+        en: "I conceived the product from scratch, translated stakeholder questions into a product brief, created the KPI model, designed and built the dashboard, and iterated it into a recurring cross-team decision tool.",
+        de: "Ich entwickelte das Produkt von Grund auf, übersetzte Stakeholder-Fragen in einen Product Brief, erstellte das KPI-Modell, konzipierte und baute das Dashboard und entwickelte es zu einem regelmäßig genutzten teamübergreifenden Entscheidungswerkzeug.",
+      },
+      decisions: [
+        { en: "Organize the product around decisions, not available data tables", de: "Das Produkt um Entscheidungen statt vorhandene Datentabellen strukturieren" },
+        { en: "Create one comparable KPI model across layout cases", de: "Ein vergleichbares KPI-Modell für unterschiedliche Layout-Fälle schaffen" },
+        { en: "Make recurring use the success criterion", de: "Wiederkehrende Nutzung als Erfolgskriterium definieren" },
+      ],
+      result: {
+        en: "The product became a weekly decision surface for around 30 users across assortment, space-planning, and advisory teams.",
+        de: "Das Produkt wurde zu einer wöchentlichen Entscheidungsoberfläche für rund 30 Nutzer aus Sortiment, Space Planning und Beratung.",
+      },
+      evidence: [
+        { en: "30 weekly users", de: "30 wöchentliche Nutzer" },
+        { en: "Three cross-functional user groups", de: "Drei funktionsübergreifende Nutzergruppen" },
+        { en: "Owned from idea to adoption", de: "Von der Idee bis zur Nutzung verantwortet" },
+      ],
+    },
     image: "/assets/project-layout-dashboard.png",
     alt: { en: "Layout impact dashboard with KPI cards and charts", de: "Layout-Impact-Dashboard mit KPI-Karten und Charts" },
     logo: "/assets/logo-dm.webp",
@@ -300,6 +394,7 @@ export default function Home() {
   const [activeProject, setActiveProject] = useState<Project>(projects[0]);
   const [activeImpact, setActiveImpact] = useState<ImpactCase>(impactCases[0]);
   const [activeSkill, setActiveSkill] = useState("Python");
+  const [openCaseStudy, setOpenCaseStudy] = useState<Project | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -307,6 +402,20 @@ export default function Home() {
     const saved = window.localStorage.getItem("pavel-portfolio-language");
     if (saved === "de" || saved === "en") setLang(saved);
   }, []);
+
+  useEffect(() => {
+    if (!openCaseStudy) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenCaseStudy(null);
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [openCaseStudy]);
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -381,6 +490,7 @@ export default function Home() {
           <br />
           <em>{t(ui.heroLine2, lang)}</em>
         </h1>
+        <p className="hero-manifesto reveal-up delay-2">{t(ui.heroManifesto, lang)}</p>
         <p className="hero-copy reveal-up delay-2">{t(ui.heroCopy, lang)}</p>
         <div className="hero-actions reveal-up delay-3">
           <button className="button button-primary" onClick={() => jumpTo("work")}>
@@ -445,7 +555,7 @@ export default function Home() {
                 >
                   <img src={project.logo} alt="" />
                   <span>{project.number}</span>
-                  {t(project.title, lang)}
+                  <span className="project-tab-label">{t(project.shortTitle, lang)}</span>
                   <Arrow />
                 </button>
               ))}
@@ -462,6 +572,9 @@ export default function Home() {
               <ul className="ownership-list">
                 {activeProject.ownership.map((item) => <li key={item.en}>{t(item, lang)}</li>)}
               </ul>
+              <button className="case-study-button" onClick={() => setOpenCaseStudy(activeProject)}>
+                {t(ui.openCase, lang)} <Arrow />
+              </button>
               <div className="tag-list">
                 {activeProject.tags.map((tag) => <span key={tag}>{tag}</span>)}
               </div>
@@ -672,6 +785,62 @@ export default function Home() {
         <span>{t(ui.footer, lang)}</span>
         <button className="back-top" onClick={() => jumpTo("top")}>{t(ui.top, lang)} ↑</button>
       </footer>
+
+      {openCaseStudy && (
+        <div
+          className="case-study-overlay"
+          role="presentation"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setOpenCaseStudy(null);
+          }}
+        >
+          <article
+            className="case-study-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="case-study-title"
+          >
+            <header className="case-study-header">
+              <div>
+                <span className="section-kicker">{t(openCaseStudy.kicker, lang)}</span>
+                <h2 id="case-study-title">{t(openCaseStudy.title, lang)}</h2>
+              </div>
+              <button className="case-study-close" onClick={() => setOpenCaseStudy(null)} aria-label={t(ui.closeCase, lang)}>
+                ×
+              </button>
+            </header>
+
+            <div className="case-study-result">
+              <span>{t(ui.caseResult, lang)}</span>
+              <strong>{t(openCaseStudy.impact, lang)}</strong>
+            </div>
+
+            <div className="case-study-grid">
+              <section>
+                <span className="case-label">{t(ui.caseChallenge, lang)}</span>
+                <p>{t(openCaseStudy.caseStudy.challenge, lang)}</p>
+              </section>
+              <section className="case-contribution">
+                <span className="case-label">{t(ui.caseContribution, lang)}</span>
+                <p>{t(openCaseStudy.caseStudy.contribution, lang)}</p>
+              </section>
+              <section>
+                <span className="case-label">{t(ui.caseDecisions, lang)}</span>
+                <ul>
+                  {openCaseStudy.caseStudy.decisions.map((item) => <li key={item.en}>{t(item, lang)}</li>)}
+                </ul>
+              </section>
+              <section>
+                <span className="case-label">{t(ui.caseResult, lang)}</span>
+                <p>{t(openCaseStudy.caseStudy.result, lang)}</p>
+                <div className="case-evidence" aria-label={t(ui.caseEvidence, lang)}>
+                  {openCaseStudy.caseStudy.evidence.map((item) => <strong key={item.en}>{t(item, lang)}</strong>)}
+                </div>
+              </section>
+            </div>
+          </article>
+        </div>
+      )}
     </main>
   );
 }

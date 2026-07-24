@@ -32,7 +32,7 @@ test("server-renders the finished portfolio", async () => {
   assert.match(html, /Pavel Polishchuk/);
   assert.match(html, /I don.t just analyze data/i);
   assert.match(html, /8h/);
-  assert.match(html, /Data Product Owner &amp; Analyst/);
+  assert.match(html, /Data Product Owner &amp; Analytics Builder/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -50,5 +50,8 @@ test("ships bilingual ownership content and required assets", async () => {
   assert.match(page, /logo-dm\.webp/);
   assert.match(page, /logo-flink\.png/);
   assert.match(page, /Pavel_Polishchuk_CV_DE\.pdf/);
-  assert.match(layout, /og-v3\.png/);
+  assert.match(page, /Open full case study/);
+  assert.match(page, /My individual contribution/);
+  assert.match(page, /Weekly reporting time fell/);
+  assert.match(layout, /og-v4\.png/);
 });

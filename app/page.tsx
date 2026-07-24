@@ -531,15 +531,50 @@ export default function Home() {
         </div>
 
         <div className="project-stage">
-          <div className="project-visual" key={activeProject.id}>
-            <img src={activeProject.image} alt={t(activeProject.alt, lang)} />
+          <div className={`project-visual project-visual-${activeProject.id}`} key={activeProject.id}>
             <div className="project-visual-topline">
               <span>{t(activeProject.kicker, lang)}</span>
               <span>{activeProject.number} / 03</span>
             </div>
-            <div className="project-impact">
-              <span className="impact-pulse" />
-              {t(activeProject.impact, lang)}
+
+            <div className="project-slide-card">
+              <div className="screenshot-toolbar">
+                <div className="window-dots" aria-hidden="true"><i /><i /><i /></div>
+                <span>{t(activeProject.shortTitle, lang)} · {lang === "en" ? "evidence slide" : "Evidence Slide"}</span>
+                <span>{activeProject.number}</span>
+              </div>
+
+              {activeProject.id === "copilot" ? (
+                <div className="ai-architecture-slide" role="img" aria-label={t(activeProject.alt, lang)}>
+                  <div className="ai-slide-heading">
+                    <span>{lang === "en" ? "Product architecture" : "Produktarchitektur"}</span>
+                    <h4>{lang === "en" ? "From a company question to executable PySpark" : "Von der Unternehmensfrage zu ausführbarem PySpark"}</h4>
+                  </div>
+                  <div className="ai-flow">
+                    <div><span>01</span><strong>{lang === "en" ? "Ask" : "Frage"}</strong><small>{lang === "en" ? "Business question" : "Business-Frage"}</small></div>
+                    <b aria-hidden="true">→</b>
+                    <div><span>02</span><strong>{lang === "en" ? "Ground" : "Kontext"}</strong><small>APIs + {lang === "en" ? "database" : "Datenbank"}</small></div>
+                    <b aria-hidden="true">→</b>
+                    <div><span>03</span><strong>{lang === "en" ? "Build" : "Bauen"}</strong><small>PySpark + {lang === "en" ? "answer" : "Antwort"}</small></div>
+                  </div>
+                  <div className="ai-proof-row">
+                    <span><strong>5+</strong>{lang === "en" ? " daily users" : " tägliche Nutzer"}</span>
+                    <span><strong>100+</strong>{lang === "en" ? " planned rollout" : " geplanter Rollout"}</span>
+                  </div>
+                </div>
+              ) : (
+                <div className="screenshot-crop">
+                  <img src={activeProject.image} alt={t(activeProject.alt, lang)} />
+                </div>
+              )}
+            </div>
+
+            <div className="project-visual-footer">
+              <div className="project-impact">
+                <span className="impact-pulse" />
+                {t(activeProject.impact, lang)}
+              </div>
+              <span>{lang === "en" ? "Selected evidence" : "Ausgewählter Beleg"} · {activeProject.number}</span>
             </div>
           </div>
 

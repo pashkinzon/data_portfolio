@@ -14,6 +14,11 @@ type Project = {
   description: LocalText;
   impact: LocalText;
   ownership: LocalText[];
+  summary: {
+    problem: LocalText;
+    role: LocalText;
+    outcome: LocalText;
+  };
   caseStudy: {
     challenge: LocalText;
     contribution: LocalText;
@@ -59,8 +64,12 @@ const ui = {
     de: "Ich analysiere nicht nur Daten. Ich verantworte, was daraus entsteht.",
   },
   heroCopy: {
-    en: "I turn ambiguous retail and operations problems into adopted data products—combining KPI strategy, hands-on building, and measurable business impact.",
-    de: "Ich verwandle unklare Retail- und Operations-Probleme in genutzte Datenprodukte—mit KPI-Strategie, Hands-on-Umsetzung und messbarem Business Impact.",
+    en: "I design and ship dashboards, data workflows, and internal AI tools—from an ambiguous retail question to measurable adoption.",
+    de: "Ich konzipiere und liefere Dashboards, Datenworkflows und interne AI-Tools—von der unklaren Retail-Frage bis zur messbaren Nutzung.",
+  },
+  heroContext: {
+    en: "Currently building retail analytics at dm across a network of more than 2,000 stores.",
+    de: "Aktuell entwickle ich Retail Analytics bei dm für ein Netzwerk von mehr als 2.000 Märkten.",
   },
   explore: { en: "Explore owned products", de: "Produkte entdecken" },
   cv: { en: "Open CV (DE)", de: "Lebenslauf öffnen" },
@@ -71,6 +80,9 @@ const ui = {
     de: "Die stärkste Arbeit ist kein Dashboard-Screenshot. Sie zeigt den gesamten Ownership-Loop: Bedarf verstehen, Logik definieren, Produkt bauen, Nutzung sichern und verbessern.",
   },
   owned: { en: "What I owned", de: "Meine Verantwortung" },
+  problem: { en: "Problem", de: "Problem" },
+  myRole: { en: "My role", de: "Meine Rolle" },
+  outcome: { en: "Outcome", de: "Ergebnis" },
   openCase: { en: "Open full case study", de: "Case Study öffnen" },
   closeCase: { en: "Close case study", de: "Case Study schließen" },
   caseChallenge: { en: "The challenge", de: "Die Herausforderung" },
@@ -85,11 +97,11 @@ const ui = {
     de: "In kleinen Teams und eigenen Projekten teste ich Ideen schnell, entwickle nützliche Interfaces und baue für Communities, die mir wichtig sind.",
   },
   visit: { en: "Visit project", de: "Projekt öffnen" },
-  impactKicker: { en: "Ownership ledger", de: "Ownership in Zahlen" },
-  impactTitle: { en: "The useful part: what changed.", de: "Was sich tatsächlich verändert hat." },
+  impactKicker: { en: "Measured outcomes", de: "Messbare Ergebnisse" },
+  impactTitle: { en: "What changed.", de: "Was sich verändert hat." },
   impactIntro: {
-    en: "A more honest replacement for a generic process section: real before-and-after evidence from products and operations I helped own.",
-    de: "Der ehrliche Ersatz für eine generische Prozess-Sektion: konkrete Vorher-Nachher-Belege aus Produkten und Operations, die ich mitverantwortet habe.",
+    en: "Four outcomes from products and operations I personally helped own—shown together, with the unit and context attached.",
+    de: "Vier Ergebnisse aus Produkten und Operations, die ich persönlich mitverantwortet habe—mit Einheit und Kontext auf einen Blick.",
   },
   evidence: { en: "Evidence", de: "Belege" },
   careerKicker: { en: "Career & education", de: "Beruf & Ausbildung" },
@@ -118,26 +130,27 @@ const ui = {
   beyondKicker: { en: "Beyond the job title", de: "Mehr als die Stellenbezeichnung" },
   beyondTitle: { en: "Curious across borders.", de: "Neugierig über Grenzen hinweg." },
   beyondCopy: {
-    en: "Three languages, two countries of study, scholarships, leadership training, and a bias toward projects with a useful social edge.",
-    de: "Drei Sprachen, Studium in zwei Ländern, Stipendien, Leadership-Training und eine Vorliebe für Projekte mit gesellschaftlichem Nutzen.",
+    en: "Studied in Germany and the US, work across three languages, and translate comfortably between technical teams, business stakeholders, and diverse users.",
+    de: "Studium in Deutschland und den USA, Arbeit in drei Sprachen und eine sichere Übersetzung zwischen Tech-Teams, Business-Stakeholdern und unterschiedlichen Nutzern.",
   },
   aboutKicker: { en: "Behind the products", de: "Hinter den Produkten" },
   aboutTitle: {
-    en: "Math brain. Operator instincts. Product-owner energy.",
-    de: "Mathe-Kopf. Operations-Instinkt. Product-Owner-Energie.",
+    en: "Mathematical thinking. Product ownership. Practical delivery.",
+    de: "Mathematisches Denken. Product Ownership. Praktische Umsetzung.",
   },
   aboutLead: {
     en: "I am happiest where an ambiguous business question becomes a product someone can trust.",
     de: "Am liebsten arbeite ich dort, wo aus einer unklaren Geschäftsfrage ein Produkt wird, dem Menschen vertrauen.",
   },
   aboutCopy: {
-    en: "My edge is range: I can speak with users, define the analytical logic, build the workflow, and judge success by adoption—not by whether the code merely runs.",
-    de: "Meine Stärke ist die Verbindung: Ich spreche mit Nutzern, definiere die analytische Logik, baue den Workflow und messe Erfolg an Nutzung—nicht nur daran, ob der Code läuft.",
+    en: "I speak with users, define the analytical logic, build the workflow, and judge success by adoption—not by whether the code merely runs.",
+    de: "Ich spreche mit Nutzern, definiere die analytische Logik, baue den Workflow und messe Erfolg an Nutzung—nicht nur daran, ob der Code läuft.",
   },
   linkedin: { en: "LinkedIn profile", de: "LinkedIn-Profil" },
   contactKicker: { en: "Have an unclear problem?", de: "Ein noch unklares Problem?" },
   contactTitle1: { en: "Let’s make it", de: "Machen wir es" },
   contactTitle2: { en: "useful.", de: "nützlich." },
+  discuss: { en: "Discuss a role or project", de: "Über eine Rolle oder ein Projekt sprechen" },
   footer: { en: "Data products · analytics · ownership", de: "Datenprodukte · Analytics · Ownership" },
   top: { en: "Back to top", de: "Nach oben" },
 };
@@ -160,6 +173,20 @@ const projects: Project[] = [
       { en: "Built the automated workflow", de: "Automatisierten Workflow gebaut" },
       { en: "Rolled it out for a five-person team", de: "Für ein fünfköpfiges Team ausgerollt" },
     ],
+    summary: {
+      problem: {
+        en: "A five-person team spent roughly eight hours each week preparing individual KPI emails for 75 stores.",
+        de: "Ein fünfköpfiges Team benötigte wöchentlich rund acht Stunden für individuelle KPI-Mails an 75 Märkte.",
+      },
+      role: {
+        en: "Owned workflow discovery, KPI logic, Python/PySpark implementation, delivery automation, and team rollout.",
+        de: "Verantwortete Prozessanalyse, KPI-Logik, Python/PySpark-Umsetzung, Versandautomatisierung und Team-Rollout.",
+      },
+      outcome: {
+        en: "Reduced the complete weekly workflow to under 15 minutes—32× faster.",
+        de: "Reduzierte den vollständigen Wochenprozess auf unter 15 Minuten—32× schneller.",
+      },
+    },
     caseStudy: {
       challenge: {
         en: "A five-person team repeatedly assembled and sent individual KPI emails for 75 stores. The weekly process consumed around eight hours, created avoidable manual work, and made consistent delivery harder.",
@@ -207,6 +234,20 @@ const projects: Project[] = [
       { en: "Integrated API and database context", de: "API- und Datenbankkontext integriert" },
       { en: "Validated usage and rollout path", de: "Nutzung und Rollout-Pfad validiert" },
     ],
+    summary: {
+      problem: {
+        en: "Complex data questions depended on scarce specialist knowledge and several disconnected technical systems.",
+        de: "Komplexe Datenfragen hingen von knappem Spezialwissen und mehreren getrennten technischen Systemen ab.",
+      },
+      role: {
+        en: "Designed the assistant, integrated API and database context, shaped PySpark generation, and validated real usage.",
+        de: "Konzipierte den Assistenten, integrierte API- und Datenbankkontext, gestaltete die PySpark-Generierung und validierte reale Nutzung.",
+      },
+      outcome: {
+        en: "Moved from prototype to daily use by 5+ users, with a rollout path for more than 100.",
+        de: "Vom Prototyp zur täglichen Nutzung durch 5+ Nutzer, mit Rollout-Pfad für mehr als 100.",
+      },
+    },
     caseStudy: {
       challenge: {
         en: "Complex internal data questions depended on scarce specialist knowledge: users needed to understand data structures, formulate PySpark logic, and navigate several technical systems before reaching an answer.",
@@ -254,6 +295,20 @@ const projects: Project[] = [
       { en: "Designed and built the interface", de: "Interface konzipiert und gebaut" },
       { en: "Earned recurring cross-team use", de: "Wiederkehrende teamübergreifende Nutzung erreicht" },
     ],
+    summary: {
+      problem: {
+        en: "Assortment and space-planning teams lacked one trusted view of how layout changes affected performance.",
+        de: "Sortiments- und Space-Planning-Teams fehlte eine vertrauenswürdige Sicht auf die Wirkung von Layout-Änderungen.",
+      },
+      role: {
+        en: "Owned the product brief, KPI model, dashboard UX, implementation, stakeholder validation, and adoption.",
+        de: "Verantwortete Product Brief, KPI-Modell, Dashboard-UX, Umsetzung, Stakeholder-Validierung und Adoption.",
+      },
+      outcome: {
+        en: "Became a weekly decision tool for around 30 users across three cross-functional teams.",
+        de: "Wurde zum wöchentlichen Entscheidungswerkzeug für rund 30 Nutzer in drei funktionsübergreifenden Teams.",
+      },
+    },
     caseStudy: {
       challenge: {
         en: "Assortment and space-planning teams needed a shared way to understand how layout changes affected performance. Questions were fragmented across teams and lacked one trusted analytical view.",
@@ -383,7 +438,35 @@ const sideProjects = [
   },
 ];
 
-const skills = ["Python", "PySpark", "SQL", "JavaScript", "Looker", "Zeppelin", "APIs", "AI", "Excel", "VBA"];
+const capabilities = [
+  {
+    number: "01",
+    title: { en: "Discover & define", de: "Verstehen & definieren" },
+    copy: {
+      en: "Turn unclear stakeholder questions into a product brief, KPI model, and measurable success criteria.",
+      de: "Unklare Stakeholder-Fragen in Product Brief, KPI-Modell und messbare Erfolgskriterien übersetzen.",
+    },
+    items: ["Stakeholder discovery", "KPI definition", "Product framing"],
+  },
+  {
+    number: "02",
+    title: { en: "Analyse & build", de: "Analysieren & bauen" },
+    copy: {
+      en: "Create reproducible analysis, dashboards, automation, and internal tools with the right technical depth.",
+      de: "Reproduzierbare Analysen, Dashboards, Automatisierung und interne Tools mit der passenden technischen Tiefe bauen.",
+    },
+    items: ["Python", "PySpark", "SQL", "Looker", "APIs"],
+  },
+  {
+    number: "03",
+    title: { en: "Deliver & earn adoption", de: "Ausliefern & Nutzung sichern" },
+    copy: {
+      en: "Roll products into real workflows, support users, and improve them using adoption and operational evidence.",
+      de: "Produkte in reale Workflows integrieren, Nutzer begleiten und anhand von Adoption und operativen Belegen verbessern.",
+    },
+    items: ["Rollout", "Automation", "User validation", "Adoption"],
+  },
+];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return <span aria-hidden="true">{diagonal ? "↗" : "→"}</span>;
@@ -392,8 +475,6 @@ function Arrow({ diagonal = false }: { diagonal?: boolean }) {
 export default function Home() {
   const [lang, setLang] = useState<Lang>("en");
   const [activeProject, setActiveProject] = useState<Project>(projects[0]);
-  const [activeImpact, setActiveImpact] = useState<ImpactCase>(impactCases[0]);
-  const [activeSkill, setActiveSkill] = useState("Python");
   const [openCaseStudy, setOpenCaseStudy] = useState<Project | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -492,6 +573,7 @@ export default function Home() {
         </h1>
         <p className="hero-manifesto reveal-up delay-2">{t(ui.heroManifesto, lang)}</p>
         <p className="hero-copy reveal-up delay-2">{t(ui.heroCopy, lang)}</p>
+        <p className="hero-context reveal-up delay-2">{t(ui.heroContext, lang)}</p>
         <div className="hero-actions reveal-up delay-3">
           <button className="button button-primary" onClick={() => jumpTo("work")}>
             {t(ui.explore, lang)} <Arrow />
@@ -501,10 +583,10 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-metrics reveal-up delay-3">
-          <div><strong>8h → &lt;15m</strong><span>{lang === "en" ? "reporting time" : "Reporting-Zeit"}</span></div>
-          <div><strong>75</strong><span>{lang === "en" ? "stores automated" : "Märkte automatisiert"}</span></div>
-          <div><strong>2,000+</strong><span>{lang === "en" ? "stores in scope" : "Märkte im Scope"}</span></div>
-          <div><strong>100+</strong><span>{lang === "en" ? "AI users planned" : "AI-Nutzer geplant"}</span></div>
+          <div><strong>32×</strong><span>{lang === "en" ? "faster weekly KPI delivery" : "schnellere wöchentliche KPI-Auslieferung"}</span></div>
+          <div><strong>75</strong><span>{lang === "en" ? "stores receiving automated KPI reports" : "Märkte mit automatisierten KPI-Reports"}</span></div>
+          <div><strong>2,000+</strong><span>{lang === "en" ? "stores covered by retail analysis" : "Märkte im analytischen Wirkungsbereich"}</span></div>
+          <div><strong>30</strong><span>{lang === "en" ? "weekly dashboard users across teams" : "wöchentliche Dashboard-Nutzer in mehreren Teams"}</span></div>
         </div>
       </section>
 
@@ -602,11 +684,20 @@ export default function Home() {
                 <span className="section-kicker">{t(activeProject.kicker, lang)}</span>
               </div>
               <h3>{t(activeProject.title, lang)}</h3>
-              <p>{t(activeProject.description, lang)}</p>
-              <span className="ownership-label">{t(ui.owned, lang)}</span>
-              <ul className="ownership-list">
-                {activeProject.ownership.map((item) => <li key={item.en}>{t(item, lang)}</li>)}
-              </ul>
+              <div className="project-summary">
+                <section>
+                  <span>{t(ui.problem, lang)}</span>
+                  <p>{t(activeProject.summary.problem, lang)}</p>
+                </section>
+                <section>
+                  <span>{t(ui.myRole, lang)}</span>
+                  <p>{t(activeProject.summary.role, lang)}</p>
+                </section>
+                <section className="summary-outcome">
+                  <span>{t(ui.outcome, lang)}</span>
+                  <p>{t(activeProject.summary.outcome, lang)}</p>
+                </section>
+              </div>
               <button className="case-study-button" onClick={() => setOpenCaseStudy(activeProject)}>
                 {t(ui.openCase, lang)} <Arrow />
               </button>
@@ -646,41 +737,22 @@ export default function Home() {
           <p>{t(ui.impactIntro, lang)}</p>
         </div>
 
-        <div className="impact-ledger">
-          <div className="impact-tabs" role="tablist" aria-label="Impact cases">
-            {impactCases.map((item) => (
-              <button
-                key={item.id}
-                role="tab"
-                aria-selected={activeImpact.id === item.id}
-                className={activeImpact.id === item.id ? "is-active" : ""}
-                onClick={() => setActiveImpact(item)}
-              >
+        <div className="impact-grid">
+          {impactCases.map((item) => (
+            <article key={item.id} className={`impact-card impact-card-${item.id}`}>
+              <div className="impact-card-top">
                 <span>{t(item.label, lang)}</span>
-                <strong>{item.metric}</strong>
-              </button>
-            ))}
-          </div>
-          <div className="impact-display" key={activeImpact.id}>
-            <div className="metric-display">
-              <strong>{activeImpact.metric}</strong>
-              <span>{t(activeImpact.metricLabel, lang)}</span>
-            </div>
-            <div className="impact-story">
-              <span className="section-kicker">{t(activeImpact.label, lang)}</span>
-              <h3>{t(activeImpact.title, lang)}</h3>
-              <p>{t(activeImpact.copy, lang)}</p>
-              <span className="ownership-label">{t(ui.evidence, lang)}</span>
-              <ul>
-                {activeImpact.proof.map((item) => <li key={item.en}>{t(item, lang)}</li>)}
-              </ul>
-            </div>
-            <div className="impact-viz" aria-hidden="true">
-              {[32, 52, 44, 72, 62, 88].map((height, index) => (
-                <i key={index} style={{ height: `${height}%` }} />
-              ))}
-            </div>
-          </div>
+                <i aria-hidden="true">0{impactCases.indexOf(item) + 1}</i>
+              </div>
+              <strong>{item.metric}</strong>
+              <span className="impact-unit">{t(item.metricLabel, lang)}</span>
+              <h3>{t(item.title, lang)}</h3>
+              <p>{t(item.copy, lang)}</p>
+              <div className="impact-proof">
+                {item.proof.slice(0, 2).map((proof) => <span key={proof.en}>{t(proof, lang)}</span>)}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -763,22 +835,20 @@ export default function Home() {
 
       <section className="toolbox section-shell">
         <div className="toolbox-copy">
-          <span className="section-kicker">{lang === "en" ? "Toolbox" : "Werkzeuge"}</span>
+          <span className="section-kicker">{lang === "en" ? "Capabilities" : "Kompetenzen"}</span>
           <h2>{lang === "en" ? "Tools change. Ownership stays." : "Werkzeuge wechseln. Ownership bleibt."}</h2>
         </div>
-        <div className="skill-board">
-          <div className="skill-cloud" aria-label="Skills">
-            {skills.map((skill) => (
-              <button key={skill} className={activeSkill === skill ? "is-active" : ""} onClick={() => setActiveSkill(skill)}>
-                {skill}
-              </button>
-            ))}
-          </div>
-          <div className="skill-readout">
-            <span>{lang === "en" ? "Currently selected" : "Ausgewählt"}</span>
-            <strong>{activeSkill}</strong>
-            <span className="readout-cursor">_</span>
-          </div>
+        <div className="capability-grid">
+          {capabilities.map((capability) => (
+            <article key={capability.number}>
+              <span className="capability-number">{capability.number}</span>
+              <h3>{t(capability.title, lang)}</h3>
+              <p>{t(capability.copy, lang)}</p>
+              <div className="capability-items">
+                {capability.items.map((item) => <span key={item}>{item}</span>)}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -808,8 +878,9 @@ export default function Home() {
         <span className="section-kicker">{t(ui.contactKicker, lang)}</span>
         <h2>{t(ui.contactTitle1, lang)}<br /><em>{t(ui.contactTitle2, lang)}</em></h2>
         <a className="button button-primary contact-button" href="mailto:pavel.polishchuk@proton.me">
-          pavel.polishchuk@proton.me <Arrow diagonal />
+          {t(ui.discuss, lang)} <Arrow diagonal />
         </a>
+        <a className="contact-email" href="mailto:pavel.polishchuk@proton.me">pavel.polishchuk@proton.me</a>
       </section>
 
       <footer>

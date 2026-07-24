@@ -44,7 +44,10 @@ test("ships bilingual ownership content and required assets", async () => {
 
   assert.match(page, /Ich analysiere nicht nur Daten/);
   assert.match(page, /pavel-portfolio-language/);
-  assert.match(page, /8h → &lt;15m/);
+  assert.match(page, /faster weekly KPI delivery/);
+  assert.match(page, /Problem/);
+  assert.match(page, /My role/);
+  assert.match(page, /What changed/);
   assert.match(page, /5\+ → 100\+/);
   assert.match(page, /2,000\+/);
   assert.match(page, /logo-dm\.webp/);

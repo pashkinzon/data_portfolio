@@ -57,7 +57,10 @@ test("ships bilingual builder content and required assets", async () => {
   assert.match(page, /Pavel_Polishchuk_CV_DE\.pdf/);
   assert.match(page, /Open full case study/);
   assert.match(page, /My individual contribution/);
-  assert.match(page, /Weekly reporting time fell/);
+  assert.match(page, /universal notebook from existing script snippets/);
+  assert.match(page, /covering ~90% of requests/);
+  assert.match(page, /Systems thinking/);
+  assert.doesNotMatch(page, /75 stores|five-person team|individual KPI emails/i);
   assert.match(page, /Illustrative reconstruction/);
-  assert.match(layout, /og-v5\.png/);
+  assert.match(layout, /og-v6\.png/);
 });

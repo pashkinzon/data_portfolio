@@ -221,61 +221,62 @@ const projects: Project[] = [
     id: "automation",
     number: "02",
     shortTitle: { en: "KPI automation", de: "KPI-Automation" },
-    kicker: { en: "dm · Reporting automation", de: "dm · Reporting-Automatisierung" },
-    title: { en: "Eight hours of reporting became fifteen minutes", de: "Aus acht Stunden Reporting wurden fünfzehn Minuten" },
+    kicker: { en: "dm · Analysis infrastructure", de: "dm · Analyse-Infrastruktur" },
+    title: { en: "One system replaced one-off analysis work", de: "Ein System ersetzte isolierte Einzelanalysen" },
     description: {
-      en: "A reproducible Python/PySpark workflow replaced manual individual KPI emails for 75 stores.",
-      de: "Ein reproduzierbarer Python/PySpark-Workflow ersetzte manuelle individuelle KPI-Mails für 75 Märkte.",
+      en: "Every request used to start from zero: new code, a new PowerPoint or table, and no reusable methodology. I consolidated the work into one universal notebook and one dashboard that now cover roughly 90% of incoming analysis requests.",
+      de: "Früher begann jede Anfrage bei null: neuer Code, eine neue PowerPoint oder Tabelle und keine wiederverwendbare Methodik. Ich bündelte die Arbeit in einem universellen Notebook und einem Dashboard, die heute rund 90 % der eingehenden Analyseanfragen abdecken.",
     },
-    impact: { en: "8h → <15m every week", de: "8 Std. → <15 Min. pro Woche" },
+    impact: { en: "8h → <15m", de: "8 Std. → <15 Min." },
     ownership: [
-      { en: "Mapped the manual workflow", de: "Manuellen Workflow analysiert" },
-      { en: "Defined KPI and recipient logic", de: "KPI- und Empfängerlogik definiert" },
-      { en: "Built generation and delivery", de: "Generierung und Versand gebaut" },
+      { en: "Identified the manual, fragmented workflow", de: "Den manuellen, fragmentierten Workflow identifiziert" },
+      { en: "Built a universal notebook from existing script snippets", de: "Aus bestehenden Skriptbausteinen ein universelles Notebook gebaut" },
+      { en: "Built the unified dashboard", de: "Das einheitliche Dashboard gebaut" },
+      { en: "Adopted by the team, now covering ~90% of requests", de: "Vom Team übernommen, deckt heute ~90 % der Anfragen ab" },
     ],
     summary: {
       problem: {
-        en: "A five-person team spent roughly eight hours each week preparing individual KPI emails for 75 stores.",
-        de: "Ein fünfköpfiges Team benötigte wöchentlich rund acht Stunden für individuelle KPI-Mails an 75 Märkte.",
+        en: "Every space, sentiment, or other analysis request was handled independently. Code, variables, methodology, and the final PowerPoint or table were rebuilt by hand each time.",
+        de: "Jede Flächen-, Sentiment- oder andere Analyseanfrage wurde unabhängig bearbeitet. Code, Variablen, Methodik und die finale PowerPoint oder Tabelle wurden jedes Mal manuell neu erstellt.",
       },
       role: {
-        en: "Mapped the workflow, defined KPI logic, and built automated generation and delivery in Python/PySpark.",
-        de: "Analysierte den Workflow, definierte die KPI-Logik und baute automatisierte Generierung sowie Versand in Python/PySpark.",
+        en: "Combined one-off script snippets into a universal notebook and connected its generated output directly to one unified dashboard.",
+        de: "Bündelte einmalige Skriptbausteine in einem universellen Notebook und verband dessen generierten Output direkt mit einem einheitlichen Dashboard.",
       },
       outcome: {
-        en: "Reduced the complete weekly workflow to under 15 minutes—around 32× faster.",
-        de: "Reduzierte den vollständigen Wochenprozess auf unter 15 Minuten—rund 32× schneller.",
+        en: "The live team tool now covers roughly 90% of incoming requests, cuts turnaround from eight hours to under 15 minutes, and keeps methodology consistent.",
+        de: "Das heute im Team genutzte Tool deckt rund 90 % der eingehenden Anfragen ab, verkürzt die Bearbeitung von acht Stunden auf unter 15 Minuten und vereinheitlicht die Methodik.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "A five-person team repeatedly assembled and sent individual KPI emails for 75 stores. The weekly process consumed around eight hours.",
-        de: "Ein fünfköpfiges Team erstellte und versendete wiederholt einzelne KPI-Mails für 75 Märkte. Der wöchentliche Prozess dauerte rund acht Stunden.",
+        en: "Every analysis request—space analysis, sentiment analysis, and others—was treated as a separate project. Someone wrote fresh code, assembled a PowerPoint or table manually, and sent it off. Variables and methodology from one request were not reused in the next, so the work never compounded.",
+        de: "Jede Analyseanfrage—Flächenanalyse, Sentiment-Analyse und andere—wurde als eigenes Projekt behandelt. Dafür entstand neuer Code, eine PowerPoint oder Tabelle wurde manuell erstellt und versendet. Variablen und Methodik einer Anfrage wurden in der nächsten nicht wiederverwendet, sodass sich die Arbeit nie aufbaute.",
       },
       contribution: {
-        en: "I mapped the existing workflow, defined the KPI and recipient logic, built the Python/PySpark generation pipeline, automated delivery, and introduced it to the team.",
-        de: "Ich analysierte den bestehenden Workflow, definierte KPI- und Empfängerlogik, baute die Python/PySpark-Pipeline, automatisierte den Versand und führte sie im Team ein.",
+        en: "I assembled the strongest snippets from previously one-off scripts into one universal notebook, then built a unified dashboard around it. A user selects the analysis goal, the notebook generates the relevant output, and the result streams directly into the dashboard instead of becoming another disposable document.",
+        de: "Ich bündelte die stärksten Bausteine aus zuvor einmaligen Skripten in einem universellen Notebook und baute darum ein einheitliches Dashboard. Nutzer wählen das Analyseziel, das Notebook erzeugt den passenden Output und das Ergebnis fließt direkt ins Dashboard, statt zum nächsten Wegwerfdokument zu werden.",
       },
       decisions: [
-        { en: "Standardize calculation before automating delivery", de: "Berechnung vor dem Versand standardisieren" },
-        { en: "Generate store-specific outputs from one reproducible workflow", de: "Marktspezifische Outputs aus einem reproduzierbaren Workflow erzeugen" },
-        { en: "Design for team use rather than a one-person script", de: "Für Teamnutzung statt als Ein-Personen-Skript bauen" },
+        { en: "Turn reusable script fragments into one maintained analysis system", de: "Wiederverwendbare Skriptbausteine in ein gepflegtes Analysesystem überführen" },
+        { en: "Let the analysis goal determine the generated output", de: "Das Analyseziel den generierten Output bestimmen lassen" },
+        { en: "Stream every result into one dashboard instead of creating another document", de: "Jedes Ergebnis in ein Dashboard leiten, statt ein weiteres Dokument zu erzeugen" },
       ],
       result: {
-        en: "Weekly reporting time fell from roughly eight hours to under 15 minutes for all 75 stores.",
-        de: "Die wöchentliche Reporting-Zeit sank für alle 75 Märkte von rund acht Stunden auf unter 15 Minuten.",
+        en: "The dashboard is a live tool used by the team today and covers roughly 90% of incoming analysis requests. Turnaround fell from eight hours to under 15 minutes, methodology is now shared, and the time saved goes into deeper analysis where it is genuinely needed.",
+        de: "Das Dashboard ist heute ein im Team genutztes Live-Tool und deckt rund 90 % der eingehenden Analyseanfragen ab. Die Bearbeitungszeit sank von acht Stunden auf unter 15 Minuten, die Methodik ist vereinheitlicht und die gewonnene Zeit fließt in tiefere Analysen, wo sie wirklich gebraucht wird.",
       },
       evidence: [
-        { en: "8h → <15m per week", de: "8 Std. → <15 Min. pro Woche" },
-        { en: "75 stores", de: "75 Märkte" },
-        { en: "Five-person team", de: "Fünfköpfiges Team" },
+        { en: "8h → <15m", de: "8 Std. → <15 Min." },
+        { en: "~90% of incoming requests", de: "~90 % der eingehenden Anfragen" },
+        { en: "Live team tool", de: "Aktiv genutztes Team-Tool" },
       ],
     },
     image: "",
-    alt: { en: "Illustrative KPI automation process diagram", de: "Illustratives Diagramm des KPI-Automationsprozesses" },
+    alt: { en: "Illustrative diagram of the universal analysis system", de: "Illustratives Diagramm des universellen Analysesystems" },
     logo: "/assets/logo-dm.webp",
     logoAlt: "dm-drogerie markt",
-    tags: ["Python", "PySpark", "Automation", "Reporting"],
+    tags: ["Python", "Automation", "Systems thinking"],
   },
   {
     id: "copilot",
@@ -344,16 +345,16 @@ const impactCases: ImpactCase[] = [
     id: "speed",
     label: { en: "Automation", de: "Automatisierung" },
     metric: "8h → <15m",
-    metricLabel: { en: "weekly reporting time", de: "wöchentliche Reporting-Zeit" },
-    title: { en: "Removed a weekly operational tax.", de: "Einen wöchentlichen Operations-Aufwand eliminiert." },
+    metricLabel: { en: "analysis turnaround", de: "Bearbeitungszeit einer Analyse" },
+    title: { en: "One system instead of starting over.", de: "Ein System statt jedes Mal von vorn." },
     copy: {
-      en: "A reproducible Python/PySpark workflow now generates and distributes KPIs for 75 stores instead of a five-person team assembling individual emails.",
-      de: "Ein reproduzierbarer Python/PySpark-Workflow generiert und verteilt KPIs für 75 Märkte, statt dass ein fünfköpfiges Team Einzelmails erstellt.",
+      en: "A universal notebook and dashboard now handle roughly 90% of incoming analysis requests with one shared methodology.",
+      de: "Ein universelles Notebook und Dashboard bearbeiten heute rund 90 % der eingehenden Analyseanfragen mit einer gemeinsamen Methodik.",
     },
     proof: [
-      { en: "75 stores", de: "75 Märkte" },
-      { en: "Five-person team", de: "Fünfköpfiges Team" },
-      { en: "Generation + delivery automated", de: "Generierung + Versand automatisiert" },
+      { en: "~90% of requests covered", de: "~90 % der Anfragen abgedeckt" },
+      { en: "One shared methodology", de: "Eine gemeinsame Methodik" },
+      { en: "Live team tool", de: "Aktiv genutztes Team-Tool" },
     ],
   },
   {
@@ -582,8 +583,8 @@ export default function Home() {
         </div>
         <div className="hero-metrics reveal-up delay-3">
           <div><strong>~30m</strong><span>{lang === "en" ? "to a first assortment prototype" : "bis zum ersten Sortiments-Prototyp"}</span></div>
-          <div><strong>32×</strong><span>{lang === "en" ? "faster weekly KPI delivery" : "schnellere wöchentliche KPI-Auslieferung"}</span></div>
-          <div><strong>75</strong><span>{lang === "en" ? "stores receiving automated reports" : "Märkte mit automatisierten Reports"}</span></div>
+          <div><strong>32×</strong><span>{lang === "en" ? "faster analysis turnaround" : "schnellere Analyse-Bearbeitung"}</span></div>
+          <div><strong>~90%</strong><span>{lang === "en" ? "of analysis requests covered" : "der Analyseanfragen abgedeckt"}</span></div>
           <div><strong>2,000+</strong><span>{lang === "en" ? "stores in analytical scope" : "Märkte im analytischen Wirkungsbereich"}</span></div>
         </div>
       </section>
@@ -657,22 +658,22 @@ export default function Home() {
               ) : activeProject.id === "automation" ? (
                 <div className="kpi-automation-slide" role="img" aria-label={t(activeProject.alt, lang)}>
                   <div className="kpi-slide-head">
-                    <span>{lang === "en" ? "Recurring reporting workflow" : "Wiederkehrender Reporting-Workflow"}</span>
+                    <span>{lang === "en" ? "Universal analysis system" : "Universelles Analysesystem"}</span>
                     <strong>8h → &lt;15m</strong>
                   </div>
                   <div className="kpi-flow">
                     {[
-                      lang === "en" ? "Collect" : "Sammeln",
-                      lang === "en" ? "Calculate" : "Berechnen",
-                      lang === "en" ? "Generate" : "Erzeugen",
-                      lang === "en" ? "Deliver" : "Versenden",
-                    ].map((step, index) => (
-                      <div key={step}><span>0{index + 1}</span><strong>{step}</strong><small>{index === 3 ? (lang === "en" ? "75 stores" : "75 Märkte") : "Python · PySpark"}</small></div>
+                      [lang === "en" ? "Select" : "Wählen", lang === "en" ? "Analysis goal" : "Analyseziel"],
+                      [lang === "en" ? "Run" : "Ausführen", lang === "en" ? "Universal notebook" : "Universelles Notebook"],
+                      [lang === "en" ? "Stream" : "Übertragen", lang === "en" ? "Unified dashboard" : "Einheitliches Dashboard"],
+                      [lang === "en" ? "Reuse" : "Wiederverwenden", lang === "en" ? "Shared methodology" : "Gemeinsame Methodik"],
+                    ].map(([step, note], index) => (
+                      <div key={step}><span>0{index + 1}</span><strong>{step}</strong><small>{note}</small></div>
                     ))}
                   </div>
                   <div className="kpi-slide-foot">
-                    <span>{lang === "en" ? "One reproducible workflow" : "Ein reproduzierbarer Workflow"}</span>
-                    <span>{lang === "en" ? "Process diagram · no internal data shown" : "Prozessdiagramm · keine internen Daten gezeigt"}</span>
+                    <span>{lang === "en" ? "~90% of incoming requests covered" : "~90 % der eingehenden Anfragen abgedeckt"}</span>
+                    <span>{lang === "en" ? "Live team tool · no internal data shown" : "Aktiv genutztes Team-Tool · keine internen Daten gezeigt"}</span>
                   </div>
                 </div>
               ) : (
@@ -741,11 +742,13 @@ export default function Home() {
                   ))}
                 </div>
               ) : activeProject.id === "automation" ? (
-                <div className="project-summary automation-summary">
-                  <section><span>{lang === "en" ? "Before" : "Vorher"}</span><p>{t(activeProject.summary.problem, lang)}</p></section>
-                  <section><span>{lang === "en" ? "Build" : "Build"}</span><p>{t(activeProject.summary.role, lang)}</p></section>
-                  <section className="summary-outcome"><span>{lang === "en" ? "Result" : "Ergebnis"}</span><p>{t(activeProject.summary.outcome, lang)}</p></section>
-                </div>
+                <>
+                  <p>{t(activeProject.description, lang)}</p>
+                  <span className="ownership-label">{t(ui.owned, lang)}</span>
+                  <ul className="ownership-list">
+                    {activeProject.ownership.map((item) => <li key={item.en}>{t(item, lang)}</li>)}
+                  </ul>
+                </>
               ) : (
                 <div className="status-story">
                   <section><span>{lang === "en" ? "What I’m building" : "Was ich baue"}</span><p>{t(activeProject.summary.role, lang)}</p></section>

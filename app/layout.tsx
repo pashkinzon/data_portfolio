@@ -36,7 +36,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: `${origin}/og-v5.png`,
+          url: `${origin}/og-v6.png`,
           width: 1731,
           height: 909,
           alt: "Pavel Polishchuk — Build fast. Test what matters.",
@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: "Pavel Polishchuk — Data Analyst & Automation Builder",
       description: "Build fast. Test what matters. Data analysis, automation, and rapid prototyping.",
-      images: [`${origin}/og-v5.png`],
+      images: [`${origin}/og-v6.png`],
     },
   };
 }

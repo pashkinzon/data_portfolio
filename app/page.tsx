@@ -54,30 +54,30 @@ const ui = {
   menu: { en: "Menu", de: "Menü" },
   close: { en: "Close", de: "Schließen" },
   heroEyebrow: {
-    en: "Retail analytics · automation · internal AI products",
-    de: "Retail Analytics · Automatisierung · interne AI-Produkte",
+    en: "Data analysis · automation · rapid prototyping",
+    de: "Datenanalyse · Automatisierung · Rapid Prototyping",
   },
-  heroLine1: { en: "Data Product Owner", de: "Data Product Owner" },
-  heroLine2: { en: "& Analytics Builder.", de: "& Analytics Builder." },
+  heroLine1: { en: "Build fast.", de: "Schnell bauen." },
+  heroLine2: { en: "Test what matters.", de: "Testen, was zählt." },
   heroManifesto: {
-    en: "I don’t just analyze data. I own what gets built.",
-    de: "Ich analysiere nicht nur Daten. Ich verantworte, was daraus entsteht.",
+    en: "Technical analyst. Fast prototypes. Early feedback.",
+    de: "Technischer Analyst. Schnelle Prototypen. Frühes Feedback.",
   },
   heroCopy: {
-    en: "I design and ship dashboards, data workflows, and internal AI tools—from an ambiguous retail question to measurable adoption.",
-    de: "Ich konzipiere und liefere Dashboards, Datenworkflows und interne AI-Tools—von der unklaren Retail-Frage bis zur messbaren Nutzung.",
+    en: "I turn slow, unclear workflows into working dashboards and automations—then put them in front of users before investing in the wrong solution.",
+    de: "Ich verwandle langsame, unklare Workflows in funktionierende Dashboards und Automatisierungen—und teste sie mit Nutzern, bevor zu viel in die falsche Lösung investiert wird.",
   },
   heroContext: {
-    en: "Currently building retail analytics at dm across a network of more than 2,000 stores.",
-    de: "Aktuell entwickle ich Retail Analytics bei dm für ein Netzwerk von mehr als 2.000 Märkten.",
+    en: "Currently a working-student Data Analyst at dm. Open to data analysis, data science, and automation-focused roles.",
+    de: "Aktuell Werkstudent als Data Analyst bei dm. Offen für Rollen in Datenanalyse, Data Science und Automatisierung.",
   },
-  explore: { en: "Explore owned products", de: "Produkte entdecken" },
+  explore: { en: "See how I work", de: "Meine Arbeitsweise ansehen" },
   cv: { en: "Open CV (DE)", de: "Lebenslauf öffnen" },
-  workKicker: { en: "Selected products", de: "Ausgewählte Produkte" },
-  workTitle: { en: "Built end to end.", de: "Von Anfang bis Nutzung." },
+  workKicker: { en: "Selected builds", de: "Ausgewählte Builds" },
+  workTitle: { en: "Prototype. Learn. Narrow.", de: "Prototyp. Lernen. Fokussieren." },
   workIntro: {
-    en: "The strongest work is not a dashboard screenshot. It is the full ownership loop: discover the need, define the logic, build the product, earn adoption, improve it.",
-    de: "Die stärkste Arbeit ist kein Dashboard-Screenshot. Sie zeigt den gesamten Ownership-Loop: Bedarf verstehen, Logik definieren, Produkt bauen, Nutzung sichern und verbessern.",
+    en: "My strongest work starts with a hypothesis, reaches a rough prototype quickly, and gets narrower—not bigger—when early feedback reveals what people actually need.",
+    de: "Meine stärkste Arbeit beginnt mit einer Hypothese, wird schnell zum ersten Prototyp und wird durch frühes Feedback fokussierter—nicht größer.",
   },
   owned: { en: "What I owned", de: "Meine Verantwortung" },
   problem: { en: "Problem", de: "Problem" },
@@ -100,8 +100,8 @@ const ui = {
   impactKicker: { en: "Measured outcomes", de: "Messbare Ergebnisse" },
   impactTitle: { en: "What changed.", de: "Was sich verändert hat." },
   impactIntro: {
-    en: "Four outcomes from products and operations I personally helped own—shown together, with the unit and context attached.",
-    de: "Vier Ergebnisse aus Produkten und Operations, die ich persönlich mitverantwortet habe—mit Einheit und Kontext auf einen Blick.",
+    en: "Measured outcomes where they exist; an honest status note where adoption is still being learned.",
+    de: "Messbare Ergebnisse, wo sie belegt sind; ein ehrlicher Status, wo Adoption noch gelernt wird.",
   },
   evidence: { en: "Evidence", de: "Belege" },
   careerKicker: { en: "Career & education", de: "Beruf & Ausbildung" },
@@ -135,43 +135,103 @@ const ui = {
   },
   aboutKicker: { en: "Behind the products", de: "Hinter den Produkten" },
   aboutTitle: {
-    en: "Mathematical thinking. Product ownership. Practical delivery.",
-    de: "Mathematisches Denken. Product Ownership. Praktische Umsetzung.",
+    en: "I would rather test a hypothesis than debate it for a week.",
+    de: "Ich teste lieber eine Hypothese, als eine Woche darüber zu diskutieren.",
   },
   aboutLead: {
-    en: "I am happiest where an ambiguous business question becomes a product someone can trust.",
-    de: "Am liebsten arbeite ich dort, wo aus einer unklaren Geschäftsfrage ein Produkt wird, dem Menschen vertrauen.",
+    en: "Although I am a working student, colleagues tend to treat me like a full-time teammate because I show up, take initiative, and build.",
+    de: "Obwohl ich Werkstudent bin, behandeln mich Kolleginnen und Kollegen oft wie ein vollwertiges Teammitglied, weil ich präsent bin, Initiative übernehme und umsetze.",
   },
   aboutCopy: {
-    en: "I speak with users, define the analytical logic, build the workflow, and judge success by adoption—not by whether the code merely runs.",
-    de: "Ich spreche mit Nutzern, definiere die analytische Logik, baue den Workflow und messe Erfolg an Nutzung—nicht nur daran, ob der Code läuft.",
+    en: "My edge is forming a hypothesis, building a rough version, and course-correcting with real feedback instead of circling an idea. I am direct when something is outside my capacity or needs more time or support. I also know I sometimes take on too much—and I am actively getting better at setting that boundary.",
+    de: "Meine Stärke ist, eine Hypothese zu bilden, eine erste Version zu bauen und mit echtem Feedback früh zu korrigieren, statt eine Idee lange zu umkreisen. Ich sage direkt, wenn etwas außerhalb meiner Kapazität liegt oder mehr Zeit beziehungsweise Unterstützung braucht. Gleichzeitig weiß ich, dass ich manchmal zu viel Verantwortung übernehme—und arbeite aktiv daran, diese Grenze besser zu setzen.",
   },
   linkedin: { en: "LinkedIn profile", de: "LinkedIn-Profil" },
   contactKicker: { en: "Have an unclear problem?", de: "Ein noch unklares Problem?" },
   contactTitle1: { en: "Let’s make it", de: "Machen wir es" },
   contactTitle2: { en: "useful.", de: "nützlich." },
   discuss: { en: "Discuss a role or project", de: "Über eine Rolle oder ein Projekt sprechen" },
-  footer: { en: "Data products · analytics · ownership", de: "Datenprodukte · Analytics · Ownership" },
+  footer: { en: "Data analysis · automation · rapid prototyping", de: "Datenanalyse · Automatisierung · Rapid Prototyping" },
   top: { en: "Back to top", de: "Nach oben" },
 };
 
 const projects: Project[] = [
   {
-    id: "automation",
+    id: "assortment",
     number: "01",
-    shortTitle: { en: "KPI automation", de: "KPI-Automation" },
-    kicker: { en: "Owned at dm · Automation product", de: "Bei dm verantwortet · Automatisierungsprodukt" },
-    title: { en: "KPI mailing: 8 hours became 15 minutes", de: "KPI-Mailing: aus 8 Stunden wurden 15 Minuten" },
+    shortTitle: { en: "30-minute prototype", de: "30-Minuten-Prototyp" },
+    kicker: { en: "dm · Assortment decision tool", de: "dm · Sortiments-Entscheidungstool" },
+    title: { en: "The prototype got smaller—and more useful", de: "Der Prototyp wurde kleiner—und nützlicher" },
     description: {
-      en: "I identified a repetitive weekly reporting flow across 75 stores, designed the reproducible KPI logic, built generation and delivery in Python/PySpark, and removed the need for manual individual emails.",
-      de: "Ich identifizierte einen repetitiven wöchentlichen Reporting-Prozess für 75 Märkte, definierte die reproduzierbare KPI-Logik, baute Generierung und Versand in Python/PySpark und ersetzte manuelle Einzelmails.",
+      en: "A same-day dashboard draft replaced a slow Excel-table workflow. Early feedback showed the initial comparison idea was too broad, so I rebuilt it around one representative product per assortment segment.",
+      de: "Ein Dashboard-Entwurf am selben Tag ersetzte einen langsamen Excel-Tabellen-Workflow. Frühes Feedback zeigte, dass die Vergleichsidee zu breit war—also baute ich das Tool um ein repräsentatives Produkt pro Sortimentssegment neu.",
     },
-    impact: { en: "32× faster every week", de: "Jede Woche 32× schneller" },
+    impact: { en: "First usable draft in ~30 minutes", de: "Erster nutzbarer Entwurf in ~30 Minuten" },
     ownership: [
-      { en: "Framed the operational problem", de: "Operatives Problem strukturiert" },
-      { en: "Defined KPI and delivery logic", de: "KPI- und Versandlogik definiert" },
-      { en: "Built the automated workflow", de: "Automatisierten Workflow gebaut" },
-      { en: "Rolled it out for a five-person team", de: "Für ein fünfköpfiges Team ausgerollt" },
+      { en: "Questioned the existing Excel workflow", de: "Bestehenden Excel-Workflow hinterfragt" },
+      { en: "Built the first dashboard draft", de: "Ersten Dashboard-Entwurf gebaut" },
+      { en: "Collected early user feedback", de: "Frühes Nutzerfeedback eingeholt" },
+      { en: "Narrowed scope around the real decision", de: "Scope auf die echte Entscheidung fokussiert" },
+    ],
+    summary: {
+      problem: {
+        en: "Sentiment managers had to navigate an Excel table and manually look up product names and images in a catalogue and website.",
+        de: "Sentiment Manager mussten eine Excel-Tabelle durchsuchen und Produktnamen sowie Bilder manuell in Katalog und Website nachschlagen.",
+      },
+      role: {
+        en: "Built a dashboard prototype in about 30 minutes, showed it early, and used feedback to challenge my first scope.",
+        de: "Baute in etwa 30 Minuten einen Dashboard-Prototyp, zeigte ihn früh und nutzte Feedback, um meinen ersten Scope zu hinterfragen.",
+      },
+      outcome: {
+        en: "Repositioned the tool around the narrower need: one representative product for each assortment segment.",
+        de: "Richtete das Tool auf den engeren Bedarf aus: ein repräsentatives Produkt pro Sortimentssegment.",
+      },
+    },
+    caseStudy: {
+      challenge: {
+        en: "The existing proposal arrived as a plain Excel table. To understand it, sentiment managers had to move slowly through rows and manually search elsewhere for product names and images.",
+        de: "Der bestehende Vorschlag kam als einfache Excel-Tabelle. Um ihn zu verstehen, mussten Sentiment Manager langsam durch Zeilen gehen und Produktnamen sowie Bilder manuell an anderer Stelle suchen.",
+      },
+      contribution: {
+        en: "I formed a hypothesis that a visual dashboard would make the proposal easier to evaluate and built the first working draft in about 30 minutes. I showed it before polishing or expanding it.",
+        de: "Ich bildete die Hypothese, dass ein visuelles Dashboard den Vorschlag leichter bewertbar macht, und baute den ersten funktionierenden Entwurf in etwa 30 Minuten. Ich zeigte ihn, bevor ich ihn ausarbeitete oder erweiterte.",
+      },
+      decisions: [
+        { en: "Prototype the visual format before designing a full comparison product", de: "Visuelles Format prototypisieren, bevor ein vollständiges Vergleichsprodukt entsteht" },
+        { en: "Ask users which decision they actually needed to make", de: "Nutzer fragen, welche Entscheidung sie tatsächlich treffen müssen" },
+        { en: "Remove deep comparisons and focus on one representative product per segment", de: "Tiefe Vergleiche entfernen und auf ein repräsentatives Produkt pro Segment fokussieren" },
+      ],
+      result: {
+        en: "The useful version was not the biggest version. Early feedback narrowed the dashboard from broad metric comparisons to a focused assortment decision view.",
+        de: "Die nützliche Version war nicht die größte Version. Frühes Feedback fokussierte das Dashboard von breiten Kennzahlenvergleichen auf eine klare Sortimentsentscheidung.",
+      },
+      evidence: [
+        { en: "~30-minute first prototype", de: "~30-Minuten-Erstprototyp" },
+        { en: "Feedback before expansion", de: "Feedback vor Ausbau" },
+        { en: "Sanitized reconstruction shown", de: "Sanitisierte Rekonstruktion gezeigt" },
+      ],
+    },
+    image: "",
+    alt: { en: "Sanitized before-and-after reconstruction of the assortment workflow", de: "Sanitisierte Vorher-Nachher-Rekonstruktion des Sortiments-Workflows" },
+    logo: "/assets/logo-dm.webp",
+    logoAlt: "dm-drogerie markt",
+    tags: ["Rapid prototyping", "Looker", "Feedback", "Dashboard UX"],
+  },
+  {
+    id: "automation",
+    number: "02",
+    shortTitle: { en: "KPI automation", de: "KPI-Automation" },
+    kicker: { en: "dm · Reporting automation", de: "dm · Reporting-Automatisierung" },
+    title: { en: "Eight hours of reporting became fifteen minutes", de: "Aus acht Stunden Reporting wurden fünfzehn Minuten" },
+    description: {
+      en: "A reproducible Python/PySpark workflow replaced manual individual KPI emails for 75 stores.",
+      de: "Ein reproduzierbarer Python/PySpark-Workflow ersetzte manuelle individuelle KPI-Mails für 75 Märkte.",
+    },
+    impact: { en: "8h → <15m every week", de: "8 Std. → <15 Min. pro Woche" },
+    ownership: [
+      { en: "Mapped the manual workflow", de: "Manuellen Workflow analysiert" },
+      { en: "Defined KPI and recipient logic", de: "KPI- und Empfängerlogik definiert" },
+      { en: "Built generation and delivery", de: "Generierung und Versand gebaut" },
     ],
     summary: {
       problem: {
@@ -179,165 +239,103 @@ const projects: Project[] = [
         de: "Ein fünfköpfiges Team benötigte wöchentlich rund acht Stunden für individuelle KPI-Mails an 75 Märkte.",
       },
       role: {
-        en: "Owned workflow discovery, KPI logic, Python/PySpark implementation, delivery automation, and team rollout.",
-        de: "Verantwortete Prozessanalyse, KPI-Logik, Python/PySpark-Umsetzung, Versandautomatisierung und Team-Rollout.",
+        en: "Mapped the workflow, defined KPI logic, and built automated generation and delivery in Python/PySpark.",
+        de: "Analysierte den Workflow, definierte die KPI-Logik und baute automatisierte Generierung sowie Versand in Python/PySpark.",
       },
       outcome: {
-        en: "Reduced the complete weekly workflow to under 15 minutes—32× faster.",
-        de: "Reduzierte den vollständigen Wochenprozess auf unter 15 Minuten—32× schneller.",
+        en: "Reduced the complete weekly workflow to under 15 minutes—around 32× faster.",
+        de: "Reduzierte den vollständigen Wochenprozess auf unter 15 Minuten—rund 32× schneller.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "A five-person team repeatedly assembled and sent individual KPI emails for 75 stores. The weekly process consumed around eight hours, created avoidable manual work, and made consistent delivery harder.",
-        de: "Ein fünfköpfiges Team erstellte und versendete wiederholt einzelne KPI-Mails für 75 Märkte. Der wöchentliche Prozess dauerte rund acht Stunden, erzeugte vermeidbare Handarbeit und erschwerte eine konsistente Auslieferung.",
+        en: "A five-person team repeatedly assembled and sent individual KPI emails for 75 stores. The weekly process consumed around eight hours.",
+        de: "Ein fünfköpfiges Team erstellte und versendete wiederholt einzelne KPI-Mails für 75 Märkte. Der wöchentliche Prozess dauerte rund acht Stunden.",
       },
       contribution: {
-        en: "I owned the solution from problem framing to rollout: mapped the existing workflow, defined the KPI and recipient logic, built the Python/PySpark generation pipeline, automated delivery, and introduced it to the operating team.",
-        de: "Ich verantwortete die Lösung von der Problemdefinition bis zum Rollout: Ist-Prozess analysiert, KPI- und Empfängerlogik definiert, Python/PySpark-Pipeline gebaut, Versand automatisiert und im operativen Team eingeführt.",
+        en: "I mapped the existing workflow, defined the KPI and recipient logic, built the Python/PySpark generation pipeline, automated delivery, and introduced it to the team.",
+        de: "Ich analysierte den bestehenden Workflow, definierte KPI- und Empfängerlogik, baute die Python/PySpark-Pipeline, automatisierte den Versand und führte sie im Team ein.",
       },
       decisions: [
-        { en: "Standardize KPI calculation before automating delivery", de: "KPI-Berechnung vor dem Versand standardisieren" },
+        { en: "Standardize calculation before automating delivery", de: "Berechnung vor dem Versand standardisieren" },
         { en: "Generate store-specific outputs from one reproducible workflow", de: "Marktspezifische Outputs aus einem reproduzierbaren Workflow erzeugen" },
         { en: "Design for team use rather than a one-person script", de: "Für Teamnutzung statt als Ein-Personen-Skript bauen" },
       ],
       result: {
-        en: "Weekly reporting time fell from roughly eight hours to under 15 minutes—a 32× faster workflow serving all 75 stores.",
-        de: "Die wöchentliche Reporting-Zeit sank von rund acht Stunden auf unter 15 Minuten—ein 32× schnellerer Workflow für alle 75 Märkte.",
+        en: "Weekly reporting time fell from roughly eight hours to under 15 minutes for all 75 stores.",
+        de: "Die wöchentliche Reporting-Zeit sank für alle 75 Märkte von rund acht Stunden auf unter 15 Minuten.",
       },
       evidence: [
         { en: "8h → <15m per week", de: "8 Std. → <15 Min. pro Woche" },
         { en: "75 stores", de: "75 Märkte" },
-        { en: "Five-person team enabled", de: "Fünfköpfiges Team entlastet" },
+        { en: "Five-person team", de: "Fünfköpfiges Team" },
       ],
     },
-    image: "/assets/project-fuks-dashboard.png",
-    alt: { en: "Retail analysis dashboard", de: "Dashboard für Retail-Analysen" },
+    image: "",
+    alt: { en: "Illustrative KPI automation process diagram", de: "Illustratives Diagramm des KPI-Automationsprozesses" },
     logo: "/assets/logo-dm.webp",
     logoAlt: "dm-drogerie markt",
     tags: ["Python", "PySpark", "Automation", "Reporting"],
   },
   {
     id: "copilot",
-    number: "02",
-    shortTitle: { en: "AI analyst", de: "AI-Analyst" },
-    kicker: { en: "Owned at dm · Internal AI product", de: "Bei dm verantwortet · Internes AI-Produkt" },
-    title: { en: "An AI analyst with company context", de: "Ein AI-Analyst mit Unternehmenskontext" },
-    description: {
-      en: "I developed an internal assistant connected to APIs and databases that generates PySpark code and answers complex data questions—turning specialist knowledge into a reusable product.",
-      de: "Ich entwickelte einen internen Assistenten mit API- und Datenbankanbindung, der PySpark-Code generiert und komplexe Datenfragen beantwortet—aus Spezialwissen wurde ein wiederverwendbares Produkt.",
-    },
-    impact: { en: "5+ daily users · 100+ planned", de: "5+ tägliche Nutzer · 100+ geplant" },
-    ownership: [
-      { en: "Found the repeated analyst pain", de: "Wiederkehrenden Analysten-Pain identifiziert" },
-      { en: "Designed the assistant workflow", de: "Assistenten-Workflow konzipiert" },
-      { en: "Integrated API and database context", de: "API- und Datenbankkontext integriert" },
-      { en: "Validated usage and rollout path", de: "Nutzung und Rollout-Pfad validiert" },
-    ],
-    summary: {
-      problem: {
-        en: "Complex data questions depended on scarce specialist knowledge and several disconnected technical systems.",
-        de: "Komplexe Datenfragen hingen von knappem Spezialwissen und mehreren getrennten technischen Systemen ab.",
-      },
-      role: {
-        en: "Designed the assistant, integrated API and database context, shaped PySpark generation, and validated real usage.",
-        de: "Konzipierte den Assistenten, integrierte API- und Datenbankkontext, gestaltete die PySpark-Generierung und validierte reale Nutzung.",
-      },
-      outcome: {
-        en: "Moved from prototype to daily use by 5+ users, with a rollout path for more than 100.",
-        de: "Vom Prototyp zur täglichen Nutzung durch 5+ Nutzer, mit Rollout-Pfad für mehr als 100.",
-      },
-    },
-    caseStudy: {
-      challenge: {
-        en: "Complex internal data questions depended on scarce specialist knowledge: users needed to understand data structures, formulate PySpark logic, and navigate several technical systems before reaching an answer.",
-        de: "Komplexe interne Datenfragen hingen von knappem Spezialwissen ab: Nutzer mussten Datenstrukturen verstehen, PySpark-Logik formulieren und mehrere technische Systeme bedienen, bevor sie eine Antwort erhielten.",
-      },
-      contribution: {
-        en: "I identified the repeated analyst bottleneck, designed the assistant workflow, connected company context through APIs and databases, shaped the code-generation behavior, and validated the first daily-use cases.",
-        de: "Ich identifizierte den wiederkehrenden Analysten-Engpass, konzipierte den Assistenten-Workflow, band Unternehmenskontext über APIs und Datenbanken an, gestaltete die Code-Generierung und validierte die ersten täglichen Use Cases.",
-      },
-      decisions: [
-        { en: "Ground answers in company data context instead of generic AI output", de: "Antworten im Unternehmenskontext statt in generischem AI-Output verankern" },
-        { en: "Return usable PySpark code alongside explanations", de: "Nutzbaren PySpark-Code zusammen mit Erklärungen liefern" },
-        { en: "Validate with a small daily-user group before wider rollout", de: "Mit einer kleinen täglichen Nutzergruppe vor dem breiten Rollout validieren" },
-      ],
-      result: {
-        en: "The assistant moved from prototype to daily use by more than five users, with a defined path toward a 100+ user rollout.",
-        de: "Der Assistent entwickelte sich vom Prototyp zum täglich genutzten Produkt mit mehr als fünf Nutzern und einem definierten Rollout-Pfad für über 100 Nutzer.",
-      },
-      evidence: [
-        { en: "5+ daily users", de: "5+ tägliche Nutzer" },
-        { en: "100+ users in planned rollout", de: "100+ Nutzer im geplanten Rollout" },
-        { en: "API + database context", de: "API- + Datenbankkontext" },
-      ],
-    },
-    image: "/project-atlas-v3.png",
-    alt: { en: "Visual map of Pavel's data products", de: "Visuelle Karte von Pavels Datenprodukten" },
-    logo: "/assets/logo-dm.webp",
-    logoAlt: "dm-drogerie markt",
-    tags: ["AI", "APIs", "Databases", "PySpark"],
-  },
-  {
-    id: "layout",
     number: "03",
-    shortTitle: { en: "Layout impact", de: "Layout Impact" },
-    kicker: { en: "Owned at dm · Decision product", de: "Bei dm verantwortet · Entscheidungsprodukt" },
-    title: { en: "Layout impact dashboard, owned end to end", de: "Layout-Impact-Dashboard, von Idee bis Nutzung" },
+    shortTitle: { en: "Internal automation", de: "Interne Automatisierung" },
+    kicker: { en: "dm · Internal automation tool", de: "dm · Internes Automatisierungstool" },
+    title: { en: "Automating work inside an internal data tool", de: "Arbeit in einem internen Datentool automatisieren" },
     description: {
-      en: "I conceived and built the product from scratch—from the original idea and KPI model to the complete working dashboard used across assortment, space-planning, and advisory teams.",
-      de: "Ich konzipierte und baute das Produkt von Grund auf—von der Idee und dem KPI-Modell bis zum fertigen Dashboard für Sortiment, Space Planning und Beratung.",
+      en: "I am building automations that connect internal context, APIs, databases, and PySpark generation. Adoption is still being learned—not forecast.",
+      de: "Ich entwickle Automatisierungen, die internen Kontext, APIs, Datenbanken und PySpark-Generierung verbinden. Adoption wird noch gelernt—nicht prognostiziert.",
     },
-    impact: { en: "30 weekly users across teams", de: "30 wöchentliche Nutzer in mehreren Teams" },
+    impact: { en: "Internal tool · adoption in progress", de: "Internes Tool · Adoption im Aufbau" },
     ownership: [
-      { en: "Turned questions into a product brief", de: "Fragen in einen Product Brief übersetzt" },
-      { en: "Created the KPI model", de: "KPI-Modell entwickelt" },
-      { en: "Designed and built the interface", de: "Interface konzipiert und gebaut" },
-      { en: "Earned recurring cross-team use", de: "Wiederkehrende teamübergreifende Nutzung erreicht" },
+      { en: "Identified repeated technical friction", de: "Wiederkehrende technische Reibung identifiziert" },
+      { en: "Connected API and database context", de: "API- und Datenbankkontext verbunden" },
+      { en: "Built and tested automations", de: "Automatisierungen gebaut und getestet" },
     ],
     summary: {
       problem: {
-        en: "Assortment and space-planning teams lacked one trusted view of how layout changes affected performance.",
-        de: "Sortiments- und Space-Planning-Teams fehlte eine vertrauenswürdige Sicht auf die Wirkung von Layout-Änderungen.",
+        en: "Repeated data work required specialist context and movement between disconnected technical systems.",
+        de: "Wiederkehrende Datenarbeit erforderte Spezialwissen und Wechsel zwischen getrennten technischen Systemen.",
       },
       role: {
-        en: "Owned the product brief, KPI model, dashboard UX, implementation, stakeholder validation, and adoption.",
-        de: "Verantwortete Product Brief, KPI-Modell, Dashboard-UX, Umsetzung, Stakeholder-Validierung und Adoption.",
+        en: "Designing and building automations around internal context, APIs, databases, and PySpark workflows.",
+        de: "Konzeption und Bau von Automatisierungen rund um internen Kontext, APIs, Datenbanken und PySpark-Workflows.",
       },
       outcome: {
-        en: "Became a weekly decision tool for around 30 users across three cross-functional teams.",
-        de: "Wurde zum wöchentlichen Entscheidungswerkzeug für rund 30 Nutzer in drei funktionsübergreifenden Teams.",
+        en: "The tool is being tested internally. Wider adoption is not yet measured, so no user forecast is claimed.",
+        de: "Das Tool wird intern getestet. Breitere Adoption ist noch nicht gemessen, daher wird keine Nutzerprognose behauptet.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "Assortment and space-planning teams needed a shared way to understand how layout changes affected performance. Questions were fragmented across teams and lacked one trusted analytical view.",
-        de: "Sortiments- und Space-Planning-Teams brauchten eine gemeinsame Sicht darauf, wie Layout-Änderungen die Performance beeinflussen. Fragen waren über Teams verteilt, eine vertrauenswürdige analytische Sicht fehlte.",
+        en: "Some recurring data tasks depended on technical context spread across APIs, databases, and specialist knowledge.",
+        de: "Einige wiederkehrende Datenaufgaben hingen von technischem Kontext aus APIs, Datenbanken und Spezialwissen ab.",
       },
       contribution: {
-        en: "I conceived the product from scratch, translated stakeholder questions into a product brief, created the KPI model, designed and built the dashboard, and iterated it into a recurring cross-team decision tool.",
-        de: "Ich entwickelte das Produkt von Grund auf, übersetzte Stakeholder-Fragen in einen Product Brief, erstellte das KPI-Modell, konzipierte und baute das Dashboard und entwickelte es zu einem regelmäßig genutzten teamübergreifenden Entscheidungswerkzeug.",
+        en: "I am building automations inside an internal tool, connecting context and shaping reusable PySpark workflows while testing what is genuinely useful.",
+        de: "Ich entwickle Automatisierungen in einem internen Tool, verbinde Kontext und gestalte wiederverwendbare PySpark-Workflows, während ich teste, was tatsächlich nützlich ist.",
       },
       decisions: [
-        { en: "Organize the product around decisions, not available data tables", de: "Das Produkt um Entscheidungen statt vorhandene Datentabellen strukturieren" },
-        { en: "Create one comparable KPI model across layout cases", de: "Ein vergleichbares KPI-Modell für unterschiedliche Layout-Fälle schaffen" },
-        { en: "Make recurring use the success criterion", de: "Wiederkehrende Nutzung als Erfolgskriterium definieren" },
+        { en: "Ground outputs in internal context instead of generic AI responses", de: "Outputs im internen Kontext statt in generischen AI-Antworten verankern" },
+        { en: "Automate repeated work before expanding feature scope", de: "Wiederkehrende Arbeit automatisieren, bevor der Feature-Scope wächst" },
+        { en: "Describe adoption honestly until usage is measured", de: "Adoption ehrlich beschreiben, bis Nutzung gemessen ist" },
       ],
       result: {
-        en: "The product became a weekly decision surface for around 30 users across assortment, space-planning, and advisory teams.",
-        de: "Das Produkt wurde zu einer wöchentlichen Entscheidungsoberfläche für rund 30 Nutzer aus Sortiment, Space Planning und Beratung.",
+        en: "This remains an internal automation effort with adoption in progress. The portfolio intentionally makes no projected user-count claim.",
+        de: "Dies bleibt eine interne Automatisierungsinitiative mit Adoption im Aufbau. Das Portfolio macht bewusst keine prognostizierte Nutzerzahl.",
       },
       evidence: [
-        { en: "30 weekly users", de: "30 wöchentliche Nutzer" },
-        { en: "Three cross-functional user groups", de: "Drei funktionsübergreifende Nutzergruppen" },
-        { en: "Owned from idea to adoption", de: "Von der Idee bis zur Nutzung verantwortet" },
+        { en: "Internal tool", de: "Internes Tool" },
+        { en: "API + database context", de: "API- + Datenbankkontext" },
+        { en: "Adoption not yet measured", de: "Adoption noch nicht gemessen" },
       ],
     },
-    image: "/assets/project-layout-dashboard.png",
-    alt: { en: "Layout impact dashboard with KPI cards and charts", de: "Layout-Impact-Dashboard mit KPI-Karten und Charts" },
+    image: "",
+    alt: { en: "Illustrative architecture of an internal automation workflow", de: "Illustrative Architektur eines internen Automatisierungsworkflows" },
     logo: "/assets/logo-dm.webp",
     logoAlt: "dm-drogerie markt",
-    tags: ["Looker", "SQL", "UX", "Product thinking"],
+    tags: ["Automation", "APIs", "Databases", "PySpark"],
   },
 ];
 
@@ -360,18 +358,18 @@ const impactCases: ImpactCase[] = [
   },
   {
     id: "adoption",
-    label: { en: "AI product", de: "AI-Produkt" },
-    metric: "5+ → 100+",
-    metricLabel: { en: "daily users to planned rollout", de: "tägliche Nutzer bis geplanter Rollout" },
-    title: { en: "Turned expertise into a reusable assistant.", de: "Expertise in einen wiederverwendbaren Assistenten verwandelt." },
+    label: { en: "Rapid prototyping", de: "Rapid Prototyping" },
+    metric: "~30m",
+    metricLabel: { en: "to the first dashboard prototype", de: "bis zum ersten Dashboard-Prototyp" },
+    title: { en: "Feedback before overbuilding.", de: "Feedback vor dem Überbauen." },
     copy: {
-      en: "The internal assistant uses API and database context to answer complex data questions and generate PySpark code. Daily use is the first adoption signal; the rollout path is the next.",
-      de: "Der interne Assistent nutzt API- und Datenbankkontext, beantwortet komplexe Datenfragen und generiert PySpark-Code. Tägliche Nutzung ist das erste Adoptionssignal; der Rollout ist der nächste Schritt.",
+      en: "A quick alternative to an Excel table exposed the real need early: not deep comparisons, but one representative product per assortment segment.",
+      de: "Eine schnelle Alternative zur Excel-Tabelle zeigte den echten Bedarf früh: keine tiefen Vergleiche, sondern ein repräsentatives Produkt pro Sortimentssegment.",
     },
     proof: [
-      { en: "Used every day", de: "Täglich genutzt" },
-      { en: "API + database integration", de: "API- + Datenbankintegration" },
-      { en: "Planned 100+ user rollout", de: "Rollout für 100+ Nutzer geplant" },
+      { en: "Same-day user feedback", de: "Nutzerfeedback am selben Tag" },
+      { en: "Scope narrowed early", de: "Scope früh fokussiert" },
+      { en: "Sanitized reconstruction shown", de: "Sanitisierte Rekonstruktion gezeigt" },
     ],
   },
   {
@@ -583,21 +581,21 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-metrics reveal-up delay-3">
+          <div><strong>~30m</strong><span>{lang === "en" ? "to a first assortment prototype" : "bis zum ersten Sortiments-Prototyp"}</span></div>
           <div><strong>32×</strong><span>{lang === "en" ? "faster weekly KPI delivery" : "schnellere wöchentliche KPI-Auslieferung"}</span></div>
-          <div><strong>75</strong><span>{lang === "en" ? "stores receiving automated KPI reports" : "Märkte mit automatisierten KPI-Reports"}</span></div>
-          <div><strong>2,000+</strong><span>{lang === "en" ? "stores covered by retail analysis" : "Märkte im analytischen Wirkungsbereich"}</span></div>
-          <div><strong>30</strong><span>{lang === "en" ? "weekly dashboard users across teams" : "wöchentliche Dashboard-Nutzer in mehreren Teams"}</span></div>
+          <div><strong>75</strong><span>{lang === "en" ? "stores receiving automated reports" : "Märkte mit automatisierten Reports"}</span></div>
+          <div><strong>2,000+</strong><span>{lang === "en" ? "stores in analytical scope" : "Märkte im analytischen Wirkungsbereich"}</span></div>
         </div>
       </section>
 
-      <div className="ticker" aria-label="Product ownership">
+      <div className="ticker" aria-label={lang === "en" ? "Working process" : "Arbeitsprozess"}>
         <div className="ticker-track">
           {[0, 1].map((copy) => (
             <div className="ticker-set" key={copy} aria-hidden={copy === 1}>
-              <span>{lang === "en" ? "FIND THE FRICTION" : "REIBUNG FINDEN"}</span><i>✦</i>
-              <span>{lang === "en" ? "DEFINE THE LOGIC" : "LOGIK DEFINIEREN"}</span><i>✦</i>
-              <span>{lang === "en" ? "BUILD THE PRODUCT" : "PRODUKT BAUEN"}</span><i>✦</i>
-              <span>{lang === "en" ? "EARN ADOPTION" : "NUTZUNG SICHERN"}</span><i>✦</i>
+              <span>{lang === "en" ? "UNDERSTAND WHY IT’S STILL BROKEN" : "VERSTEHEN, WARUM ES NOCH NICHT FUNKTIONIERT"}</span><i>✦</i>
+              <span>{lang === "en" ? "PROTOTYPE FAST" : "SCHNELL PROTOTYPISIEREN"}</span><i>✦</i>
+              <span>{lang === "en" ? "GET FEEDBACK EARLY" : "FRÜH FEEDBACK HOLEN"}</span><i>✦</i>
+              <span>{lang === "en" ? "DECIDE WHAT’S WORTH BUILDING" : "ENTSCHEIDEN, WAS SICH ZU BAUEN LOHNT"}</span><i>✦</i>
             </div>
           ))}
         </div>
@@ -626,27 +624,74 @@ export default function Home() {
                 <span>{activeProject.number}</span>
               </div>
 
-              {activeProject.id === "copilot" ? (
-                <div className="ai-architecture-slide" role="img" aria-label={t(activeProject.alt, lang)}>
-                  <div className="ai-slide-heading">
-                    <span>{lang === "en" ? "Product architecture" : "Produktarchitektur"}</span>
-                    <h4>{lang === "en" ? "From a company question to executable PySpark" : "Von der Unternehmensfrage zu ausführbarem PySpark"}</h4>
+              {activeProject.id === "assortment" ? (
+                <div className="assortment-reconstruction" role="img" aria-label={t(activeProject.alt, lang)}>
+                  <div className="artifact-disclaimer">
+                    {lang === "en" ? "Illustrative reconstruction · dummy data · no internal interface shown" : "Illustrative Rekonstruktion · Dummy-Daten · keine interne Oberfläche gezeigt"}
                   </div>
-                  <div className="ai-flow">
-                    <div><span>01</span><strong>{lang === "en" ? "Ask" : "Frage"}</strong><small>{lang === "en" ? "Business question" : "Business-Frage"}</small></div>
-                    <b aria-hidden="true">→</b>
-                    <div><span>02</span><strong>{lang === "en" ? "Ground" : "Kontext"}</strong><small>APIs + {lang === "en" ? "database" : "Datenbank"}</small></div>
-                    <b aria-hidden="true">→</b>
-                    <div><span>03</span><strong>{lang === "en" ? "Build" : "Bauen"}</strong><small>PySpark + {lang === "en" ? "answer" : "Antwort"}</small></div>
+                  <div className="artifact-comparison">
+                    <section className="excel-artifact">
+                      <div className="artifact-title"><span>{lang === "en" ? "Before" : "Vorher"}</span><strong>{lang === "en" ? "Spreadsheet proposal" : "Tabellenvorschlag"}</strong></div>
+                      <div className="fake-sheet">
+                        <div><b>Segment</b><b>SKU</b><b>{lang === "en" ? "Product" : "Produkt"}</b><b>{lang === "en" ? "Image" : "Bild"}</b></div>
+                        {["A", "B", "C", "D"].map((segment, index) => (
+                          <div key={segment}><span>{segment}</span><span>0{index + 1}42</span><span>{lang === "en" ? "Look up manually" : "Manuell suchen"}</span><span>—</span></div>
+                        ))}
+                      </div>
+                      <small>{lang === "en" ? "Catalogue + website lookup required" : "Katalog- + Website-Suche erforderlich"}</small>
+                    </section>
+                    <div className="artifact-arrow" aria-hidden="true">→</div>
+                    <section className="decision-artifact">
+                      <div className="artifact-title"><span>{lang === "en" ? "After feedback" : "Nach Feedback"}</span><strong>{lang === "en" ? "Focused decision view" : "Fokussierte Entscheidungssicht"}</strong></div>
+                      <div className="segment-cards">
+                        {["Core", "Build", "Differentiate"].map((segment, index) => (
+                          <article key={segment} className={index === 0 ? "is-standard" : ""}>
+                            <span>{segment}</span><i aria-hidden="true">P{index + 1}</i><strong>{lang === "en" ? `Sample product ${index + 1}` : `Beispielprodukt ${index + 1}`}</strong><small>{index === 0 ? (lang === "en" ? "Representative standard" : "Repräsentativer Standard") : (lang === "en" ? "Assortment option" : "Sortimentsoption")}</small>
+                          </article>
+                        ))}
+                      </div>
+                    </section>
                   </div>
-                  <div className="ai-proof-row">
-                    <span><strong>5+</strong>{lang === "en" ? " daily users" : " tägliche Nutzer"}</span>
-                    <span><strong>100+</strong>{lang === "en" ? " planned rollout" : " geplanter Rollout"}</span>
+                  <blockquote>{lang === "en" ? "“We don’t need every comparison. Show one representative product per segment.”" : "„Wir brauchen nicht jeden Vergleich. Zeig ein repräsentatives Produkt pro Segment.“"}</blockquote>
+                </div>
+              ) : activeProject.id === "automation" ? (
+                <div className="kpi-automation-slide" role="img" aria-label={t(activeProject.alt, lang)}>
+                  <div className="kpi-slide-head">
+                    <span>{lang === "en" ? "Recurring reporting workflow" : "Wiederkehrender Reporting-Workflow"}</span>
+                    <strong>8h → &lt;15m</strong>
+                  </div>
+                  <div className="kpi-flow">
+                    {[
+                      lang === "en" ? "Collect" : "Sammeln",
+                      lang === "en" ? "Calculate" : "Berechnen",
+                      lang === "en" ? "Generate" : "Erzeugen",
+                      lang === "en" ? "Deliver" : "Versenden",
+                    ].map((step, index) => (
+                      <div key={step}><span>0{index + 1}</span><strong>{step}</strong><small>{index === 3 ? (lang === "en" ? "75 stores" : "75 Märkte") : "Python · PySpark"}</small></div>
+                    ))}
+                  </div>
+                  <div className="kpi-slide-foot">
+                    <span>{lang === "en" ? "One reproducible workflow" : "Ein reproduzierbarer Workflow"}</span>
+                    <span>{lang === "en" ? "Process diagram · no internal data shown" : "Prozessdiagramm · keine internen Daten gezeigt"}</span>
                   </div>
                 </div>
               ) : (
-                <div className="screenshot-crop">
-                  <img src={activeProject.image} alt={t(activeProject.alt, lang)} />
+                <div className="ai-architecture-slide" role="img" aria-label={t(activeProject.alt, lang)}>
+                  <div className="ai-slide-heading">
+                    <span>{lang === "en" ? "Internal automation architecture" : "Interne Automatisierungsarchitektur"}</span>
+                    <h4>{lang === "en" ? "Connect context. Automate repeated work." : "Kontext verbinden. Wiederholte Arbeit automatisieren."}</h4>
+                  </div>
+                  <div className="ai-flow">
+                    <div><span>01</span><strong>{lang === "en" ? "Trigger" : "Auslöser"}</strong><small>{lang === "en" ? "Repeated task" : "Wiederholte Aufgabe"}</small></div>
+                    <b aria-hidden="true">→</b>
+                    <div><span>02</span><strong>{lang === "en" ? "Ground" : "Kontext"}</strong><small>APIs + {lang === "en" ? "database" : "Datenbank"}</small></div>
+                    <b aria-hidden="true">→</b>
+                    <div><span>03</span><strong>{lang === "en" ? "Automate" : "Automatisieren"}</strong><small>PySpark + {lang === "en" ? "output" : "Output"}</small></div>
+                  </div>
+                  <div className="ai-proof-row">
+                    <span><strong>{lang === "en" ? "Internal tool" : "Internes Tool"}</strong>{lang === "en" ? " being tested" : " wird getestet"}</span>
+                    <span><strong>{lang === "en" ? "Adoption" : "Adoption"}</strong>{lang === "en" ? " not yet measured" : " noch nicht gemessen"}</span>
+                  </div>
                 </div>
               )}
             </div>
@@ -684,20 +729,30 @@ export default function Home() {
                 <span className="section-kicker">{t(activeProject.kicker, lang)}</span>
               </div>
               <h3>{t(activeProject.title, lang)}</h3>
-              <div className="project-summary">
-                <section>
-                  <span>{t(ui.problem, lang)}</span>
-                  <p>{t(activeProject.summary.problem, lang)}</p>
-                </section>
-                <section>
-                  <span>{t(ui.myRole, lang)}</span>
-                  <p>{t(activeProject.summary.role, lang)}</p>
-                </section>
-                <section className="summary-outcome">
-                  <span>{t(ui.outcome, lang)}</span>
-                  <p>{t(activeProject.summary.outcome, lang)}</p>
-                </section>
-              </div>
+              {activeProject.id === "assortment" ? (
+                <div className="prototype-timeline">
+                  {[
+                    [lang === "en" ? "Ask" : "Frage", lang === "en" ? "Can this be better than an Excel table?" : "Geht das besser als mit einer Excel-Tabelle?"],
+                    [lang === "en" ? "Build" : "Bauen", lang === "en" ? "First dashboard draft in about 30 minutes." : "Erster Dashboard-Entwurf in etwa 30 Minuten."],
+                    [lang === "en" ? "Listen" : "Zuhören", lang === "en" ? "Users wanted one representative product—not deep comparisons." : "Nutzer wollten ein repräsentatives Produkt—keine tiefen Vergleiche."],
+                    [lang === "en" ? "Narrow" : "Fokussieren", lang === "en" ? "Rebuilt around the smaller, useful decision." : "Um die kleinere, nützliche Entscheidung neu gebaut."],
+                  ].map(([label, copy], index) => (
+                    <section key={label}><i>0{index + 1}</i><div><span>{label}</span><p>{copy}</p></div></section>
+                  ))}
+                </div>
+              ) : activeProject.id === "automation" ? (
+                <div className="project-summary automation-summary">
+                  <section><span>{lang === "en" ? "Before" : "Vorher"}</span><p>{t(activeProject.summary.problem, lang)}</p></section>
+                  <section><span>{lang === "en" ? "Build" : "Build"}</span><p>{t(activeProject.summary.role, lang)}</p></section>
+                  <section className="summary-outcome"><span>{lang === "en" ? "Result" : "Ergebnis"}</span><p>{t(activeProject.summary.outcome, lang)}</p></section>
+                </div>
+              ) : (
+                <div className="status-story">
+                  <section><span>{lang === "en" ? "What I’m building" : "Was ich baue"}</span><p>{t(activeProject.summary.role, lang)}</p></section>
+                  <section><span>{lang === "en" ? "Status now" : "Aktueller Status"}</span><p>{t(activeProject.summary.outcome, lang)}</p></section>
+                  <div>{lang === "en" ? "No projected user count. Adoption is still being learned." : "Keine prognostizierte Nutzerzahl. Adoption wird noch gelernt."}</div>
+                </div>
+              )}
               <button className="case-study-button" onClick={() => setOpenCaseStudy(activeProject)}>
                 {t(ui.openCase, lang)} <Arrow />
               </button>

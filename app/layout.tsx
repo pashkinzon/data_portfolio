@@ -22,32 +22,32 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
+    title: "Pavel Polishchuk — Data Analyst & Automation Builder",
     description:
-      "I design and ship dashboards, data workflows, and internal AI tools—from an ambiguous retail question to measurable adoption.",
+      "Technical data analyst who prototypes dashboards and automations quickly, gets feedback early, and tests what is worth building.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
+      title: "Pavel Polishchuk — Data Analyst & Automation Builder",
       description:
-        "Dashboards, data workflows, and internal AI tools—from an ambiguous retail question to measurable adoption.",
+        "Build fast. Test what matters. Data analysis, automation, and rapid prototyping.",
       type: "website",
       images: [
         {
-          url: `${origin}/og-v4.png`,
+          url: `${origin}/og-v5.png`,
           width: 1731,
           height: 909,
-          alt: "Pavel Polishchuk — I own what gets built.",
+          alt: "Pavel Polishchuk — Build fast. Test what matters.",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Pavel Polishchuk — Data Product Owner & Analytics Builder",
-      description: "Dashboards, data workflows, and internal AI tools—from an ambiguous retail question to measurable adoption.",
-      images: [`${origin}/og-v4.png`],
+      title: "Pavel Polishchuk — Data Analyst & Automation Builder",
+      description: "Build fast. Test what matters. Data analysis, automation, and rapid prototyping.",
+      images: [`${origin}/og-v5.png`],
     },
   };
 }

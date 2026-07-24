@@ -30,25 +30,27 @@ test("server-renders the finished portfolio", async () => {
 
   const html = await response.text();
   assert.match(html, /Pavel Polishchuk/);
-  assert.match(html, /I don.t just analyze data/i);
+  assert.match(html, /Build fast/i);
+  assert.match(html, /Test what matters/i);
   assert.match(html, /8h/);
-  assert.match(html, /Data Product Owner &amp; Analytics Builder/);
+  assert.match(html, /Data Analyst &amp; Automation Builder/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
 });
 
-test("ships bilingual ownership content and required assets", async () => {
+test("ships bilingual builder content and required assets", async () => {
   const [page, layout] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
   ]);
 
-  assert.match(page, /Ich analysiere nicht nur Daten/);
+  assert.match(page, /Schnell bauen/);
+  assert.match(page, /Testen, was zählt/);
   assert.match(page, /pavel-portfolio-language/);
-  assert.match(page, /faster weekly KPI delivery/);
+  assert.match(page, /30-minute first prototype/);
   assert.match(page, /Problem/);
   assert.match(page, /My role/);
   assert.match(page, /What changed/);
-  assert.match(page, /5\+ → 100\+/);
+  assert.match(page, /Adoption not yet measured/);
   assert.match(page, /2,000\+/);
   assert.match(page, /logo-dm\.webp/);
   assert.match(page, /logo-flink\.png/);
@@ -56,5 +58,6 @@ test("ships bilingual ownership content and required assets", async () => {
   assert.match(page, /Open full case study/);
   assert.match(page, /My individual contribution/);
   assert.match(page, /Weekly reporting time fell/);
-  assert.match(layout, /og-v4\.png/);
+  assert.match(page, /Illustrative reconstruction/);
+  assert.match(layout, /og-v5\.png/);
 });

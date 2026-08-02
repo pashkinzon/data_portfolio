@@ -38,5 +38,6 @@ test("ships bilingual content and GitHub Pages configuration", async () => {
   assert.match(nextConfig, /output: "export"/);
   assert.match(nextConfig, /NEXT_PUBLIC_BASE_PATH/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
+  assert.match(workflow, /enablement: true/);
   assert.match(workflow, /path: \.\/out/);
 });

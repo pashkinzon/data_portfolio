@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Pavel Polishchuk — Data Analyst & Automation Builder",
   description:
-    "Technical data analyst who prototypes dashboards and automations quickly, gets feedback early, and tests what is worth building.",
+    "Working-student data analyst building evidence-led dashboards, reporting automations, and self-service analytical tools.",
   icons: {
     icon: `${siteUrl}/favicon.svg`,
     shortcut: `${siteUrl}/favicon.svg`,
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pavel Polishchuk — Data Analyst & Automation Builder",
     description:
-      "Build fast. Test what matters. Data analysis, automation, and rapid prototyping.",
+      "Define clearly. Build what helps. Data analysis, automation, and self-service tools.",
     url: siteUrl,
     type: "website",
     images: [
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-v6.png`,
         width: 1731,
         height: 909,
-        alt: "Pavel Polishchuk — Build fast. Test what matters.",
+        alt: "Pavel Polishchuk — Data analysis, automation, and self-service tools.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pavel Polishchuk — Data Analyst & Automation Builder",
-    description: "Build fast. Test what matters. Data analysis, automation, and rapid prototyping.",
+    description: "Define clearly. Build what helps. Data analysis, automation, and self-service tools.",
     images: [`${siteUrl}/og-v6.png`],
   },
 };

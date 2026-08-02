@@ -55,18 +55,18 @@ const ui = {
   menu: { en: "Menu", de: "Menü" },
   close: { en: "Close", de: "Schließen" },
   heroEyebrow: {
-    en: "Data analysis · automation · rapid prototyping",
-    de: "Datenanalyse · Automatisierung · Rapid Prototyping",
+    en: "Data analysis · automation · self-service tools",
+    de: "Datenanalyse · Automatisierung · Self-Service-Tools",
   },
-  heroLine1: { en: "Build fast.", de: "Schnell bauen." },
-  heroLine2: { en: "Test what matters.", de: "Testen, was zählt." },
+  heroLine1: { en: "Define clearly.", de: "Klar definieren." },
+  heroLine2: { en: "Build what helps.", de: "Bauen, was hilft." },
   heroManifesto: {
-    en: "Technical analyst. Fast prototypes. Early feedback.",
-    de: "Technischer Analyst. Schnelle Prototypen. Frühes Feedback.",
+    en: "Technical analyst. Useful systems. Evidence-led decisions.",
+    de: "Technischer Analyst. Nützliche Systeme. Evidenzbasierte Entscheidungen.",
   },
   heroCopy: {
-    en: "I turn slow, unclear workflows into working dashboards and automations—then put them in front of users before investing in the wrong solution.",
-    de: "Ich verwandle langsame, unklare Workflows in funktionierende Dashboards und Automatisierungen—und teste sie mit Nutzern, bevor zu viel in die falsche Lösung investiert wird.",
+    en: "I turn unclear analytical questions and repetitive workflows into dashboards and automations that people can use directly.",
+    de: "Ich übersetze unklare analytische Fragen und wiederkehrende Workflows in Dashboards und Automatisierungen, die Menschen direkt nutzen können.",
   },
   heroContext: {
     en: "Currently a working-student Data Analyst at dm. Open to data analysis, data science, and automation-focused roles.",
@@ -75,10 +75,10 @@ const ui = {
   explore: { en: "See how I work", de: "Meine Arbeitsweise ansehen" },
   cv: { en: "Open CV (DE)", de: "Lebenslauf öffnen" },
   workKicker: { en: "Selected builds", de: "Ausgewählte Builds" },
-  workTitle: { en: "Prototype. Learn. Narrow.", de: "Prototyp. Lernen. Fokussieren." },
+  workTitle: { en: "Define. Build. Improve.", de: "Definieren. Bauen. Verbessern." },
   workIntro: {
-    en: "My strongest work starts with a hypothesis, reaches a rough prototype quickly, and gets narrower—not bigger—when early feedback reveals what people actually need.",
-    de: "Meine stärkste Arbeit beginnt mit einer Hypothese, wird schnell zum ersten Prototyp und wird durch frühes Feedback fokussierter—nicht größer.",
+    en: "My work starts by clarifying the decision behind a request, reusing proven methods where possible, and improving the result through feedback from users and colleagues.",
+    de: "Meine Arbeit beginnt damit, die Entscheidung hinter einer Anfrage zu klären, bewährte Methoden wiederzuverwenden und das Ergebnis durch Feedback von Nutzern und Kollegen zu verbessern.",
   },
   owned: { en: "What I owned", de: "Meine Verantwortung" },
   problem: { en: "Problem", de: "Problem" },
@@ -108,26 +108,27 @@ const ui = {
   careerKicker: { en: "Career & education", de: "Beruf & Ausbildung" },
   careerTitle: { en: "Responsibility grew fast.", de: "Verantwortung wuchs schnell." },
   careerIntro: {
-    en: "From operations leadership to retail analytics—and a mathematics foundation across Germany and the US.",
-    de: "Von operativer Führung zu Retail Analytics—mit mathematischem Fundament in Deutschland und den USA.",
+    en: "From hands-on operations responsibility to retail analytics—with a mathematics foundation across Germany and the US.",
+    de: "Von praktischer Verantwortung im operativen Betrieb zu Retail Analytics—mit mathematischem Fundament in Deutschland und den USA.",
   },
   today: { en: "Today", de: "Heute" },
   now: { en: "Oct 2024 — now", de: "Okt 2024 — heute" },
   dmRole: { en: "Working Student · Data Analyst", de: "Werkstudent · Data Analyst" },
   dmCopy: {
     en: "Retail analytics, scalable reporting, AI-enabled workflows, and assortment decisions with scope across more than 2,000 stores.",
-    de: "Retail Analytics, skalierbares Reporting, AI-gestützte Workflows und Sortimentsentscheidungen mit Wirkung auf mehr als 2.000 Märkte.",
+    de: "Retail Analytics, skalierbares Reporting, AI-gestützte Workflows und Sortimentsentscheidungen für einen Analyseumfang von mehr als 2.000 Märkten.",
   },
   flinkDate: { en: "Oct 2023 — Sep 2024", de: "Okt 2023 — Sep 2024" },
   flinkRole: {
-    en: "Operations Associate → Operational Manager",
-    de: "Operations Associate → Operational Manager",
+    en: "Operations Associate / Ops Associate Plus",
+    de: "Operations Associate / Ops Associate Plus",
   },
   flinkCopy: {
-    en: "Promoted within six months; helped reduce picking time by roughly 15% through operational process improvement.",
-    de: "Beförderung innerhalb von sechs Monaten; Kommissionierzeit durch Prozessoptimierung um rund 15 % reduziert.",
+    en: "Took on shift coordination, delivery control, order accuracy, and communication with customers and riders; improved the hub layout and picking system.",
+    de: "Übernahm Schichtkoordination, Liefersteuerung, Auftragsqualität und Kommunikation mit Kunden und Fahrern; verbesserte Hub-Layout und Kommissioniersystem.",
   },
-  study: { en: "Mathematics · B.Sc.", de: "Mathematik · B.Sc." },
+  studyHeidelberg: { en: "Mathematics · B.Sc.", de: "Mathematik · B.Sc." },
+  studyFlorida: { en: "Mathematics · B.A.", de: "Mathematik · B.A." },
   beyondKicker: { en: "Beyond the job title", de: "Mehr als die Stellenbezeichnung" },
   beyondTitle: { en: "Curious across borders.", de: "Neugierig über Grenzen hinweg." },
   beyondCopy: {
@@ -140,19 +141,19 @@ const ui = {
     de: "Ich teste lieber eine Hypothese, als eine Woche darüber zu diskutieren.",
   },
   aboutLead: {
-    en: "Although I am a working student, colleagues tend to treat me like a full-time teammate because I show up, take initiative, and build.",
-    de: "Obwohl ich Werkstudent bin, behandeln mich Kolleginnen und Kollegen oft wie ein vollwertiges Teammitglied, weil ich präsent bin, Initiative übernehme und umsetze.",
+    en: "I take ownership from the first question through implementation, testing, documentation, and user support.",
+    de: "Ich übernehme Verantwortung von der ersten Fragestellung über Umsetzung und Tests bis zu Dokumentation und Anwenderunterstützung.",
   },
   aboutCopy: {
-    en: "My edge is forming a hypothesis, building a rough version, and course-correcting with real feedback instead of circling an idea. I am direct when something is outside my capacity or needs more time or support. I also know I sometimes take on too much—and I am actively getting better at setting that boundary.",
-    de: "Meine Stärke ist, eine Hypothese zu bilden, eine erste Version zu bauen und mit echtem Feedback früh zu korrigieren, statt eine Idee lange zu umkreisen. Ich sage direkt, wenn etwas außerhalb meiner Kapazität liegt oder mehr Zeit beziehungsweise Unterstützung braucht. Gleichzeitig weiß ich, dass ich manchmal zu viel Verantwortung übernehme—und arbeite aktiv daran, diese Grenze besser zu setzen.",
+    en: "I begin by understanding what stakeholders already know, define the question precisely, and challenge my analysis with colleagues before communicating results. Visible tickets and workload help me set realistic timing and offer useful alternatives when priorities compete.",
+    de: "Ich beginne damit zu verstehen, was Stakeholder bereits wissen, definiere die Frage präzise und lasse meine Analyse von Kollegen hinterfragen, bevor ich Ergebnisse kommuniziere. Sichtbare Tickets und Auslastung helfen mir, realistische Zeitrahmen zu nennen und bei konkurrierenden Prioritäten sinnvolle Alternativen anzubieten.",
   },
   linkedin: { en: "LinkedIn profile", de: "LinkedIn-Profil" },
   contactKicker: { en: "Have an unclear problem?", de: "Ein noch unklares Problem?" },
   contactTitle1: { en: "Let’s make it", de: "Machen wir es" },
   contactTitle2: { en: "useful.", de: "nützlich." },
   discuss: { en: "Discuss a role or project", de: "Über eine Rolle oder ein Projekt sprechen" },
-  footer: { en: "Data analysis · automation · rapid prototyping", de: "Datenanalyse · Automatisierung · Rapid Prototyping" },
+  footer: { en: "Data analysis · automation · self-service tools", de: "Datenanalyse · Automatisierung · Self-Service-Tools" },
   top: { en: "Back to top", de: "Nach oben" },
 };
 
@@ -160,124 +161,124 @@ const projects: Project[] = [
   {
     id: "assortment",
     number: "01",
-    shortTitle: { en: "30-minute prototype", de: "30-Minuten-Prototyp" },
-    kicker: { en: "dm · Assortment decision tool", de: "dm · Sortiments-Entscheidungstool" },
-    title: { en: "The prototype got smaller—and more useful", de: "Der Prototyp wurde kleiner—und nützlicher" },
+    shortTitle: { en: "Self-service dashboard", de: "Self-Service-Dashboard" },
+    kicker: { en: "dm · Unified analytics dashboard", de: "dm · Einheitliches Analyse-Dashboard" },
+    title: { en: "Repeated requests became one reusable view", de: "Aus wiederkehrenden Anfragen wurde eine wiederverwendbare Sicht" },
     description: {
-      en: "A same-day dashboard draft replaced a slow Excel-table workflow. Early feedback showed the initial comparison idea was too broad, so I rebuilt it around one representative product per assortment segment.",
-      de: "Ein Dashboard-Entwurf am selben Tag ersetzte einen langsamen Excel-Tabellen-Workflow. Frühes Feedback zeigte, dass die Vergleichsidee zu breit war—also baute ich das Tool um ein repräsentatives Produkt pro Sortimentssegment neu.",
+      en: "Assortment teams repeatedly requested similar analyses, while each answer was still prepared separately in PowerPoint. I proposed and built a unified dashboard so teams can inspect standard KPIs immediately and arrive at more focused follow-up questions.",
+      de: "Sortimentsteams fragten wiederholt ähnliche Analysen an, während jede Antwort weiterhin einzeln in PowerPoint aufbereitet wurde. Ich schlug ein einheitliches Dashboard vor und setzte es um, damit Teams Standard-KPIs sofort prüfen und gezieltere Folgefragen stellen können.",
     },
-    impact: { en: "First usable draft in ~30 minutes", de: "Erster nutzbarer Entwurf in ~30 Minuten" },
+    impact: { en: "Initial insight: weeks → immediate", de: "Erste Einblicke: Wochen → sofort" },
     ownership: [
-      { en: "Questioned the existing Excel workflow", de: "Bestehenden Excel-Workflow hinterfragt" },
-      { en: "Built the first dashboard draft", de: "Ersten Dashboard-Entwurf gebaut" },
-      { en: "Collected early user feedback", de: "Frühes Nutzerfeedback eingeholt" },
-      { en: "Narrowed scope around the real decision", de: "Scope auf die echte Entscheidung fokussiert" },
+      { en: "Proposed the project after recognizing repeated requests", de: "Projekt nach dem Erkennen wiederkehrender Anfragen vorgeschlagen" },
+      { en: "Defined KPI logic and built the data preparation", de: "KPI-Logik definiert und Datenaufbereitung entwickelt" },
+      { en: "Built and deployed the web frontend", de: "Web-Frontend entwickelt und bereitgestellt" },
+      { en: "Documented the tool and incorporated user feedback", de: "Tool dokumentiert und Nutzerfeedback eingearbeitet" },
     ],
     summary: {
       problem: {
-        en: "Sentiment managers had to navigate an Excel table and manually look up product names and images in a catalogue and website.",
-        de: "Sentiment Manager mussten eine Excel-Tabelle durchsuchen und Produktnamen sowie Bilder manuell in Katalog und Website nachschlagen.",
+        en: "Similar questions about sales, layout position, and assortment trends repeatedly arrived as separate tickets and were answered with separate presentations.",
+        de: "Ähnliche Fragen zu Verkauf, Platzierung und Sortimentstrends kamen wiederholt als einzelne Tickets und wurden in separaten Präsentationen beantwortet.",
       },
       role: {
-        en: "Built a dashboard prototype in about 30 minutes, showed it early, and used feedback to challenge my first scope.",
-        de: "Baute in etwa 30 Minuten einen Dashboard-Prototyp, zeigte ihn früh und nutzte Feedback, um meinen ersten Scope zu hinterfragen.",
+        en: "Developed the solution independently from concept and KPI logic through Python processing, frontend, testing, deployment, and documentation.",
+        de: "Entwickelte die Lösung eigenständig von Konzept und KPI-Logik über Python-Verarbeitung und Frontend bis zu Tests, Bereitstellung und Dokumentation.",
       },
       outcome: {
-        en: "Repositioned the tool around the narrower need: one representative product for each assortment segment.",
-        de: "Richtete das Tool auf den engeren Bedarf aus: ein repräsentatives Produkt pro Sortimentssegment.",
+        en: "Teams can review standard KPIs directly instead of waiting weeks for an initial analysis; later conversations start with better context and more specific questions.",
+        de: "Teams können Standard-KPIs direkt prüfen, statt wochenlang auf eine erste Analyse zu warten; spätere Gespräche beginnen mit besserem Kontext und konkreteren Fragen.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "The existing proposal arrived as a plain Excel table. To understand it, sentiment managers had to move slowly through rows and manually search elsewhere for product names and images.",
-        de: "Der bestehende Vorschlag kam als einfache Excel-Tabelle. Um ihn zu verstehen, mussten Sentiment Manager langsam durch Zeilen gehen und Produktnamen sowie Bilder manuell an anderer Stelle suchen.",
+        en: "Although ticket details varied, the analytical views were often nearly identical. Preparing each analysis and PowerPoint separately delayed the first insight and made methods harder to compare across the team.",
+        de: "Obwohl sich die Details der Tickets unterschieden, waren die benötigten Analysesichten oft nahezu identisch. Jede Analyse und PowerPoint separat zu erstellen, verzögerte erste Einblicke und erschwerte den Vergleich der Methoden im Team.",
       },
       contribution: {
-        en: "I formed a hypothesis that a visual dashboard would make the proposal easier to evaluate and built the first working draft in about 30 minutes. I showed it before polishing or expanding it.",
-        de: "Ich bildete die Hypothese, dass ein visuelles Dashboard den Vorschlag leichter bewertbar macht, und baute den ersten funktionierenden Entwurf in etwa 30 Minuten. Ich zeigte ihn, bevor ich ihn ausarbeitete oder erweiterte.",
+        en: "I proposed the unified tool and developed it end to end. A Python notebook connects to the database, prepares the data, calculates KPIs, and exports dashboard-ready CSV files. I built the HTML/CSS frontend, deployed it internally, documented it, and supported users.",
+        de: "Ich schlug das einheitliche Tool vor und entwickelte es vollständig. Ein Python-Notebook verbindet sich mit der Datenbank, bereitet Daten auf, berechnet KPIs und exportiert Dashboard-fertige CSV-Dateien. Ich baute das HTML/CSS-Frontend, stellte es intern bereit, dokumentierte es und unterstützte Nutzer.",
       },
       decisions: [
-        { en: "Prototype the visual format before designing a full comparison product", de: "Visuelles Format prototypisieren, bevor ein vollständiges Vergleichsprodukt entsteht" },
-        { en: "Ask users which decision they actually needed to make", de: "Nutzer fragen, welche Entscheidung sie tatsächlich treffen müssen" },
-        { en: "Remove deep comparisons and focus on one representative product per segment", de: "Tiefe Vergleiche entfernen und auf ein repräsentatives Produkt pro Segment fokussieren" },
+        { en: "Standardize recurring KPI logic instead of rebuilding each view", de: "Wiederkehrende KPI-Logik standardisieren, statt jede Sicht neu zu bauen" },
+        { en: "Separate data preparation from the web interface through CSV exports", de: "Datenaufbereitung und Web-Oberfläche durch CSV-Exporte trennen" },
+        { en: "Use feedback from colleagues and assortment teams to improve later versions", de: "Feedback von Kollegen und Sortimentsteams für spätere Versionen nutzen" },
       ],
       result: {
-        en: "The useful version was not the biggest version. Early feedback narrowed the dashboard from broad metric comparisons to a focused assortment decision view.",
-        de: "Die nützliche Version war nicht die größte Version. Frühes Feedback fokussierte das Dashboard von breiten Kennzahlenvergleichen auf eine klare Sortimentsentscheidung.",
+        en: "Assortment teams can now inspect standard KPIs immediately and use the service for more specific, complex questions. Regular usage is estimated at around 30 people based on recurring feedback and support contacts.",
+        de: "Sortimentsteams können Standard-KPIs nun sofort prüfen und den Service für spezifischere, komplexere Fragen nutzen. Die regelmäßige Nutzung wird anhand wiederkehrender Feedback- und Supportkontakte auf rund 30 Personen geschätzt.",
       },
       evidence: [
-        { en: "~30-minute first prototype", de: "~30-Minuten-Erstprototyp" },
-        { en: "Feedback before expansion", de: "Feedback vor Ausbau" },
-        { en: "Sanitized reconstruction shown", de: "Sanitisierte Rekonstruktion gezeigt" },
+        { en: "Weeks of waiting → immediate standard views", de: "Wochen Wartezeit → sofortige Standardsichten" },
+        { en: "~30 regular users (estimate)", de: "~30 regelmäßige Nutzer (Schätzung)" },
+        { en: "End-to-end individual contribution", de: "Eigenständiger End-to-End-Beitrag" },
       ],
     },
     image: "",
-    alt: { en: "Sanitized before-and-after reconstruction of the assortment workflow", de: "Sanitisierte Vorher-Nachher-Rekonstruktion des Sortiments-Workflows" },
+    alt: { en: "Illustrative architecture of the self-service dashboard", de: "Illustrative Architektur des Self-Service-Dashboards" },
     logo: assetPath("/assets/logo-dm.webp"),
     logoAlt: "dm-drogerie markt",
-    tags: ["Rapid prototyping", "Looker", "Feedback", "Dashboard UX"],
+    tags: ["Python", "Databases", "HTML/CSS", "Self-service analytics"],
   },
   {
     id: "automation",
     number: "02",
     shortTitle: { en: "KPI automation", de: "KPI-Automation" },
-    kicker: { en: "dm · Analysis infrastructure", de: "dm · Analyse-Infrastruktur" },
-    title: { en: "One system replaced one-off analysis work", de: "Ein System ersetzte isolierte Einzelanalysen" },
+    kicker: { en: "dm · Automated KPI mailing", de: "dm · Automatisiertes KPI-Mailing" },
+    title: { en: "A weekly manual report became an automated delivery", de: "Aus einem manuellen Wochenbericht wurde eine automatisierte Zustellung" },
     description: {
-      en: "Every request used to start from zero: new code, a new PowerPoint or table, and no reusable methodology. I consolidated the work into one universal notebook and one dashboard that now cover roughly 90% of incoming analysis requests.",
-      de: "Früher begann jede Anfrage bei null: neuer Code, eine neue PowerPoint oder Tabelle und keine wiederverwendbare Methodik. Ich bündelte die Arbeit in einem universellen Notebook und einem Dashboard, die heute rund 90 % der eingehenden Analyseanfragen abdecken.",
+      en: "KPI reports for 75 markets were prepared and sent manually each week. I automated the data processing, Excel output with tables and charts, email attachments, and distribution.",
+      de: "KPI-Berichte für 75 Märkte wurden jede Woche manuell erstellt und versendet. Ich automatisierte Datenverarbeitung, Excel-Ausgabe mit Tabellen und Diagrammen, E-Mail-Anhänge und Versand.",
     },
     impact: { en: "8h → <15m", de: "8 Std. → <15 Min." },
     ownership: [
-      { en: "Identified the manual, fragmented workflow", de: "Den manuellen, fragmentierten Workflow identifiziert" },
-      { en: "Built a universal notebook from existing script snippets", de: "Aus bestehenden Skriptbausteinen ein universelles Notebook gebaut" },
-      { en: "Built the unified dashboard", de: "Das einheitliche Dashboard gebaut" },
-      { en: "Adopted by the team, now covering ~90% of requests", de: "Vom Team übernommen, deckt heute ~90 % der Anfragen ab" },
+      { en: "Identified a repetitive weekly reporting workflow", de: "Wiederkehrenden wöchentlichen Reporting-Workflow identifiziert" },
+      { en: "Learned and connected the required Microsoft APIs", de: "Benötigte Microsoft-APIs erlernt und angebunden" },
+      { en: "Generated Excel tables and charts directly from data", de: "Excel-Tabellen und Diagramme direkt aus Daten erzeugt" },
+      { en: "Automated attachments and email distribution", de: "Anhänge und E-Mail-Versand automatisiert" },
     ],
     summary: {
       problem: {
-        en: "Every space, sentiment, or other analysis request was handled independently. Code, variables, methodology, and the final PowerPoint or table were rebuilt by hand each time.",
-        de: "Jede Flächen-, Sentiment- oder andere Analyseanfrage wurde unabhängig bearbeitet. Code, Variablen, Methodik und die finale PowerPoint oder Tabelle wurden jedes Mal manuell neu erstellt.",
+        en: "The team processed the available KPI data, then manually transferred results into files and sent them to markets every week.",
+        de: "Das Team verarbeitete die verfügbaren KPI-Daten, übertrug Ergebnisse anschließend manuell in Dateien und versendete sie jede Woche an die Märkte.",
       },
       role: {
-        en: "Combined one-off script snippets into a universal notebook and connected its generated output directly to one unified dashboard.",
-        de: "Bündelte einmalige Skriptbausteine in einem universellen Notebook und verband dessen generierten Output direkt mit einem einheitlichen Dashboard.",
+        en: "Built a Python/PySpark workflow that generates the Excel reports and charts, attaches them to emails, and automates distribution through Microsoft workflows.",
+        de: "Entwickelte einen Python/PySpark-Workflow, der Excel-Berichte und Diagramme erzeugt, an E-Mails anhängt und über Microsoft-Workflows automatisch versendet.",
       },
       outcome: {
-        en: "The live team tool now covers roughly 90% of incoming requests, cuts turnaround from eight hours to under 15 minutes, and keeps methodology consistent.",
-        de: "Das heute im Team genutzte Tool deckt rund 90 % der eingehenden Anfragen ab, verkürzt die Bearbeitung von acht Stunden auf unter 15 Minuten und vereinheitlicht die Methodik.",
+        en: "Weekly generation and distribution for 75 markets fell from roughly eight hours of manual work to under 15 minutes.",
+        de: "Erstellung und Versand für 75 Märkte sanken von rund acht Stunden manueller Arbeit pro Woche auf weniger als 15 Minuten.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "Every analysis request—space analysis, sentiment analysis, and others—was treated as a separate project. Someone wrote fresh code, assembled a PowerPoint or table manually, and sent it off. Variables and methodology from one request were not reused in the next, so the work never compounded.",
-        de: "Jede Analyseanfrage—Flächenanalyse, Sentiment-Analyse und andere—wurde als eigenes Projekt behandelt. Dafür entstand neuer Code, eine PowerPoint oder Tabelle wurde manuell erstellt und versendet. Variablen und Methodik einer Anfrage wurden in der nächsten nicht wiederverwendet, sodass sich die Arbeit nie aufbaute.",
+        en: "The reporting logic was repeatable, but the file generation and delivery steps consumed hours every week without adding analytical value.",
+        de: "Die Reporting-Logik war wiederholbar, doch Dateierstellung und Versand beanspruchten jede Woche Stunden, ohne zusätzlichen analytischen Wert zu schaffen.",
       },
       contribution: {
-        en: "I assembled the strongest snippets from previously one-off scripts into one universal notebook, then built a unified dashboard around it. A user selects the analysis goal, the notebook generates the relevant output, and the result streams directly into the dashboard instead of becoming another disposable document.",
-        de: "Ich bündelte die stärksten Bausteine aus zuvor einmaligen Skripten in einem universellen Notebook und baute darum ein einheitliches Dashboard. Nutzer wählen das Analyseziel, das Notebook erzeugt den passenden Output und das Ergebnis fließt direkt ins Dashboard, statt zum nächsten Wegwerfdokument zu werden.",
+        en: "I learned how the required APIs and Microsoft automation components worked, then connected data processing, Excel generation, charts, attachments, and email delivery into one workflow.",
+        de: "Ich eignete mir die benötigten APIs und Microsoft-Automatisierungskomponenten an und verband Datenverarbeitung, Excel-Erstellung, Diagramme, Anhänge und E-Mail-Versand zu einem Workflow.",
       },
       decisions: [
-        { en: "Turn reusable script fragments into one maintained analysis system", de: "Wiederverwendbare Skriptbausteine in ein gepflegtes Analysesystem überführen" },
-        { en: "Let the analysis goal determine the generated output", de: "Das Analyseziel den generierten Output bestimmen lassen" },
-        { en: "Stream every result into one dashboard instead of creating another document", de: "Jedes Ergebnis in ein Dashboard leiten, statt ein weiteres Dokument zu erzeugen" },
+        { en: "Automate the low-creativity handoffs around an established KPI process", de: "Die wenig kreativen Übergaben rund um einen etablierten KPI-Prozess automatisieren" },
+        { en: "Generate tables and charts directly from processed data", de: "Tabellen und Diagramme direkt aus verarbeiteten Daten erzeugen" },
+        { en: "Keep the final market deliverable in a familiar Excel format", de: "Das finale Ergebnis für Märkte im vertrauten Excel-Format halten" },
       ],
       result: {
-        en: "The dashboard is a live tool used by the team today and covers roughly 90% of incoming analysis requests. Turnaround fell from eight hours to under 15 minutes, methodology is now shared, and the time saved goes into deeper analysis where it is genuinely needed.",
-        de: "Das Dashboard ist heute ein im Team genutztes Live-Tool und deckt rund 90 % der eingehenden Analyseanfragen ab. Die Bearbeitungszeit sank von acht Stunden auf unter 15 Minuten, die Methodik ist vereinheitlicht und die gewonnene Zeit fließt in tiefere Analysen, wo sie wirklich gebraucht wird.",
+        en: "The weekly workflow for 75 markets now runs in under 15 minutes instead of requiring around eight hours of manual preparation and dispatch.",
+        de: "Der wöchentliche Workflow für 75 Märkte läuft nun in weniger als 15 Minuten statt rund acht Stunden manueller Aufbereitung und Versandarbeit zu benötigen.",
       },
       evidence: [
         { en: "8h → <15m", de: "8 Std. → <15 Min." },
-        { en: "~90% of incoming requests", de: "~90 % der eingehenden Anfragen" },
-        { en: "Live team tool", de: "Aktiv genutztes Team-Tool" },
+        { en: "75 markets", de: "75 Märkte" },
+        { en: "Automated Excel + email delivery", de: "Automatisierte Excel- und E-Mail-Zustellung" },
       ],
     },
     image: "",
-    alt: { en: "Illustrative diagram of the universal analysis system", de: "Illustratives Diagramm des universellen Analysesystems" },
+    alt: { en: "Illustrative diagram of the automated KPI-mailing workflow", de: "Illustratives Diagramm des automatisierten KPI-Mailing-Workflows" },
     logo: assetPath("/assets/logo-dm.webp"),
     logoAlt: "dm-drogerie markt",
-    tags: ["Python", "Automation", "Systems thinking"],
+    tags: ["Python", "PySpark", "Excel", "Microsoft automation"],
   },
   {
     id: "copilot",
@@ -346,32 +347,32 @@ const impactCases: ImpactCase[] = [
     id: "speed",
     label: { en: "Automation", de: "Automatisierung" },
     metric: "8h → <15m",
-    metricLabel: { en: "analysis turnaround", de: "Bearbeitungszeit einer Analyse" },
-    title: { en: "One system instead of starting over.", de: "Ein System statt jedes Mal von vorn." },
+    metricLabel: { en: "weekly preparation and delivery", de: "wöchentliche Erstellung und Zustellung" },
+    title: { en: "A repetitive report became a reliable workflow.", de: "Aus einem wiederkehrenden Bericht wurde ein zuverlässiger Workflow." },
     copy: {
-      en: "A universal notebook and dashboard now handle roughly 90% of incoming analysis requests with one shared methodology.",
-      de: "Ein universelles Notebook und Dashboard bearbeiten heute rund 90 % der eingehenden Analyseanfragen mit einer gemeinsamen Methodik.",
+      en: "Python/PySpark processing and Microsoft automation generate and distribute KPI reports for 75 markets.",
+      de: "Python/PySpark-Verarbeitung und Microsoft-Automatisierung erzeugen und versenden KPI-Berichte für 75 Märkte.",
     },
     proof: [
-      { en: "~90% of requests covered", de: "~90 % der Anfragen abgedeckt" },
-      { en: "One shared methodology", de: "Eine gemeinsame Methodik" },
-      { en: "Live team tool", de: "Aktiv genutztes Team-Tool" },
+      { en: "75 markets", de: "75 Märkte" },
+      { en: "Excel tables and charts", de: "Excel-Tabellen und Diagramme" },
+      { en: "Automated email delivery", de: "Automatisierter E-Mail-Versand" },
     ],
   },
   {
     id: "adoption",
-    label: { en: "Rapid prototyping", de: "Rapid Prototyping" },
-    metric: "~30m",
-    metricLabel: { en: "to the first dashboard prototype", de: "bis zum ersten Dashboard-Prototyp" },
-    title: { en: "Feedback before overbuilding.", de: "Feedback vor dem Überbauen." },
+    label: { en: "Self-service analytics", de: "Self-Service-Analytics" },
+    metric: "~30",
+    metricLabel: { en: "regular users (estimate)", de: "regelmäßige Nutzer (Schätzung)" },
+    title: { en: "Standard views became immediately accessible.", de: "Standardsichten wurden unmittelbar zugänglich." },
     copy: {
-      en: "A quick alternative to an Excel table exposed the real need early: not deep comparisons, but one representative product per assortment segment.",
-      de: "Eine schnelle Alternative zur Excel-Tabelle zeigte den echten Bedarf früh: keine tiefen Vergleiche, sondern ein repräsentatives Produkt pro Sortimentssegment.",
+      en: "Assortment teams can inspect recurring KPIs themselves instead of waiting several weeks for an initial analysis.",
+      de: "Sortimentsteams können wiederkehrende KPIs selbst prüfen, statt mehrere Wochen auf eine erste Analyse zu warten.",
     },
     proof: [
-      { en: "Same-day user feedback", de: "Nutzerfeedback am selben Tag" },
-      { en: "Scope narrowed early", de: "Scope früh fokussiert" },
-      { en: "Sanitized reconstruction shown", de: "Sanitisierte Rekonstruktion gezeigt" },
+      { en: "Estimate based on recurring contacts", de: "Schätzung anhand wiederkehrender Kontakte" },
+      { en: "Weeks → immediate standard view", de: "Wochen → sofortige Standardsicht" },
+      { en: "Shared KPI logic", de: "Gemeinsame KPI-Logik" },
     ],
   },
   {
@@ -393,17 +394,17 @@ const impactCases: ImpactCase[] = [
   {
     id: "leadership",
     label: { en: "Operations", de: "Operations" },
-    metric: "−15%",
-    metricLabel: { en: "picking time", de: "Kommissionierzeit" },
-    title: { en: "Product thinking started in operations.", de: "Product Thinking begann in Operations." },
+    metric: "Shift flow",
+    metricLabel: { en: "expanded responsibility", de: "erweiterte Verantwortung" },
+    title: { en: "Initiative became responsibility.", de: "Aus Initiative wurde Verantwortung." },
     copy: {
-      en: "Before analytics, I learned to improve work at the process level—earning promotion to Operational Manager within six months and helping reduce picking time.",
-      de: "Vor Analytics lernte ich, Arbeit direkt im Prozess zu verbessern—mit Beförderung zum Operational Manager innerhalb von sechs Monaten und kürzerer Kommissionierzeit.",
+      en: "At Flink, I moved from picking orders to coordinating shifts, deliveries, order accuracy, and communication while improving the hub layout and picking system.",
+      de: "Bei Flink entwickelte ich mich von der Kommissionierung zur Koordination von Schichten, Lieferungen, Auftragsqualität und Kommunikation und verbesserte Hub-Layout sowie Kommissioniersystem.",
     },
     proof: [
-      { en: "Promoted in six months", de: "Beförderung in sechs Monaten" },
-      { en: "Hands-on process improvement", de: "Praktische Prozessoptimierung" },
-      { en: "Measured operational result", de: "Messbares operatives Ergebnis" },
+      { en: "Documented Ops Associate Plus role", de: "Dokumentierte Rolle Ops Associate Plus" },
+      { en: "Shift and delivery coordination", de: "Schicht- und Lieferkoordination" },
+      { en: "Layout and picking-system improvements", de: "Verbesserungen an Layout und Kommissioniersystem" },
     ],
   },
 ];
@@ -435,8 +436,8 @@ const sideProjects = [
     logo: assetPath("/assets/logo-manya.png"),
     href: "https://pashkinzon.github.io/manya-platform-prototype/",
     copy: {
-      en: "Free mental-health knowledge in Russian, designed for clarity.",
-      de: "Kostenloses Mental-Health-Wissen auf Russisch, klar gestaltet.",
+      en: "Research-based mental-health information in Russian, made clear and accessible.",
+      de: "Forschungsbasierte Informationen zu psychischer Gesundheit auf Russisch, klar und zugänglich aufbereitet.",
     },
   },
 ];
@@ -484,7 +485,9 @@ export default function Home() {
 
   useEffect(() => {
     const saved = window.localStorage.getItem("pavel-portfolio-language");
-    if (saved === "de" || saved === "en") setLang(saved);
+    if (saved !== "de" && saved !== "en") return;
+    const frame = window.requestAnimationFrame(() => setLang(saved));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
@@ -586,9 +589,9 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-metrics reveal-up delay-3">
-          <div><strong>~30m</strong><span>{lang === "en" ? "to a first assortment prototype" : "bis zum ersten Sortiments-Prototyp"}</span></div>
-          <div><strong>32×</strong><span>{lang === "en" ? "faster analysis turnaround" : "schnellere Analyse-Bearbeitung"}</span></div>
-          <div><strong>~90%</strong><span>{lang === "en" ? "of analysis requests covered" : "der Analyseanfragen abgedeckt"}</span></div>
+          <div><strong>75</strong><span>{lang === "en" ? "markets in automated KPI mailing" : "Märkte im automatisierten KPI-Mailing"}</span></div>
+          <div><strong>8h → &lt;15m</strong><span>{lang === "en" ? "weekly reporting workflow" : "wöchentlicher Reporting-Workflow"}</span></div>
+          <div><strong>~30</strong><span>{lang === "en" ? "regular dashboard users (estimate)" : "regelmäßige Dashboard-Nutzer (Schätzung)"}</span></div>
           <div><strong>2,000+</strong><span>{lang === "en" ? "stores in analytical scope" : "Märkte im analytischen Wirkungsbereich"}</span></div>
         </div>
       </section>
@@ -597,10 +600,10 @@ export default function Home() {
         <div className="ticker-track">
           {[0, 1].map((copy) => (
             <div className="ticker-set" key={copy} aria-hidden={copy === 1}>
-              <span>{lang === "en" ? "UNDERSTAND WHY IT’S STILL BROKEN" : "VERSTEHEN, WARUM ES NOCH NICHT FUNKTIONIERT"}</span><i>✦</i>
-              <span>{lang === "en" ? "PROTOTYPE FAST" : "SCHNELL PROTOTYPISIEREN"}</span><i>✦</i>
-              <span>{lang === "en" ? "GET FEEDBACK EARLY" : "FRÜH FEEDBACK HOLEN"}</span><i>✦</i>
-              <span>{lang === "en" ? "DECIDE WHAT’S WORTH BUILDING" : "ENTSCHEIDEN, WAS SICH ZU BAUEN LOHNT"}</span><i>✦</i>
+              <span>{lang === "en" ? "UNDERSTAND THE EXISTING CONTEXT" : "BESTEHENDEN KONTEXT VERSTEHEN"}</span><i>✦</i>
+              <span>{lang === "en" ? "DEFINE THE QUESTION" : "FRAGE PRÄZISE DEFINIEREN"}</span><i>✦</i>
+              <span>{lang === "en" ? "BUILD THE USEFUL SYSTEM" : "DAS NÜTZLICHE SYSTEM BAUEN"}</span><i>✦</i>
+              <span>{lang === "en" ? "CHALLENGE AND IMPROVE" : "HINTERFRAGEN UND VERBESSERN"}</span><i>✦</i>
             </div>
           ))}
         </div>
@@ -636,48 +639,48 @@ export default function Home() {
                   </div>
                   <div className="artifact-comparison">
                     <section className="excel-artifact">
-                      <div className="artifact-title"><span>{lang === "en" ? "Before" : "Vorher"}</span><strong>{lang === "en" ? "Spreadsheet proposal" : "Tabellenvorschlag"}</strong></div>
+                      <div className="artifact-title"><span>{lang === "en" ? "Before" : "Vorher"}</span><strong>{lang === "en" ? "Separate analysis tickets" : "Separate Analyse-Tickets"}</strong></div>
                       <div className="fake-sheet">
-                        <div><b>Segment</b><b>SKU</b><b>{lang === "en" ? "Product" : "Produkt"}</b><b>{lang === "en" ? "Image" : "Bild"}</b></div>
-                        {["A", "B", "C", "D"].map((segment, index) => (
-                          <div key={segment}><span>{segment}</span><span>0{index + 1}42</span><span>{lang === "en" ? "Look up manually" : "Manuell suchen"}</span><span>—</span></div>
+                        <div><b>{lang === "en" ? "Ticket" : "Ticket"}</b><b>{lang === "en" ? "View" : "Sicht"}</b><b>{lang === "en" ? "Output" : "Output"}</b><b>{lang === "en" ? "Wait" : "Wartezeit"}</b></div>
+                        {["A", "B", "C", "D"].map((ticket, index) => (
+                          <div key={ticket}><span>0{index + 1}</span><span>{lang === "en" ? "Recurring KPI" : "Wiederkehrender KPI"}</span><span>PowerPoint</span><span>{lang === "en" ? "Weeks" : "Wochen"}</span></div>
                         ))}
                       </div>
-                      <small>{lang === "en" ? "Catalogue + website lookup required" : "Katalog- + Website-Suche erforderlich"}</small>
+                      <small>{lang === "en" ? "Similar methods rebuilt for each request" : "Ähnliche Methoden für jede Anfrage neu erstellt"}</small>
                     </section>
                     <div className="artifact-arrow" aria-hidden="true">→</div>
                     <section className="decision-artifact">
-                      <div className="artifact-title"><span>{lang === "en" ? "After feedback" : "Nach Feedback"}</span><strong>{lang === "en" ? "Focused decision view" : "Fokussierte Entscheidungssicht"}</strong></div>
+                      <div className="artifact-title"><span>{lang === "en" ? "Self-service" : "Self-Service"}</span><strong>{lang === "en" ? "Unified KPI dashboard" : "Einheitliches KPI-Dashboard"}</strong></div>
                       <div className="segment-cards">
-                        {["Core", "Build", "Differentiate"].map((segment, index) => (
-                          <article key={segment} className={index === 0 ? "is-standard" : ""}>
-                            <span>{segment}</span><i aria-hidden="true">P{index + 1}</i><strong>{lang === "en" ? `Sample product ${index + 1}` : `Beispielprodukt ${index + 1}`}</strong><small>{index === 0 ? (lang === "en" ? "Representative standard" : "Repräsentativer Standard") : (lang === "en" ? "Assortment option" : "Sortimentsoption")}</small>
+                        {["Sales", "Layout", "Trend"].map((view, index) => (
+                          <article key={view} className={index === 0 ? "is-standard" : ""}>
+                            <span>{lang === "en" ? "Standard view" : "Standardsicht"}</span><i aria-hidden="true">K{index + 1}</i><strong>{view}</strong><small>{lang === "en" ? "Available immediately" : "Sofort verfügbar"}</small>
                           </article>
                         ))}
                       </div>
                     </section>
                   </div>
-                  <blockquote>{lang === "en" ? "“We don’t need every comparison. Show one representative product per segment.”" : "„Wir brauchen nicht jeden Vergleich. Zeig ein repräsentatives Produkt pro Segment.“"}</blockquote>
+                  <blockquote>{lang === "en" ? "Python + database → CSV → web dashboard · illustrative architecture" : "Python + Datenbank → CSV → Web-Dashboard · illustrative Architektur"}</blockquote>
                 </div>
               ) : activeProject.id === "automation" ? (
                 <div className="kpi-automation-slide" role="img" aria-label={t(activeProject.alt, lang)}>
                   <div className="kpi-slide-head">
-                    <span>{lang === "en" ? "Universal analysis system" : "Universelles Analysesystem"}</span>
+                    <span>{lang === "en" ? "Automated KPI mailing · 75 markets" : "Automatisiertes KPI-Mailing · 75 Märkte"}</span>
                     <strong>8h → &lt;15m</strong>
                   </div>
                   <div className="kpi-flow">
                     {[
-                      [lang === "en" ? "Select" : "Wählen", lang === "en" ? "Analysis goal" : "Analyseziel"],
-                      [lang === "en" ? "Run" : "Ausführen", lang === "en" ? "Universal notebook" : "Universelles Notebook"],
-                      [lang === "en" ? "Stream" : "Übertragen", lang === "en" ? "Unified dashboard" : "Einheitliches Dashboard"],
-                      [lang === "en" ? "Reuse" : "Wiederverwenden", lang === "en" ? "Shared methodology" : "Gemeinsame Methodik"],
+                      [lang === "en" ? "Process" : "Verarbeiten", lang === "en" ? "KPI data" : "KPI-Daten"],
+                      [lang === "en" ? "Generate" : "Erzeugen", lang === "en" ? "Excel + charts" : "Excel + Diagramme"],
+                      [lang === "en" ? "Attach" : "Anhängen", lang === "en" ? "Market reports" : "Marktberichte"],
+                      [lang === "en" ? "Deliver" : "Versenden", lang === "en" ? "Automated email" : "Automatisierte E-Mail"],
                     ].map(([step, note], index) => (
                       <div key={step}><span>0{index + 1}</span><strong>{step}</strong><small>{note}</small></div>
                     ))}
                   </div>
                   <div className="kpi-slide-foot">
-                    <span>{lang === "en" ? "~90% of incoming requests covered" : "~90 % der eingehenden Anfragen abgedeckt"}</span>
-                    <span>{lang === "en" ? "Live team tool · no internal data shown" : "Aktiv genutztes Team-Tool · keine internen Daten gezeigt"}</span>
+                    <span>{lang === "en" ? "75 market reports generated and distributed" : "75 Marktberichte erzeugt und versendet"}</span>
+                    <span>{lang === "en" ? "~8h weekly → <15m · no internal data shown" : "~8 Std. wöchentlich → <15 Min. · keine internen Daten gezeigt"}</span>
                   </div>
                 </div>
               ) : (
@@ -737,10 +740,10 @@ export default function Home() {
               {activeProject.id === "assortment" ? (
                 <div className="prototype-timeline">
                   {[
-                    [lang === "en" ? "Ask" : "Frage", lang === "en" ? "Can this be better than an Excel table?" : "Geht das besser als mit einer Excel-Tabelle?"],
-                    [lang === "en" ? "Build" : "Bauen", lang === "en" ? "First dashboard draft in about 30 minutes." : "Erster Dashboard-Entwurf in etwa 30 Minuten."],
-                    [lang === "en" ? "Listen" : "Zuhören", lang === "en" ? "Users wanted one representative product—not deep comparisons." : "Nutzer wollten ein repräsentatives Produkt—keine tiefen Vergleiche."],
-                    [lang === "en" ? "Narrow" : "Fokussieren", lang === "en" ? "Rebuilt around the smaller, useful decision." : "Um die kleinere, nützliche Entscheidung neu gebaut."],
+                    [lang === "en" ? "Recognize" : "Erkennen", lang === "en" ? "Similar questions repeatedly required similar views." : "Ähnliche Fragen benötigten wiederholt ähnliche Sichten."],
+                    [lang === "en" ? "Propose" : "Vorschlagen", lang === "en" ? "Initiated one unified self-service dashboard." : "Ein einheitliches Self-Service-Dashboard initiiert."],
+                    [lang === "en" ? "Build" : "Bauen", lang === "en" ? "Developed KPI logic, data pipeline, frontend, and deployment." : "KPI-Logik, Datenpipeline, Frontend und Bereitstellung entwickelt."],
+                    [lang === "en" ? "Improve" : "Verbessern", lang === "en" ? "Incorporated feedback and supported regular users." : "Feedback eingearbeitet und regelmäßige Nutzer unterstützt."],
                   ].map(([label, copy], index) => (
                     <section key={label}><i>0{index + 1}</i><div><span>{label}</span><p>{copy}</p></div></section>
                   ))}
@@ -849,14 +852,14 @@ export default function Home() {
             <span className="career-date">{t(ui.flinkDate, lang)}</span>
             <h3>{t(ui.flinkRole, lang)}</h3>
             <p>{t(ui.flinkCopy, lang)}</p>
-            <div className="career-metric">−15%</div>
+            <div className="career-metric">OPS+</div>
           </article>
           <article className="education-card">
             <span className="education-mark">UH</span>
             <div>
-              <span className="career-date">2023 — 2027</span>
+              <span className="career-date">{lang === "en" ? "Since 2023" : "Seit 2023"}</span>
               <h3>Universität Heidelberg</h3>
-              <p>{t(ui.study, lang)} · 2,4</p>
+              <p>{t(ui.studyHeidelberg, lang)} · 2,4</p>
             </div>
           </article>
           <article className="education-card">
@@ -864,7 +867,7 @@ export default function Home() {
             <div>
               <span className="career-date">2021 — 2023</span>
               <h3>University of Florida</h3>
-              <p>{t(ui.study, lang)} · 71/120 Credits</p>
+              <p>{t(ui.studyFlorida, lang)} · 71/120 Credits</p>
             </div>
           </article>
         </div>
@@ -891,15 +894,15 @@ export default function Home() {
           </article>
           <article>
             <span className="beyond-icon">↗</span>
-            <span className="section-kicker">{lang === "en" ? "Learning & leadership" : "Lernen & Leadership"}</span>
+            <span className="section-kicker">{lang === "en" ? "Learning & intercultural exchange" : "Lernen & interkultureller Austausch"}</span>
             <h3>Google Data Analytics + Europe101</h3>
-            <p>{lang === "en" ? "Formal analytics training complemented by a European leadership program." : "Formale Analytics-Ausbildung ergänzt durch ein europäisches Leadership-Programm."}</p>
+            <p>{lang === "en" ? "Google’s professional certificate complemented by the Common Purpose Europe101 Programme." : "Googles Professional Certificate ergänzt durch das Common Purpose Europe101 Programme."}</p>
           </article>
           <article>
             <span className="beyond-icon">AЯ</span>
             <span className="section-kicker">{lang === "en" ? "Languages" : "Sprachen"}</span>
             <h3>DE · EN · RU</h3>
-            <p>{lang === "en" ? "German C1/C2 · English C1/C2 · Russian native." : "Deutsch C1/C2 · Englisch C1/C2 · Russisch Muttersprache."}</p>
+            <p>{lang === "en" ? "German: TestDaF TDN 4 in all four sections · English C1 · Russian native." : "Deutsch: TestDaF TDN 4 in allen vier Teilprüfungen · Englisch C1 · Russisch Muttersprache."}</p>
           </article>
         </div>
       </section>

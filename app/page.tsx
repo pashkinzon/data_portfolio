@@ -44,6 +44,7 @@ type ImpactCase = {
 };
 
 const t = (value: LocalText, lang: Lang) => value[lang];
+const assetPath = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
 
 const ui = {
   navWork: { en: "Work", de: "Projekte" },
@@ -213,7 +214,7 @@ const projects: Project[] = [
     },
     image: "",
     alt: { en: "Sanitized before-and-after reconstruction of the assortment workflow", de: "Sanitisierte Vorher-Nachher-Rekonstruktion des Sortiments-Workflows" },
-    logo: "/assets/logo-dm.webp",
+    logo: assetPath("/assets/logo-dm.webp"),
     logoAlt: "dm-drogerie markt",
     tags: ["Rapid prototyping", "Looker", "Feedback", "Dashboard UX"],
   },
@@ -274,7 +275,7 @@ const projects: Project[] = [
     },
     image: "",
     alt: { en: "Illustrative diagram of the universal analysis system", de: "Illustratives Diagramm des universellen Analysesystems" },
-    logo: "/assets/logo-dm.webp",
+    logo: assetPath("/assets/logo-dm.webp"),
     logoAlt: "dm-drogerie markt",
     tags: ["Python", "Automation", "Systems thinking"],
   },
@@ -334,7 +335,7 @@ const projects: Project[] = [
     },
     image: "",
     alt: { en: "Illustrative architecture of an internal automation workflow", de: "Illustrative Architektur eines internen Automatisierungsworkflows" },
-    logo: "/assets/logo-dm.webp",
+    logo: assetPath("/assets/logo-dm.webp"),
     logoAlt: "dm-drogerie markt",
     tags: ["Automation", "APIs", "Databases", "PySpark"],
   },
@@ -411,7 +412,7 @@ const sideProjects = [
   {
     title: "Paws from Georgia",
     theme: "paws",
-    logo: "/assets/logo-paws-georgia.png",
+    logo: assetPath("/assets/logo-paws-georgia.png"),
     href: "https://paws-for-georgia.onrender.com/",
     copy: {
       en: "A social-impact adoption experience for Georgian dogs.",
@@ -421,7 +422,7 @@ const sideProjects = [
   {
     title: "Flights History",
     theme: "flights",
-    logo: "/assets/logo-flights-history.png",
+    logo: assetPath("/assets/logo-flights-history.png"),
     href: "https://flights-history.onrender.com/",
     copy: {
       en: "Personal flight and travel data turned into an explorable product.",
@@ -431,7 +432,7 @@ const sideProjects = [
   {
     title: "Маня",
     theme: "manya",
-    logo: "/assets/logo-manya.png",
+    logo: assetPath("/assets/logo-manya.png"),
     href: "https://pashkinzon.github.io/manya-platform-prototype/",
     copy: {
       en: "Free mental-health knowledge in Russian, designed for clarity.",
@@ -580,7 +581,7 @@ export default function Home() {
           <button className="button button-primary" onClick={() => jumpTo("work")}>
             {t(ui.explore, lang)} <Arrow />
           </button>
-          <a className="button button-secondary" href="/Pavel_Polishchuk_CV_DE.pdf" target="_blank" rel="noreferrer">
+          <a className="button button-secondary" href={assetPath("/Pavel_Polishchuk_CV_DE.pdf")} target="_blank" rel="noreferrer">
             {t(ui.cv, lang)} <Arrow diagonal />
           </a>
         </div>
@@ -837,14 +838,14 @@ export default function Home() {
 
         <div className="career-grid">
           <article className="career-card current">
-            <div className="org-logo"><img src="/assets/logo-dm.webp" alt="dm-drogerie markt" /></div>
+            <div className="org-logo"><img src={assetPath("/assets/logo-dm.webp")} alt="dm-drogerie markt" /></div>
             <span className="career-date">{t(ui.now, lang)}</span>
             <h3>{t(ui.dmRole, lang)}</h3>
             <p>{t(ui.dmCopy, lang)}</p>
             <div className="career-chip"><span className="status-dot" />{t(ui.today, lang)}</div>
           </article>
           <article className="career-card">
-            <div className="org-logo flink"><img src="/assets/logo-flink.png" alt="Flink SE" /></div>
+            <div className="org-logo flink"><img src={assetPath("/assets/logo-flink.png")} alt="Flink SE" /></div>
             <span className="career-date">{t(ui.flinkDate, lang)}</span>
             <h3>{t(ui.flinkRole, lang)}</h3>
             <p>{t(ui.flinkCopy, lang)}</p>
@@ -924,7 +925,7 @@ export default function Home() {
 
       <section className="about section-shell" id="about">
         <div className="about-photo">
-          <img src="/assets/about-photo.jpg" alt="Pavel Polishchuk at home with his dog" />
+          <img src={assetPath("/assets/about-photo.jpg")} alt="Pavel Polishchuk at home with his dog" />
           <div className="photo-label">Pavel + {lang === "en" ? "the real project manager" : "der echte Projektmanager"}</div>
         </div>
         <div className="about-copy">
@@ -936,7 +937,7 @@ export default function Home() {
             <a className="button button-secondary" href="https://www.linkedin.com/in/pavelpolishchuk/" target="_blank" rel="noreferrer">
               {t(ui.linkedin, lang)} <Arrow diagonal />
             </a>
-            <a className="button button-secondary" href="/Pavel_Polishchuk_CV_DE.pdf" target="_blank" rel="noreferrer">
+            <a className="button button-secondary" href={assetPath("/Pavel_Polishchuk_CV_DE.pdf")} target="_blank" rel="noreferrer">
               {t(ui.cv, lang)} <Arrow diagonal />
             </a>
           </div>

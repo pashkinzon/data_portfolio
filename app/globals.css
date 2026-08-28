@@ -750,14 +750,12 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
 }
 .side-project-card-paws .side-logo-wrap img,
 .side-project-card-manya .side-logo-wrap img { mix-blend-mode: multiply; }
-.side-project-card-flights .side-logo-wrap {
+.side-project-card-setonsi .side-logo-wrap {
   background:
-    radial-gradient(circle at 12% 82%, rgba(48,239,199,.12) 0 42px, transparent 43px),
-    #080a10;
+    radial-gradient(circle at 12% 82%, rgba(36,86,214,.12) 0 42px, transparent 43px),
+    #e7ebf5;
 }
-.side-project-card-flights .brand-band-label { color: rgba(255,255,255,.48); }
-.side-project-card-flights .side-logo-wrap::after { border-color: rgba(48,239,199,.23); }
-.side-project-card-flights .side-logo-wrap img { max-height: 78px; max-width: 84%; }
+.side-project-card-setonsi .side-logo-wrap img { max-height: 60px; max-width: 78%; mix-blend-mode: multiply; }
 .side-project-card-manya .side-logo-wrap {
   background:
     radial-gradient(circle at 84% 28%, rgba(238,104,75,.14) 0 38px, transparent 39px),
@@ -936,6 +934,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
   width: 80px;
 }
 .education-mark.uf { background: #1b4e9b; color: #f39b31; }
+.education-mark img { filter: grayscale(1); max-height: 62px; max-width: 62px; object-fit: contain; }
+.education-mark.uf img { filter: grayscale(1) brightness(1.65); }
 .education-card h3 { font-size: 23px; margin: 7px 0 4px; }
 .education-card p { color: #536078; font-size: 15px; margin: 0; }
 

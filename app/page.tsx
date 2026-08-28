@@ -55,22 +55,22 @@ const ui = {
   menu: { en: "Menu", de: "Menü" },
   close: { en: "Close", de: "Schließen" },
   heroEyebrow: {
-    en: "Data analysis · automation · self-service tools",
-    de: "Datenanalyse · Automatisierung · Self-Service-Tools",
+    en: "Mathematics · data products · automation",
+    de: "Mathematik · Datenprodukte · Automatisierung",
   },
   heroLine1: { en: "Define clearly.", de: "Klar definieren." },
   heroLine2: { en: "Build what helps.", de: "Bauen, was hilft." },
   heroManifesto: {
-    en: "Technical analyst. Useful systems. Evidence-led decisions.",
-    de: "Technischer Analyst. Nützliche Systeme. Evidenzbasierte Entscheidungen.",
+    en: "Data analyst who turns recurring work into scalable products.",
+    de: "Data Analyst, der wiederkehrende Arbeit in skalierbare Produkte übersetzt.",
   },
   heroCopy: {
-    en: "I turn unclear analytical questions and repetitive workflows into dashboards and automations that people can use directly.",
-    de: "Ich übersetze unklare analytische Fragen und wiederkehrende Workflows in Dashboards und Automatisierungen, die Menschen direkt nutzen können.",
+    en: "Mathematics student with about two years of experience building Python/SQL data pipelines, API integrations, self-service applications, and useful AI-supported workflows.",
+    de: "Mathematikstudent mit rund zwei Jahren Erfahrung in Python-/SQL-Datenpipelines, API-Integrationen, Self-Service-Anwendungen und sinnvoll eingesetzten KI-Workflows.",
   },
   heroContext: {
-    en: "Currently a working-student Data Analyst at dm. Open to data analysis, data science, and automation-focused roles.",
-    de: "Aktuell Werkstudent als Data Analyst bei dm. Offen für Rollen in Datenanalyse, Data Science und Automatisierung.",
+    en: "Currently in assortment and store analytics at dm. Seeking a long-term working-student role with a path to a full-time position after graduation in March 2028.",
+    de: "Aktuell in der Sortiments- und Filialanalytik bei dm. Suche eine langfristige Werkstudentenposition mit Perspektive auf den Berufseinstieg nach dem Abschluss im März 2028.",
   },
   explore: { en: "See how I work", de: "Meine Arbeitsweise ansehen" },
   cv: { en: "Open CV (DE)", de: "Lebenslauf öffnen" },
@@ -91,7 +91,7 @@ const ui = {
   caseDecisions: { en: "Key product decisions", de: "Zentrale Produktentscheidungen" },
   caseResult: { en: "Measured result", de: "Messbares Ergebnis" },
   caseEvidence: { en: "Evidence", de: "Belege" },
-  sideKicker: { en: "Independent & social-impact builds", de: "Eigene & gemeinnützige Projekte" },
+  sideKicker: { en: "Independent initiative projects", de: "Eigene Initiativprojekte" },
   sideTitle: { en: "Products beyond the day job.", de: "Produkte über den Job hinaus." },
   sideIntro: {
     en: "Small teams and personal projects are where I test ideas quickly, make useful interfaces, and build for communities I care about.",
@@ -113,10 +113,10 @@ const ui = {
   },
   today: { en: "Today", de: "Heute" },
   now: { en: "Oct 2024 — now", de: "Okt 2024 — heute" },
-  dmRole: { en: "Working Student · Data Analyst", de: "Werkstudent · Data Analyst" },
+  dmRole: { en: "Working Student · Assortment & Store Analytics", de: "Werkstudent · Sortiments- & Filialanalytik" },
   dmCopy: {
-    en: "Retail analytics, scalable reporting, AI-enabled workflows, and assortment decisions with scope across more than 2,000 stores.",
-    de: "Retail Analytics, skalierbares Reporting, AI-gestützte Workflows und Sortimentsentscheidungen für einen Analyseumfang von mehr als 2.000 Märkten.",
+    en: "Translate open business questions into data preparation, models, and clear decision support for assortment and store decisions across more than 2,000 stores.",
+    de: "Übersetze offene Geschäftsfragen in Datenaufbereitungen, Modelle und verständliche Entscheidungsgrundlagen für Sortiments- und Filialentscheidungen in über 2.000 Märkten.",
   },
   flinkDate: { en: "Oct 2023 — Sep 2024", de: "Okt 2023 — Sep 2024" },
   flinkRole: {
@@ -161,136 +161,136 @@ const projects: Project[] = [
   {
     id: "assortment",
     number: "01",
-    shortTitle: { en: "Self-service dashboard", de: "Self-Service-Dashboard" },
-    kicker: { en: "dm · Unified analytics dashboard", de: "dm · Einheitliches Analyse-Dashboard" },
-    title: { en: "Repeated requests became one reusable view", de: "Aus wiederkehrenden Anfragen wurde eine wiederverwendbare Sicht" },
+    shortTitle: { en: "Self-service platform", de: "Self-Service-Plattform" },
+    kicker: { en: "dm · Product ownership & development", de: "dm · Product Ownership & Entwicklung" },
+    title: { en: "One platform now covers 80% of recurring analysis requests", de: "Eine Plattform deckt heute 80 % der wiederkehrenden Analyseanfragen ab" },
     description: {
-      en: "Assortment teams repeatedly requested similar analyses, while each answer was still prepared separately in PowerPoint. I proposed and built a unified dashboard so teams can inspect standard KPIs immediately and arrive at more focused follow-up questions.",
-      de: "Sortimentsteams fragten wiederholt ähnliche Analysen an, während jede Antwort weiterhin einzeln in PowerPoint aufbereitet wurde. Ich schlug ein einheitliches Dashboard vor und setzte es um, damit Teams Standard-KPIs sofort prüfen und gezieltere Folgefragen stellen können.",
+      en: "I initiated and built an end-to-end analytical product that consolidates recurring assortment and store-layout work into a reusable data pipeline, analysis modules, APIs, and an interactive web dashboard.",
+      de: "Ich initiierte und entwickelte ein analytisches End-to-End-Produkt, das wiederkehrende Sortiments- und Filialanalysen in einer wiederverwendbaren Datenpipeline, Analysemodulen, APIs und einem interaktiven Web-Dashboard bündelt.",
     },
-    impact: { en: "Initial insight: weeks → immediate", de: "Erste Einblicke: Wochen → sofort" },
+    impact: { en: "6.4 → 1.7 days · −73%", de: "6,4 → 1,7 Tage · −73 %" },
     ownership: [
-      { en: "Proposed the project after recognizing repeated requests", de: "Projekt nach dem Erkennen wiederkehrender Anfragen vorgeschlagen" },
-      { en: "Defined KPI logic and built the data preparation", de: "KPI-Logik definiert und Datenaufbereitung entwickelt" },
-      { en: "Built and deployed the web frontend", de: "Web-Frontend entwickelt und bereitgestellt" },
-      { en: "Documented the tool and incorporated user feedback", de: "Tool dokumentiert und Nutzerfeedback eingearbeitet" },
+      { en: "Acted as product owner from problem discovery to rollout", de: "Product Owner von der Problemdefinition bis zum Rollout" },
+      { en: "Built the reusable analytical modules and data pipeline", de: "Wiederverwendbare Analysemodule und Datenpipeline entwickelt" },
+      { en: "Developed the APIs and interactive web dashboard", de: "APIs und interaktives Web-Dashboard entwickelt" },
+      { en: "Tested the beta across 14 assortment projects", de: "Beta in 14 Sortimentsprojekten getestet" },
     ],
     summary: {
       problem: {
-        en: "Similar questions about sales, layout position, and assortment trends repeatedly arrived as separate tickets and were answered with separate presentations.",
-        de: "Ähnliche Fragen zu Verkauf, Platzierung und Sortimentstrends kamen wiederholt als einzelne Tickets und wurden in separaten Präsentationen beantwortet.",
+        en: "Recurring assortment and layout questions were rebuilt as separate notebook analyses and PowerPoint presentations, slowing delivery and fragmenting analytical knowledge.",
+        de: "Wiederkehrende Sortiments- und Layoutfragen wurden als separate Notebook-Analysen und PowerPoint-Präsentationen neu erstellt. Das verlangsamte die Bearbeitung und verteilte Wissen auf Einzellösungen.",
       },
       role: {
-        en: "Developed the solution independently from concept and KPI logic through Python processing, frontend, testing, deployment, and documentation.",
-        de: "Entwickelte die Lösung eigenständig von Konzept und KPI-Logik über Python-Verarbeitung und Frontend bis zu Tests, Bereitstellung und Dokumentation.",
+        en: "Owned and developed the solution end to end: product framing, Python/PySpark modules, data pipeline, API integration, dashboard UX, testing, documentation, and rollout.",
+        de: "Verantwortete und entwickelte die Lösung End-to-End: Product Framing, Python-/PySpark-Module, Datenpipeline, API-Integration, Dashboard-UX, Tests, Dokumentation und Rollout.",
       },
       outcome: {
-        en: "Teams can review standard KPIs directly instead of waiting weeks for an initial analysis; later conversations start with better context and more specific questions.",
-        de: "Teams können Standard-KPIs direkt prüfen, statt wochenlang auf eine erste Analyse zu warten; spätere Gespräche beginnen mit besserem Kontext und konkreteren Fragen.",
+        en: "Across 14 beta projects, active completion time fell from 6.4 to 1.7 days. The platform standardizes about 80% of recurring request types.",
+        de: "In 14 Beta-Projekten sank die aktive Bearbeitungszeit von 6,4 auf 1,7 Tage. Die Plattform standardisiert rund 80 % der wiederkehrenden Anfragetypen.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "Although ticket details varied, the analytical views were often nearly identical. Preparing each analysis and PowerPoint separately delayed the first insight and made methods harder to compare across the team.",
-        de: "Obwohl sich die Details der Tickets unterschieden, waren die benötigten Analysesichten oft nahezu identisch. Jede Analyse und PowerPoint separat zu erstellen, verzögerte erste Einblicke und erschwerte den Vergleich der Methoden im Team.",
+        en: "Most tickets varied in business context, but reused the same analytical building blocks: sales, quantity, efficiency, shelf metres, layout changes, adjacency, market profiles, and product hierarchies.",
+        de: "Die Tickets unterschieden sich im Geschäftskontext, nutzten aber dieselben analytischen Bausteine: Umsatz, Menge, Effizienz, Regalmetern, Layoutänderungen, Nachbarschaften, Marktprofile und Produkthierarchien.",
       },
       contribution: {
-        en: "I proposed the unified tool and developed it end to end. A Python notebook connects to the database, prepares the data, calculates KPIs, and exports dashboard-ready CSV files. I built the HTML/CSS frontend, deployed it internally, documented it, and supported users.",
-        de: "Ich schlug das einheitliche Tool vor und entwickelte es vollständig. Ein Python-Notebook verbindet sich mit der Datenbank, bereitet Daten auf, berechnet KPIs und exportiert Dashboard-fertige CSV-Dateien. Ich baute das HTML/CSS-Frontend, stellte es intern bereit, dokumentierte es und unterstützte Nutzer.",
+        en: "I initiated the product, translated repeated work into reusable modules, built the Python/PySpark pipeline and web interface, and am preparing broader stakeholder access through direct API integration.",
+        de: "Ich initiierte das Produkt, überführte wiederkehrende Arbeit in wiederverwendbare Module, entwickelte Python-/PySpark-Pipeline und Web-Oberfläche und bereite den breiteren Zugang über direkte API-Integration vor.",
       },
       decisions: [
-        { en: "Standardize recurring KPI logic instead of rebuilding each view", de: "Wiederkehrende KPI-Logik standardisieren, statt jede Sicht neu zu bauen" },
-        { en: "Separate data preparation from the web interface through CSV exports", de: "Datenaufbereitung und Web-Oberfläche durch CSV-Exporte trennen" },
-        { en: "Use feedback from colleagues and assortment teams to improve later versions", de: "Feedback von Kollegen und Sortimentsteams für spätere Versionen nutzen" },
+        { en: "Standardize analytical quality without removing project-specific flexibility", de: "Analytische Qualität standardisieren, ohne projektspezifische Flexibilität zu verlieren" },
+        { en: "Separate reusable data logic from the interactive decision interface", de: "Wiederverwendbare Datenlogik von der interaktiven Entscheidungsoberfläche trennen" },
+        { en: "Measure active processing and feedback time, excluding queue time", de: "Aktive Bearbeitungs- und Feedbackzeit messen, Wartezeit ausschließen" },
       ],
       result: {
-        en: "Assortment teams can now inspect standard KPIs immediately and use the service for more specific, complex questions. Regular usage is estimated at around 30 people based on recurring feedback and support contacts.",
-        de: "Sortimentsteams können Standard-KPIs nun sofort prüfen und den Service für spezifischere, komplexere Fragen nutzen. Die regelmäßige Nutzung wird anhand wiederkehrender Feedback- und Supportkontakte auf rund 30 Personen geschätzt.",
+        en: "The beta has supported 14 assortment projects. Typical active completion time dropped by 4.7 days, from 6.4 to 1.7 days—an approximately 73% reduction.",
+        de: "Die Beta unterstützte 14 Sortimentsprojekte. Die typische aktive Bearbeitungszeit sank um 4,7 Tage von 6,4 auf 1,7 Tage – eine Reduktion von rund 73 %.",
       },
       evidence: [
-        { en: "Weeks of waiting → immediate standard views", de: "Wochen Wartezeit → sofortige Standardsichten" },
-        { en: "~30 regular users (estimate)", de: "~30 regelmäßige Nutzer (Schätzung)" },
-        { en: "End-to-end individual contribution", de: "Eigenständiger End-to-End-Beitrag" },
+        { en: "14 assortment projects", de: "14 Sortimentsprojekte" },
+        { en: "6.4 → 1.7 active days", de: "6,4 → 1,7 aktive Tage" },
+        { en: "~80% recurring request coverage", de: "~80 % Abdeckung wiederkehrender Anfragen" },
       ],
     },
     image: "",
     alt: { en: "Illustrative architecture of the self-service dashboard", de: "Illustrative Architektur des Self-Service-Dashboards" },
-    logo: assetPath("/assets/logo-dm.webp"),
+    logo: assetPath("/assets/dm.svg"),
     logoAlt: "dm-drogerie markt",
     tags: ["Python", "Databases", "HTML/CSS", "Self-service analytics"],
   },
   {
     id: "automation",
     number: "02",
-    shortTitle: { en: "KPI automation", de: "KPI-Automation" },
-    kicker: { en: "dm · Automated KPI mailing", de: "dm · Automatisiertes KPI-Mailing" },
-    title: { en: "A weekly manual report became an automated delivery", de: "Aus einem manuellen Wochenbericht wurde eine automatisierte Zustellung" },
+    shortTitle: { en: "Assortment potential model", de: "Sortiments-Potenzialmodell" },
+    kicker: { en: "dm · Python, regression & Looker", de: "dm · Python, Regression & Looker" },
+    title: { en: "A model turned shelf-space variation into a €760k opportunity", de: "Ein Modell machte aus Regalvarianten ein Potenzial von 760.000 €" },
     description: {
-      en: "KPI reports for 75 markets were prepared and sent manually each week. I automated the data processing, Excel output with tables and charts, email attachments, and distribution.",
-      de: "KPI-Berichte für 75 Märkte wurden jede Woche manuell erstellt und versendet. Ich automatisierte Datenverarbeitung, Excel-Ausgabe mit Tabellen und Diagrammen, E-Mail-Anhänge und Versand.",
+      en: "I built a Python and regression-based model with an interactive Looker dashboard to evaluate assortment variants and support decisions on which shelf-length options to introduce or retire.",
+      de: "Ich entwickelte ein Python- und regressionsbasiertes Modell mit interaktivem Looker-Dashboard, um Sortimentsvarianten zu bewerten und Entscheidungen über neue oder entfallende Regallängen zu unterstützen.",
     },
-    impact: { en: "8h → <15m", de: "8 Std. → <15 Min." },
+    impact: { en: "€760k conservatively derived", de: "760.000 € konservativ abgeleitet" },
     ownership: [
-      { en: "Identified a repetitive weekly reporting workflow", de: "Wiederkehrenden wöchentlichen Reporting-Workflow identifiziert" },
-      { en: "Learned and connected the required Microsoft APIs", de: "Benötigte Microsoft-APIs erlernt und angebunden" },
-      { en: "Generated Excel tables and charts directly from data", de: "Excel-Tabellen und Diagramme direkt aus Daten erzeugt" },
-      { en: "Automated attachments and email distribution", de: "Anhänge und E-Mail-Versand automatisiert" },
+      { en: "Normalized market-level deviations from standard shelf variants", de: "Marktabweichungen von Standard-Regalvarianten normalisiert" },
+      { en: "Developed the regression and recommendation logic", de: "Regressions- und Empfehlungslogik entwickelt" },
+      { en: "Built the interactive Looker decision dashboard", de: "Interaktives Looker-Entscheidungsdashboard entwickelt" },
+      { en: "Translated model results into an implementation case", de: "Modellergebnisse in einen Implementierungsfall übersetzt" },
     ],
     summary: {
       problem: {
-        en: "The team processed the available KPI data, then manually transferred results into files and sent them to markets every week.",
-        de: "Das Team verarbeitete die verfügbaren KPI-Daten, übertrug Ergebnisse anschließend manuell in Dateien und versendete sie jede Woche an die Märkte.",
+        en: "Stores often deviated from standard shelf-length variants, making performance comparisons noisy and future assortment-variant decisions difficult.",
+        de: "Märkte wichen häufig von Standard-Regalvarianten ab. Das erschwerte Performancevergleiche und Entscheidungen über zukünftige Sortimentsvarianten.",
       },
       role: {
-        en: "Built a Python/PySpark workflow that generates the Excel reports and charts, attaches them to emails, and automates distribution through Microsoft workflows.",
-        de: "Entwickelte einen Python/PySpark-Workflow, der Excel-Berichte und Diagramme erzeugt, an E-Mails anhängt und über Microsoft-Workflows automatisch versendet.",
+        en: "Built the full analytical workflow in Python, developed the regression approach, and created an interactive Looker dashboard for assortment teams.",
+        de: "Entwickelte den vollständigen Analyseworkflow in Python, den Regressionsansatz und ein interaktives Looker-Dashboard für Sortimentsteams.",
       },
       outcome: {
-        en: "Weekly generation and distribution for 75 markets fell from roughly eight hours of manual work to under 15 minutes.",
-        de: "Erstellung und Versand für 75 Märkte sanken von rund acht Stunden manueller Arbeit pro Woche auf weniger als 15 Minuten.",
+        en: "In Q4 2025 and Q1 2026, realized revenue averaged 3.7% above the forecast, supporting a conservative derivation of roughly €760,000 in additional revenue.",
+        de: "In Q4 2025 und Q1 2026 lag der realisierte Umsatz im Mittel 3,7 % über der Prognose. Daraus lassen sich konservativ rund 760.000 € Mehrumsatz ableiten.",
       },
     },
     caseStudy: {
       challenge: {
-        en: "The reporting logic was repeatable, but the file generation and delivery steps consumed hours every week without adding analytical value.",
-        de: "Die Reporting-Logik war wiederholbar, doch Dateierstellung und Versand beanspruchten jede Woche Stunden, ohne zusätzlichen analytischen Wert zu schaffen.",
+        en: "Custom shelf implementations across stores obscured which standardized variants were commercially effective and which options should enter the future assortment pool.",
+        de: "Individuelle Regallösungen in den Märkten verdeckten, welche standardisierten Varianten wirtschaftlich funktionieren und künftig in den Variantenpool aufgenommen werden sollten.",
       },
       contribution: {
-        en: "I learned how the required APIs and Microsoft automation components worked, then connected data processing, Excel generation, charts, attachments, and email delivery into one workflow.",
-        de: "Ich eignete mir die benötigten APIs und Microsoft-Automatisierungskomponenten an und verband Datenverarbeitung, Excel-Erstellung, Diagramme, Anhänge und E-Mail-Versand zu einem Workflow.",
+        en: "I connected market and assortment data, normalized variant deviations, modeled expected performance, and made the comparison explorable in Looker for decision-makers.",
+        de: "Ich verband Markt- und Sortimentsdaten, normalisierte Variantenabweichungen, modellierte die erwartete Performance und machte den Vergleich in Looker für Entscheider:innen explorierbar.",
       },
       decisions: [
-        { en: "Automate the low-creativity handoffs around an established KPI process", de: "Die wenig kreativen Übergaben rund um einen etablierten KPI-Prozess automatisieren" },
-        { en: "Generate tables and charts directly from processed data", de: "Tabellen und Diagramme direkt aus verarbeiteten Daten erzeugen" },
-        { en: "Keep the final market deliverable in a familiar Excel format", de: "Das finale Ergebnis für Märkte im vertrauten Excel-Format halten" },
+        { en: "Compare realized performance with a model-based forecast", de: "Realisierte Performance mit einer modellbasierten Prognose vergleichen" },
+        { en: "Keep the revenue derivation deliberately conservative", de: "Die Umsatzableitung bewusst konservativ halten" },
+        { en: "Expose assumptions and variant comparisons in an interactive dashboard", de: "Annahmen und Variantenvergleiche in einem interaktiven Dashboard sichtbar machen" },
       ],
       result: {
-        en: "The weekly workflow for 75 markets now runs in under 15 minutes instead of requiring around eight hours of manual preparation and dispatch.",
-        de: "Der wöchentliche Workflow für 75 Märkte läuft nun in weniger als 15 Minuten statt rund acht Stunden manueller Aufbereitung und Versandarbeit zu benötigen.",
+        en: "The realized result averaged 3.7% above forecast across Q4 2025 and Q1 2026, corresponding to a conservatively derived additional revenue of about €760,000.",
+        de: "Der realisierte Umsatz lag in Q4 2025 und Q1 2026 im Mittel 3,7 % über der Prognose – entsprechend konservativ rund 760.000 € abgeleitetem Mehrumsatz.",
       },
       evidence: [
-        { en: "8h → <15m", de: "8 Std. → <15 Min." },
-        { en: "75 markets", de: "75 Märkte" },
-        { en: "Automated Excel + email delivery", de: "Automatisierte Excel- und E-Mail-Zustellung" },
+        { en: "+3.7% vs forecast", de: "+3,7 % ggü. Prognose" },
+        { en: "Q4 2025 + Q1 2026", de: "Q4 2025 + Q1 2026" },
+        { en: "~€760k conservative derivation", de: "~760.000 € konservative Ableitung" },
       ],
     },
     image: "",
-    alt: { en: "Illustrative diagram of the automated KPI-mailing workflow", de: "Illustratives Diagramm des automatisierten KPI-Mailing-Workflows" },
-    logo: assetPath("/assets/logo-dm.webp"),
+    alt: { en: "Illustrative workflow of the assortment potential model", de: "Illustrativer Workflow des Sortiments-Potenzialmodells" },
+    logo: assetPath("/assets/dm.svg"),
     logoAlt: "dm-drogerie markt",
-    tags: ["Python", "PySpark", "Excel", "Microsoft automation"],
+    tags: ["Python", "Regression", "Looker", "Assortment optimization"],
   },
   {
     id: "copilot",
     number: "03",
-    shortTitle: { en: "Internal automation", de: "Interne Automatisierung" },
-    kicker: { en: "dm · Internal automation tool", de: "dm · Internes Automatisierungstool" },
-    title: { en: "Automating work inside an internal data tool", de: "Arbeit in einem internen Datentool automatisieren" },
+    shortTitle: { en: "Team AI agent", de: "KI-Agent fürs Team" },
+    kicker: { en: "dm · API & database-grounded agent", de: "dm · API- & datenbankgestützter Agent" },
+    title: { en: "A custom agent became part of the team’s daily analytical work", de: "Ein eigener Agent wurde Teil der täglichen Analytics-Arbeit" },
     description: {
-      en: "I am building automations that connect internal context, APIs, databases, and PySpark generation. Adoption is still being learned—not forecast.",
-      de: "Ich entwickle Automatisierungen, die internen Kontext, APIs, Datenbanken und PySpark-Generierung verbinden. Adoption wird noch gelernt—nicht prognostiziert.",
+      en: "I developed an agent that combines team standards, reusable workflows, database APIs, and PySpark/Zeppelin conventions to support coding and database questions with current internal context.",
+      de: "Ich entwickelte einen Agenten, der Teamstandards, wiederverwendbare Workflows, Datenbank-APIs und PySpark-/Zeppelin-Konventionen verbindet und Coding- sowie Datenbankfragen mit aktuellem internem Kontext unterstützt.",
     },
-    impact: { en: "Internal tool · adoption in progress", de: "Internes Tool · Adoption im Aufbau" },
+    impact: { en: "275 chats · 2,000 messages", de: "275 Chats · 2.000 Nachrichten" },
     ownership: [
       { en: "Identified repeated technical friction", de: "Wiederkehrende technische Reibung identifiziert" },
       { en: "Connected API and database context", de: "API- und Datenbankkontext verbunden" },
@@ -302,12 +302,12 @@ const projects: Project[] = [
         de: "Wiederkehrende Datenarbeit erforderte Spezialwissen und Wechsel zwischen getrennten technischen Systemen.",
       },
       role: {
-        en: "Designing and building automations around internal context, APIs, databases, and PySpark workflows.",
-        de: "Konzeption und Bau von Automatisierungen rund um internen Kontext, APIs, Datenbanken und PySpark-Workflows.",
+        en: "Developed the custom agent, consolidated team standards and reusable code, connected database APIs, and shaped validated PySpark/Zeppelin outputs.",
+        de: "Entwickelte den eigenen Agenten, bündelte Teamstandards und wiederverwendbaren Code, band Datenbank-APIs an und strukturierte validierte PySpark-/Zeppelin-Ausgaben.",
       },
       outcome: {
-        en: "The tool is being tested internally. Wider adoption is not yet measured, so no user forecast is claimed.",
-        de: "Das Tool wird intern getestet. Breitere Adoption ist noch nicht gemessen, daher wird keine Nutzerprognose behauptet.",
+        en: "The seven-person analytics team uses the agent daily; internal tracking recorded about 275 new chats and 2,000 messages within a few months.",
+        de: "Das siebenköpfige Analytics-Team nutzt den Agenten täglich; intern wurden innerhalb weniger Monate rund 275 neue Chats und 2.000 Nachrichten erfasst.",
       },
     },
     caseStudy: {
@@ -316,95 +316,91 @@ const projects: Project[] = [
         de: "Einige wiederkehrende Datenaufgaben hingen von technischem Kontext aus APIs, Datenbanken und Spezialwissen ab.",
       },
       contribution: {
-        en: "I am building automations inside an internal tool, connecting context and shaping reusable PySpark workflows while testing what is genuinely useful.",
-        de: "Ich entwickle Automatisierungen in einem internen Tool, verbinde Kontext und gestalte wiederverwendbare PySpark-Workflows, während ich teste, was tatsächlich nützlich ist.",
+        en: "I built and iterated the agent, encoded the team’s coding and documentation conventions, connected current database context, and moved the product into daily team use.",
+        de: "Ich entwickelte und iterierte den Agenten, hinterlegte Coding- und Dokumentationsstandards des Teams, band aktuellen Datenbankkontext an und überführte das Produkt in die tägliche Nutzung.",
       },
       decisions: [
         { en: "Ground outputs in internal context instead of generic AI responses", de: "Outputs im internen Kontext statt in generischen AI-Antworten verankern" },
         { en: "Automate repeated work before expanding feature scope", de: "Wiederkehrende Arbeit automatisieren, bevor der Feature-Scope wächst" },
-        { en: "Describe adoption honestly until usage is measured", de: "Adoption ehrlich beschreiben, bis Nutzung gemessen ist" },
+        { en: "Track real usage rather than forecast adoption", de: "Reale Nutzung messen statt Adoption zu prognostizieren" },
       ],
       result: {
-        en: "This remains an internal automation effort with adoption in progress. The portfolio intentionally makes no projected user-count claim.",
-        de: "Dies bleibt eine interne Automatisierungsinitiative mit Adoption im Aufbau. Das Portfolio macht bewusst keine prognostizierte Nutzerzahl.",
+        en: "The agent moved into daily use across the seven-person team and processed roughly 275 chats and 2,000 messages within its first months.",
+        de: "Der Agent wurde in die tägliche Nutzung des siebenköpfigen Teams überführt und verarbeitete in den ersten Monaten rund 275 Chats und 2.000 Nachrichten.",
       },
       evidence: [
-        { en: "Internal tool", de: "Internes Tool" },
-        { en: "API + database context", de: "API- + Datenbankkontext" },
-        { en: "Adoption not yet measured", de: "Adoption noch nicht gemessen" },
+        { en: "Daily use by a 7-person team", de: "Tägliche Nutzung im 7-köpfigen Team" },
+        { en: "~275 chats", de: "~275 Chats" },
+        { en: "~2,000 messages", de: "~2.000 Nachrichten" },
       ],
     },
     image: "",
     alt: { en: "Illustrative architecture of an internal automation workflow", de: "Illustrative Architektur eines internen Automatisierungsworkflows" },
-    logo: assetPath("/assets/logo-dm.webp"),
+    logo: assetPath("/assets/dm.svg"),
     logoAlt: "dm-drogerie markt",
-    tags: ["Automation", "APIs", "Databases", "PySpark"],
+    tags: ["AI agent", "APIs", "Databases", "PySpark", "Zeppelin"],
   },
 ];
 
 const impactCases: ImpactCase[] = [
   {
     id: "speed",
-    label: { en: "Automation", de: "Automatisierung" },
-    metric: "8h → <15m",
-    metricLabel: { en: "weekly preparation and delivery", de: "wöchentliche Erstellung und Zustellung" },
-    title: { en: "A repetitive report became a reliable workflow.", de: "Aus einem wiederkehrenden Bericht wurde ein zuverlässiger Workflow." },
+    label: { en: "Self-service software", de: "Self-Service-Software" },
+    metric: "−73%",
+    metricLabel: { en: "active completion time", de: "aktive Bearbeitungszeit" },
+    title: { en: "Recurring analyses became a reusable product.", de: "Wiederkehrende Analysen wurden zu einem wiederverwendbaren Produkt." },
     copy: {
-      en: "Python/PySpark processing and Microsoft automation generate and distribute KPI reports for 75 markets.",
-      de: "Python/PySpark-Verarbeitung und Microsoft-Automatisierung erzeugen und versenden KPI-Berichte für 75 Märkte.",
+      en: "An end-to-end platform reduced typical active delivery from 6.4 to 1.7 days across 14 assortment projects.",
+      de: "Eine End-to-End-Plattform reduzierte die typische aktive Bearbeitung in 14 Sortimentsprojekten von 6,4 auf 1,7 Tage.",
     },
     proof: [
-      { en: "75 markets", de: "75 Märkte" },
-      { en: "Excel tables and charts", de: "Excel-Tabellen und Diagramme" },
-      { en: "Automated email delivery", de: "Automatisierter E-Mail-Versand" },
+      { en: "14 beta projects", de: "14 Beta-Projekte" },
+      { en: "~80% request coverage", de: "~80 % Anfrageabdeckung" },
     ],
   },
   {
     id: "adoption",
-    label: { en: "Self-service analytics", de: "Self-Service-Analytics" },
-    metric: "~30",
-    metricLabel: { en: "regular users (estimate)", de: "regelmäßige Nutzer (Schätzung)" },
-    title: { en: "Standard views became immediately accessible.", de: "Standardsichten wurden unmittelbar zugänglich." },
+    label: { en: "Commercial impact", de: "Kommerzieller Impact" },
+    metric: "~€760k",
+    metricLabel: { en: "conservatively derived revenue", de: "konservativ abgeleiteter Mehrumsatz" },
+    title: { en: "A potential model supported better assortment variants.", de: "Ein Potenzialmodell unterstützte bessere Sortimentsvarianten." },
     copy: {
-      en: "Assortment teams can inspect recurring KPIs themselves instead of waiting several weeks for an initial analysis.",
-      de: "Sortimentsteams können wiederkehrende KPIs selbst prüfen, statt mehrere Wochen auf eine erste Analyse zu warten.",
+      en: "Realized revenue averaged 3.7% above forecast in Q4 2025 and Q1 2026.",
+      de: "Der realisierte Umsatz lag in Q4 2025 und Q1 2026 im Mittel 3,7 % über der Prognose.",
     },
     proof: [
-      { en: "Estimate based on recurring contacts", de: "Schätzung anhand wiederkehrender Kontakte" },
-      { en: "Weeks → immediate standard view", de: "Wochen → sofortige Standardsicht" },
-      { en: "Shared KPI logic", de: "Gemeinsame KPI-Logik" },
+      { en: "Python + regression", de: "Python + Regression" },
+      { en: "Interactive Looker dashboard", de: "Interaktives Looker-Dashboard" },
     ],
   },
   {
     id: "scope",
-    label: { en: "Retail analytics", de: "Retail Analytics" },
-    metric: "2,000+",
-    metricLabel: { en: "stores in analytical scope", de: "Märkte im analytischen Wirkungsbereich" },
-    title: { en: "Analysis built for real retail scale.", de: "Analysen für echte Retail-Skalierung." },
+    label: { en: "Process automation", de: "Prozessautomatisierung" },
+    metric: "8h → <15m",
+    metricLabel: { en: "per weekly reporting run", de: "pro wöchentlichem Reporting-Lauf" },
+    title: { en: "A manual KPI mailing now runs almost by itself.", de: "Ein manuelles KPI-Mailing läuft heute nahezu selbstständig." },
     copy: {
-      en: "Sales, cross-selling, potential, trend-market, and regression analyses support assortment and store decisions across the dm network.",
-      de: "Verkaufs-, Zusatzverkaufs-, Potenzial-, Trendmarkt- und Regressionsanalysen unterstützen Sortiments- und Filialentscheidungen im dm-Netzwerk.",
+      en: "Excel/VBA and Microsoft Power Automate generate and distribute weekly KPI communications for 75 stores.",
+      de: "Excel/VBA und Microsoft Power Automate erzeugen und versenden wöchentliche KPI-Kommunikation für 75 Märkte.",
     },
     proof: [
-      { en: "Assortment decisions", de: "Sortimentsentscheidungen" },
-      { en: "Statistical and regression models", de: "Statistische Verfahren und Regression" },
-      { en: "Parameterized exports", de: "Parametrisierte Exporte" },
+      { en: "In use for one year", de: "Seit einem Jahr im Einsatz" },
+      { en: "Reports arrive earlier each week", de: "Berichte erreichen Märkte früher" },
     ],
   },
   {
     id: "leadership",
-    label: { en: "Operations", de: "Operations" },
-    metric: "Shift flow",
-    metricLabel: { en: "expanded responsibility", de: "erweiterte Verantwortung" },
-    title: { en: "Initiative became responsibility.", de: "Aus Initiative wurde Verantwortung." },
+    label: { en: "Decision product", de: "Entscheidungsprodukt" },
+    metric: "16 × 60m",
+    metricLabel: { en: "assortment-review interviews", de: "Sortimentsinterviews" },
+    title: { en: "A dashboard became the working surface for every interview.", de: "Ein Dashboard wurde zur Arbeitsoberfläche jedes Interviews." },
     copy: {
-      en: "At Flink, I moved from picking orders to coordinating shifts, deliveries, order accuracy, and communication while improving the hub layout and picking system.",
-      de: "Bei Flink entwickelte ich mich von der Kommissionierung zur Koordination von Schichten, Lieferungen, Auftragsqualität und Kommunikation und verbesserte Hub-Layout sowie Kommissioniersystem.",
+      en: "The custom dashboard supported all 16 review sessions across 59 product-layout areas and surfaced 2,800–4,200 potential article additions.",
+      de: "Das eigene Dashboard unterstützte alle 16 Review-Sessions über 59 Layoutbereiche und machte ein Potenzial von 2.800–4.200 zusätzlichen Artikeln sichtbar.",
     },
     proof: [
-      { en: "Documented Ops Associate Plus role", de: "Dokumentierte Rolle Ops Associate Plus" },
-      { en: "Shift and delivery coordination", de: "Schicht- und Lieferkoordination" },
-      { en: "Layout and picking-system improvements", de: "Verbesserungen an Layout und Kommissioniersystem" },
+      { en: "59 layout areas", de: "59 Layoutbereiche" },
+      { en: "Consistently positive usability feedback", de: "Durchgehend positives Usability-Feedback" },
     ],
   },
 ];
@@ -413,31 +409,31 @@ const sideProjects = [
   {
     title: "Paws from Georgia",
     theme: "paws",
-    logo: assetPath("/assets/logo-paws-georgia.png"),
+    logo: assetPath("/assets/paws-from-georgia.svg"),
     href: "https://paws-for-georgia.onrender.com/",
     copy: {
-      en: "A social-impact adoption experience for Georgian dogs.",
-      de: "Eine gemeinnützige Vermittlungsplattform für Hunde aus Georgien.",
-    },
-  },
-  {
-    title: "Flights History",
-    theme: "flights",
-    logo: assetPath("/assets/logo-flights-history.png"),
-    href: "https://flights-history.onrender.com/",
-    copy: {
-      en: "Personal flight and travel data turned into an explorable product.",
-      de: "Persönliche Flug- und Reisedaten als interaktives Datenprodukt.",
+      en: "A volunteer project connecting Georgian rescue dogs with adopters in Europe.",
+      de: "Ein ehrenamtliches Projekt, das georgische Tierschutzhunde mit Adoptierenden in Europa verbindet.",
     },
   },
   {
     title: "Маня",
     theme: "manya",
-    logo: assetPath("/assets/logo-manya.png"),
-    href: "https://pashkinzon.github.io/manya-platform-prototype/",
+    logo: assetPath("/assets/manya.svg"),
+    href: "https://pashkinzon.github.io/manya-platform-prototype/website/#/",
     copy: {
-      en: "Research-based mental-health information in Russian, made clear and accessible.",
-      de: "Forschungsbasierte Informationen zu psychischer Gesundheit auf Russisch, klar und zugänglich aufbereitet.",
+      en: "A Russian-language, evidence-based mental-health platform in development.",
+      de: "Eine russischsprachige, evidenzbasierte Mental-Health-Plattform in Entwicklung.",
+    },
+  },
+  {
+    title: "Setonsi",
+    theme: "setonsi",
+    logo: assetPath("/assets/setonsi.svg"),
+    href: "https://setonsi-beta.pavel-polishchuk.workers.dev/",
+    copy: {
+      en: "An AI-assisted application tracker that turns screenshots into structured records, currently in beta testing.",
+      de: "Ein KI-gestützter Bewerbungstracker, der Screenshots in strukturierte Einträge überführt – aktuell in der Beta-Testphase.",
     },
   },
 ];
@@ -599,10 +595,10 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-metrics reveal-up delay-3">
-          <div><strong>75</strong><span>{lang === "en" ? "markets in automated KPI mailing" : "Märkte im automatisierten KPI-Mailing"}</span></div>
-          <div><strong>8h → &lt;15m</strong><span>{lang === "en" ? "weekly reporting workflow" : "wöchentlicher Reporting-Workflow"}</span></div>
-          <div><strong>~30</strong><span>{lang === "en" ? "regular dashboard users (estimate)" : "regelmäßige Dashboard-Nutzer (Schätzung)"}</span></div>
-          <div><strong>2,000+</strong><span>{lang === "en" ? "stores in analytical scope" : "Märkte im analytischen Wirkungsbereich"}</span></div>
+          <div><strong>−73%</strong><span>{lang === "en" ? "active delivery time across 14 projects" : "aktive Bearbeitungszeit in 14 Projekten"}</span></div>
+          <div><strong>~€760k</strong><span>{lang === "en" ? "conservatively derived additional revenue" : "konservativ abgeleiteter Mehrumsatz"}</span></div>
+          <div><strong>8h → &lt;15m</strong><span>{lang === "en" ? "weekly KPI workflow for 75 stores" : "wöchentlicher KPI-Workflow für 75 Märkte"}</span></div>
+          <div><strong>2,000</strong><span>{lang === "en" ? "messages processed by a daily-used team agent" : "Nachrichten im täglich genutzten Team-Agenten"}</span></div>
         </div>
       </section>
 
@@ -675,22 +671,22 @@ export default function Home() {
               ) : activeProject.id === "automation" ? (
                 <div className="kpi-automation-slide" role="img" aria-label={t(activeProject.alt, lang)}>
                   <div className="kpi-slide-head">
-                    <span>{lang === "en" ? "Automated KPI mailing · 75 markets" : "Automatisiertes KPI-Mailing · 75 Märkte"}</span>
-                    <strong>8h → &lt;15m</strong>
+                    <span>{lang === "en" ? "Assortment potential model · Q4 2025 + Q1 2026" : "Sortiments-Potenzialmodell · Q4 2025 + Q1 2026"}</span>
+                    <strong>~€760k</strong>
                   </div>
                   <div className="kpi-flow">
                     {[
-                      [lang === "en" ? "Process" : "Verarbeiten", lang === "en" ? "KPI data" : "KPI-Daten"],
-                      [lang === "en" ? "Generate" : "Erzeugen", lang === "en" ? "Excel + charts" : "Excel + Diagramme"],
-                      [lang === "en" ? "Attach" : "Anhängen", lang === "en" ? "Market reports" : "Marktberichte"],
-                      [lang === "en" ? "Deliver" : "Versenden", lang === "en" ? "Automated email" : "Automatisierte E-Mail"],
+                      [lang === "en" ? "Normalize" : "Normieren", lang === "en" ? "Shelf variants" : "Regalvarianten"],
+                      [lang === "en" ? "Model" : "Modellieren", lang === "en" ? "Expected revenue" : "Erwarteter Umsatz"],
+                      [lang === "en" ? "Compare" : "Vergleichen", lang === "en" ? "Forecast vs actual" : "Prognose vs. Ist"],
+                      [lang === "en" ? "Decide" : "Entscheiden", lang === "en" ? "Variant portfolio" : "Variantenportfolio"],
                     ].map(([step, note], index) => (
                       <div key={step}><span>0{index + 1}</span><strong>{step}</strong><small>{note}</small></div>
                     ))}
                   </div>
                   <div className="kpi-slide-foot">
-                    <span>{lang === "en" ? "75 market reports generated and distributed" : "75 Marktberichte erzeugt und versendet"}</span>
-                    <span>{lang === "en" ? "~8h weekly → <15m · no internal data shown" : "~8 Std. wöchentlich → <15 Min. · keine internen Daten gezeigt"}</span>
+                    <span>{lang === "en" ? "+3.7% realized revenue vs forecast" : "+3,7 % realisierter Umsatz ggü. Prognose"}</span>
+                    <span>{lang === "en" ? "Python + regression + Looker · conservative derivation" : "Python + Regression + Looker · konservative Ableitung"}</span>
                   </div>
                 </div>
               ) : (
@@ -707,8 +703,8 @@ export default function Home() {
                     <div><span>03</span><strong>{lang === "en" ? "Automate" : "Automatisieren"}</strong><small>PySpark + {lang === "en" ? "output" : "Output"}</small></div>
                   </div>
                   <div className="ai-proof-row">
-                    <span><strong>{lang === "en" ? "Internal tool" : "Internes Tool"}</strong>{lang === "en" ? " being tested" : " wird getestet"}</span>
-                    <span><strong>{lang === "en" ? "Adoption" : "Adoption"}</strong>{lang === "en" ? " not yet measured" : " noch nicht gemessen"}</span>
+                    <span><strong>275</strong>{lang === "en" ? " chats in a few months" : " Chats in wenigen Monaten"}</span>
+                    <span><strong>2,000</strong>{lang === "en" ? " messages · daily team use" : " Nachrichten · tägliche Teamnutzung"}</span>
                   </div>
                 </div>
               )}
@@ -750,10 +746,10 @@ export default function Home() {
               {activeProject.id === "assortment" ? (
                 <div className="prototype-timeline">
                   {[
-                    [lang === "en" ? "Recognize" : "Erkennen", lang === "en" ? "Similar questions repeatedly required similar views." : "Ähnliche Fragen benötigten wiederholt ähnliche Sichten."],
-                    [lang === "en" ? "Propose" : "Vorschlagen", lang === "en" ? "Initiated one unified self-service dashboard." : "Ein einheitliches Self-Service-Dashboard initiiert."],
-                    [lang === "en" ? "Build" : "Bauen", lang === "en" ? "Developed KPI logic, data pipeline, frontend, and deployment." : "KPI-Logik, Datenpipeline, Frontend und Bereitstellung entwickelt."],
-                    [lang === "en" ? "Improve" : "Verbessern", lang === "en" ? "Incorporated feedback and supported regular users." : "Feedback eingearbeitet und regelmäßige Nutzer unterstützt."],
+                    [lang === "en" ? "Initiate" : "Initiieren", lang === "en" ? "Framed repeated ticket work as one reusable product." : "Wiederkehrende Ticketarbeit als ein wiederverwendbares Produkt definiert."],
+                    [lang === "en" ? "Own" : "Verantworten", lang === "en" ? "Led the product from idea through beta rollout." : "Das Produkt von der Idee bis zum Beta-Rollout verantwortet."],
+                    [lang === "en" ? "Build" : "Bauen", lang === "en" ? "Developed pipeline, modules, APIs, and web dashboard." : "Pipeline, Module, APIs und Web-Dashboard entwickelt."],
+                    [lang === "en" ? "Measure" : "Messen", lang === "en" ? "14 projects: 6.4 → 1.7 active days." : "14 Projekte: 6,4 → 1,7 aktive Tage."],
                   ].map(([label, copy], index) => (
                     <section key={label}><i>0{index + 1}</i><div><span>{label}</span><p>{copy}</p></div></section>
                   ))}
@@ -770,7 +766,7 @@ export default function Home() {
                 <div className="status-story">
                   <section><span>{lang === "en" ? "What I’m building" : "Was ich baue"}</span><p>{t(activeProject.summary.role, lang)}</p></section>
                   <section><span>{lang === "en" ? "Status now" : "Aktueller Status"}</span><p>{t(activeProject.summary.outcome, lang)}</p></section>
-                  <div>{lang === "en" ? "No projected user count. Adoption is still being learned." : "Keine prognostizierte Nutzerzahl. Adoption wird noch gelernt."}</div>
+                  <div>{lang === "en" ? "Measured internal usage · 7-person team · daily workflow" : "Gemessene interne Nutzung · 7-köpfiges Team · täglicher Workflow"}</div>
                 </div>
               )}
               <button className="case-study-button" onClick={() => setOpenCaseStudy(activeProject)}>
@@ -851,21 +847,21 @@ export default function Home() {
 
         <div className="career-grid">
           <article className="career-card current">
-            <div className="org-logo"><img src={assetPath("/assets/logo-dm.webp")} alt="dm-drogerie markt" /></div>
+            <div className="org-logo"><img src={assetPath("/assets/dm.svg")} alt="dm-drogerie markt" /></div>
             <span className="career-date">{t(ui.now, lang)}</span>
             <h3>{t(ui.dmRole, lang)}</h3>
             <p>{t(ui.dmCopy, lang)}</p>
             <div className="career-chip"><span className="status-dot" />{t(ui.today, lang)}</div>
           </article>
           <article className="career-card">
-            <div className="org-logo flink"><img src={assetPath("/assets/logo-flink.png")} alt="Flink SE" /></div>
+            <div className="org-logo flink"><img src={assetPath("/assets/flink.svg")} alt="Flink SE" /></div>
             <span className="career-date">{t(ui.flinkDate, lang)}</span>
             <h3>{t(ui.flinkRole, lang)}</h3>
             <p>{t(ui.flinkCopy, lang)}</p>
             <div className="career-metric">OPS+</div>
           </article>
           <article className="education-card">
-            <span className="education-mark">UH</span>
+            <span className="education-mark"><img src={assetPath("/assets/heidelberg.svg")} alt="Universität Heidelberg" /></span>
             <div>
               <span className="career-date">{lang === "en" ? "Since 2023" : "Seit 2023"}</span>
               <h3>Universität Heidelberg</h3>
@@ -873,11 +869,11 @@ export default function Home() {
             </div>
           </article>
           <article className="education-card">
-            <span className="education-mark uf">UF</span>
+            <span className="education-mark uf"><img src={assetPath("/assets/uf.svg")} alt="University of Florida" /></span>
             <div>
               <span className="career-date">2021 — 2023</span>
               <h3>University of Florida</h3>
-              <p>{t(ui.studyFlorida, lang)} · 71/120 Credits</p>
+              <p>{t(ui.studyFlorida, lang)} · GPA 3.48/4.00 · 66/120 Credits</p>
             </div>
           </article>
         </div>

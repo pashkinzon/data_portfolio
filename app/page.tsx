@@ -459,7 +459,17 @@ const capabilities = [
       en: "Create reproducible analysis, dashboards, automation, and internal tools with the right technical depth.",
       de: "Reproduzierbare Analysen, Dashboards, Automatisierung und interne Tools mit der passenden technischen Tiefe bauen.",
     },
-    items: ["Python", "PySpark", "SQL", "Looker", "APIs"],
+    items: [
+      "Python",
+      "PySpark",
+      "SQL",
+      "Looker",
+      "APIs",
+      { en: "Git · professional", de: "Git · beruflich" },
+      { en: "Google Cloud Platform · professional", de: "Google Cloud Platform · beruflich" },
+      { en: "Tableau · first personal projects", de: "Tableau · erste persönliche Projekte" },
+      { en: "Power BI · first personal projects", de: "Power BI · erste persönliche Projekte" },
+    ],
   },
   {
     number: "03",
@@ -919,7 +929,10 @@ export default function Home() {
               <h3>{t(capability.title, lang)}</h3>
               <p>{t(capability.copy, lang)}</p>
               <div className="capability-items">
-                {capability.items.map((item) => <span key={item}>{item}</span>)}
+                {capability.items.map((item) => {
+                  const label = typeof item === "string" ? item : t(item, lang);
+                  return <span key={label}>{label}</span>;
+                })}
               </div>
             </article>
           ))}
